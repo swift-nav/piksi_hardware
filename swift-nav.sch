@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9970,6 +9970,60 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="swift-nav">
+<packages>
+<package name="TCX_7Q">
+<smd name="1" x="-1.51" y="-0.68" dx="0.78" dy="0.87" layer="1"/>
+<smd name="2" x="1.51" y="-0.68" dx="0.78" dy="0.87" layer="1"/>
+<smd name="3" x="1.51" y="0.68" dx="0.78" dy="0.87" layer="1"/>
+<smd name="4" x="-1.51" y="0.68" dx="0.78" dy="0.87" layer="1"/>
+<circle x="-2.91" y="-0.71" radius="0.436575" width="0.127" layer="21"/>
+<wire x1="-1.68" y1="0.07" x2="-1.68" y2="-0.07" width="0.127" layer="21"/>
+<wire x1="1.67" y1="0.07" x2="1.67" y2="-0.07" width="0.127" layer="21"/>
+<wire x1="-1.67" y1="1.31" x2="1.67" y2="1.31" width="0.127" layer="21"/>
+<wire x1="1.67" y1="-1.31" x2="-1.67" y2="-1.31" width="0.127" layer="21"/>
+<text x="-2.032" y="2.032" size="1.016" layer="25">&gt;NAME</text>
+<wire x1="-1.67" y1="1.31" x2="1.67" y2="1.31" width="0.127" layer="51"/>
+<wire x1="1.67" y1="0.07" x2="1.67" y2="-0.07" width="0.127" layer="51"/>
+<wire x1="1.67" y1="-1.31" x2="-1.67" y2="-1.31" width="0.127" layer="51"/>
+<wire x1="-1.68" y1="-0.07" x2="-1.68" y2="0.07" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="7Q-16.368MBG-T">
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<pin name="GND2" x="2.54" y="-12.7" length="middle" rot="R90"/>
+<pin name="GND1" x="-2.54" y="-12.7" length="middle" rot="R90"/>
+<pin name="OUT" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="VDD" x="-12.7" y="2.54" length="middle"/>
+<text x="-10.16" y="7.62" size="1.778" layer="96">7Q-16.368MBG-T</text>
+<text x="-10.16" y="10.16" size="2.1844" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="7Q-16.368MBG-T" prefix="U">
+<gates>
+<gate name="U$1" symbol="7Q-16.368MBG-T" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TCX_7Q">
+<connects>
+<connect gate="U$1" pin="GND1" pad="1"/>
+<connect gate="U$1" pin="GND2" pad="2"/>
+<connect gate="U$1" pin="OUT" pad="3"/>
+<connect gate="U$1" pin="VDD" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10216,6 +10270,7 @@ Source: www.kingbright.com</description>
 <part name="VCC31" library="supply1" deviceset="VCCIO" device=""/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
 <part name="X3" library="pel_molex" deviceset="CONN_12-1" device="-53261" value="FPGA_DEBUG_HDR"/>
+<part name="U4" library="swift-nav" deviceset="7Q-16.368MBG-T" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10227,11 +10282,11 @@ Source: www.kingbright.com</description>
 <wire x1="248.92" y1="24.13" x2="248.92" y2="163.83" width="0.508" layer="97" style="shortdash"/>
 <wire x1="248.92" y1="163.83" x2="482.6" y2="163.83" width="0.508" layer="97" style="shortdash"/>
 <wire x1="482.6" y1="163.83" x2="482.6" y2="107.95" width="0.508" layer="97" style="shortdash"/>
-<text x="543.56" y="10.16" size="3.81" layer="94">2.0</text>
+<text x="543.56" y="10.16" size="3.81" layer="94">2.2</text>
 <text x="78.74" y="401.32" size="6.4516" layer="94">Spartan Configuration</text>
 <text x="346.71" y="168.91" size="6.4516" layer="94">RF Frontend</text>
 <text x="297.18" y="410.21" size="6.4516" layer="94">Spartan IO Banks</text>
-<text x="454.66" y="27.94" size="5.08" layer="94">Schematic</text>
+<text x="454.66" y="27.94" size="5.08" layer="94">FPGA, POWER, RF</text>
 <text x="292.1" y="147.32" size="2.54" layer="94">50 ohm lines</text>
 <text x="292.1" y="101.6" size="2.54" layer="94">50 ohm lines</text>
 <text x="129.54" y="123.19" size="2.54" layer="97">MAX2769 Bypass</text>
@@ -10344,12 +10399,12 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="433.07" y="70.358" size="1.778" layer="96"/>
 </instance>
 <instance part="GND28" gate="1" x="416.56" y="63.5"/>
-<instance part="C44" gate="G$1" x="266.7" y="50.8" smashed="yes">
-<attribute name="NAME" x="262.636" y="50.419" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="262.636" y="47.879" size="1.778" layer="96" rot="R180"/>
+<instance part="C44" gate="G$1" x="289.56" y="50.8" smashed="yes">
+<attribute name="NAME" x="285.496" y="50.419" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="285.496" y="47.879" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND30" gate="1" x="266.7" y="30.48"/>
-<instance part="GND32" gate="1" x="320.04" y="30.48"/>
+<instance part="GND30" gate="1" x="289.56" y="30.48"/>
+<instance part="GND32" gate="1" x="307.34" y="30.48"/>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
 <instance part="FRAME2" gate="G$2" x="452.12" y="2.54"/>
 <instance part="U1" gate="B0" x="259.08" y="313.69"/>
@@ -10360,14 +10415,16 @@ Source: www.kingbright.com</description>
 <instance part="U1" gate="BNA" x="116.84" y="317.5"/>
 <instance part="U1" gate="BVCCAUX" x="53.34" y="76.2"/>
 <instance part="U1" gate="BVCCINT" x="76.2" y="76.2"/>
-<instance part="U10" gate="_ANA" x="332.74" y="76.2"/>
+<instance part="U10" gate="_ANA" x="332.74" y="76.2" smashed="yes">
+<attribute name="NAME" x="332.74" y="114.3" size="1.778" layer="95"/>
+</instance>
 <instance part="U10" gate="_DIG" x="439.42" y="73.66"/>
 <instance part="VCC4" gate="G$1" x="60.96" y="91.44"/>
 <instance part="VCC5" gate="G$1" x="119.38" y="93.98"/>
 <instance part="VCC6" gate="G$1" x="83.82" y="91.44"/>
 <instance part="VCC7" gate="G$1" x="119.38" y="71.12"/>
 <instance part="P+2" gate="VCC" x="121.92" y="123.19"/>
-<instance part="P+3" gate="VCC" x="266.7" y="58.42"/>
+<instance part="P+3" gate="VCC" x="289.56" y="58.42"/>
 <instance part="P+4" gate="VCC" x="347.98" y="152.4"/>
 <instance part="P+5" gate="VCC" x="363.22" y="152.4"/>
 <instance part="P+6" gate="VCC" x="434.34" y="137.16"/>
@@ -10586,6 +10643,7 @@ Source: www.kingbright.com</description>
 <instance part="GND40" gate="1" x="281.94" y="127"/>
 <instance part="GND39" gate="1" x="472.44" y="294.64"/>
 <instance part="X3" gate="G$1" x="483.87" y="313.69"/>
+<instance part="U4" gate="U$1" x="307.34" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -10693,14 +10751,9 @@ Source: www.kingbright.com</description>
 <pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="266.7" y1="33.02" x2="266.7" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="33.02" x2="289.56" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C44" gate="G$1" pin="2"/>
 <pinref part="GND30" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="317.5" y1="43.18" x2="320.04" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="43.18" x2="320.04" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="GND32" gate="1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="83.82" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
@@ -11063,6 +11116,17 @@ Source: www.kingbright.com</description>
 <wire x1="472.44" y1="300.99" x2="472.44" y2="297.18" width="0.1524" layer="91"/>
 <pinref part="X3" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="U4" gate="U$1" pin="GND1"/>
+<wire x1="304.8" y1="38.1" x2="304.8" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U4" gate="U$1" pin="GND2"/>
+<wire x1="304.8" y1="35.56" x2="307.34" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="35.56" x2="309.88" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="35.56" x2="309.88" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="GND32" gate="1" pin="GND"/>
+<wire x1="307.34" y1="33.02" x2="307.34" y2="35.56" width="0.1524" layer="91"/>
+<junction x="307.34" y="35.56"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -11091,6 +11155,8 @@ Source: www.kingbright.com</description>
 <segment>
 <wire x1="325.12" y1="53.34" x2="325.12" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="C20" gate="G$1" pin="2"/>
+<pinref part="U4" gate="U$1" pin="OUT"/>
+<wire x1="320.04" y1="53.34" x2="325.12" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -11511,11 +11577,12 @@ Source: www.kingbright.com</description>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<wire x1="266.7" y1="55.88" x2="266.7" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="53.34" x2="289.56" y2="53.34" width="0.1524" layer="91"/>
-<junction x="266.7" y="53.34"/>
+<wire x1="289.56" y1="55.88" x2="289.56" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="53.34" x2="294.64" y2="53.34" width="0.1524" layer="91"/>
+<junction x="289.56" y="53.34"/>
 <pinref part="C44" gate="G$1" pin="1"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
+<pinref part="U4" gate="U$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="347.98" y1="149.86" x2="347.98" y2="121.92" width="0.1524" layer="91"/>
@@ -12288,13 +12355,13 @@ Source: www.kingbright.com</description>
 <text x="24.13" y="318.77" size="3.81" layer="91" rot="MR180">UART1</text>
 <text x="20.32" y="384.81" size="3.81" layer="94">5V Molex Connector</text>
 <text x="24.13" y="269.24" size="3.81" layer="91" rot="MR180">UART3</text>
-<text x="118.11" y="162.56" size="3.81" layer="91" rot="MR180">JTAG chain</text>
-<rectangle x1="114.3" y1="134.62" x2="127" y2="146.05" layer="91"/>
-<rectangle x1="137.16" y1="134.62" x2="149.86" y2="146.05" layer="91"/>
-<text x="96.52" y="138.43" size="2.54" layer="91">TDI</text>
-<text x="95.25" y="125.73" size="2.54" layer="91">TDO</text>
-<text x="115.57" y="148.59" size="2.54" layer="91">STM32</text>
-<text x="134.62" y="148.59" size="2.54" layer="91">SPARTAN6</text>
+<text x="100.33" y="154.94" size="3.81" layer="91" rot="MR180">JTAG chain</text>
+<rectangle x1="96.52" y1="127" x2="109.22" y2="138.43" layer="91"/>
+<rectangle x1="119.38" y1="127" x2="132.08" y2="138.43" layer="91"/>
+<text x="78.74" y="130.81" size="2.54" layer="91">TDI</text>
+<text x="77.47" y="118.11" size="2.54" layer="91">TDO</text>
+<text x="97.79" y="140.97" size="2.54" layer="91">STM32</text>
+<text x="116.84" y="140.97" size="2.54" layer="91">SPARTAN6</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
@@ -13135,24 +13202,24 @@ Source: www.kingbright.com</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<wire x1="104.14" y1="139.7" x2="114.3" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="132.08" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<wire x1="104.14" y1="127" x2="114.3" y2="127" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="119.38" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<wire x1="127" y1="139.7" x2="137.16" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="132.08" x2="119.38" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<wire x1="149.86" y1="139.7" x2="156.21" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="156.21" y1="139.7" x2="156.21" y2="127" width="0.1524" layer="91"/>
-<wire x1="156.21" y1="127" x2="114.3" y2="127" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="132.08" x2="138.43" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="138.43" y1="132.08" x2="138.43" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="138.43" y1="119.38" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="STM_TDO_FPGA_TDI" class="0">
