@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10014,7 +10014,6 @@ Source: www.kingbright.com</description>
 <part name="J3" library="joby_robotics" deviceset="SMA" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0402" value="0R"/>
 <part name="C15" library="rcl" deviceset="C-EU" device="C0402" value="DNP"/>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="CHIP-LED0603" value="RED"/>
@@ -10044,7 +10043,6 @@ Source: www.kingbright.com</description>
 <text x="375.285" y="195.58" size="6.4516" layer="94">RF Frontend</text>
 <text x="304.8" y="398.78" size="6.4516" layer="94">Spartan IO Banks</text>
 <text x="456.565" y="29.845" size="5.08" layer="94">FPGA / POWER / RF</text>
-<text x="320.675" y="128.27" size="2.54" layer="94">50 ohm lines</text>
 <text x="136.525" y="118.745" size="2.54" layer="97">Spartan 6 Bypass - VCCAUX</text>
 <text x="136.525" y="95.885" size="2.54" layer="97">Spartan 6 Bypass - VCCINT</text>
 <text x="189.865" y="67.31" size="2.54" layer="97">Spartan 6 Bypass - Bank 3</text>
@@ -10081,7 +10079,7 @@ Source: www.kingbright.com</description>
 </instance>
 <instance part="GND18" gate="1" x="320.675" y="133.35"/>
 <instance part="J1" gate="G$1" x="269.875" y="132.08" rot="MR0"/>
-<instance part="ANT1" gate="G$1" x="264.795" y="175.26"/>
+<instance part="ANT1" gate="G$1" x="264.795" y="176.53"/>
 <instance part="R2" gate="G$1" x="334.645" y="110.49" smashed="yes">
 <attribute name="NAME" x="330.835" y="111.9886" size="1.778" layer="95"/>
 <attribute name="VALUE" x="335.915" y="112.268" size="1.778" layer="96"/>
@@ -10349,10 +10347,6 @@ Source: www.kingbright.com</description>
 <instance part="J3" gate="G$1" x="269.875" y="161.29" rot="R180"/>
 <instance part="GND7" gate="1" x="253.365" y="158.75"/>
 <instance part="GND34" gate="1" x="274.955" y="158.75"/>
-<instance part="C2" gate="G$1" x="339.09" y="167.005" smashed="yes" rot="R270">
-<attribute name="NAME" x="335.534" y="172.466" size="1.778" layer="95"/>
-<attribute name="VALUE" x="335.534" y="169.926" size="1.778" layer="96"/>
-</instance>
 <instance part="C15" gate="G$1" x="304.8" y="161.925" smashed="yes" rot="R180">
 <attribute name="NAME" x="307.594" y="162.306" size="1.778" layer="95"/>
 <attribute name="VALUE" x="307.594" y="159.766" size="1.778" layer="96"/>
@@ -11560,7 +11554,7 @@ Source: www.kingbright.com</description>
 <pinref part="J3" gate="G$1" pin="1"/>
 <wire x1="264.795" y1="161.29" x2="264.795" y2="167.005" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="264.795" y1="167.005" x2="264.795" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="264.795" y1="167.005" x2="264.795" y2="171.45" width="0.1524" layer="91"/>
 <wire x1="288.925" y1="167.005" x2="264.795" y2="167.005" width="0.1524" layer="91"/>
 <junction x="264.795" y="167.005"/>
 </segment>
@@ -11589,15 +11583,6 @@ Source: www.kingbright.com</description>
 <pinref part="U10" gate="_DIG" pin="SHDN"/>
 <label x="394.335" y="27.305" size="1.778" layer="95"/>
 <wire x1="419.735" y1="28.575" x2="410.845" y2="28.575" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<wire x1="349.25" y1="167.005" x2="349.25" y2="130.81" width="0.1524" layer="91"/>
-<wire x1="349.25" y1="130.81" x2="353.06" y2="130.81" width="0.1524" layer="91"/>
-<pinref part="U10" gate="_ANA" pin="LNA_IN1"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="349.25" y1="167.005" x2="341.63" y2="167.005" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -11636,9 +11621,11 @@ Source: www.kingbright.com</description>
 <pinref part="C75" gate="G$1" pin="2"/>
 <pinref part="C59" gate="G$1" pin="2"/>
 <wire x1="320.04" y1="167.005" x2="325.12" y2="167.005" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="325.12" y1="167.005" x2="334.01" y2="167.005" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="167.005" x2="349.25" y2="167.005" width="0.1524" layer="91"/>
 <junction x="325.12" y="167.005"/>
+<wire x1="349.25" y1="167.005" x2="349.25" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="349.25" y1="130.81" x2="353.06" y2="130.81" width="0.1524" layer="91"/>
+<pinref part="U10" gate="_ANA" pin="LNA_IN1"/>
 </segment>
 </net>
 <net name="FPGA_INIT_B" class="0">
