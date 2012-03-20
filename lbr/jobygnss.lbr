@@ -432,7 +432,7 @@
 <smd name="6" x="16.8" y="14.525" dx="1" dy="3.55" layer="1"/>
 <smd name="7" x="15.025" y="16.8" dx="4.55" dy="1" layer="1"/>
 <smd name="8" x="8.65" y="16.8" dx="3.8" dy="1" layer="1" rot="R180"/>
-<smd name="9" x="2.275" y="16.8" dx="4.55" dy="1" layer="1"/>
+<smd name="9" x="2.148" y="16.8" dx="4.296" dy="1" layer="1"/>
 <smd name="10" x="0.5" y="14.525" dx="1" dy="3.55" layer="1"/>
 <smd name="11" x="0.5" y="8.65" dx="3.8" dy="1" layer="1" rot="R270"/>
 <smd name="12" x="0.5" y="2.775" dx="1" dy="3.55" layer="1"/>
