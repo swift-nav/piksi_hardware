@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11844,7 +11844,7 @@ Source: www.kingbright.com</description>
 <pinref part="U1" gate="B2" pin="IO_L62N_D6_2"/>
 </segment>
 </net>
-<net name="NSHDN" class="0">
+<net name="MAX_NSHDN" class="0">
 <segment>
 <wire x1="462.915" y1="91.44" x2="419.735" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="419.735" y1="91.44" x2="419.735" y2="28.575" width="0.1524" layer="91"/>
