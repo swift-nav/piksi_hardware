@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -748,7 +748,7 @@ Source: Samtec SSW.pdf</description>
 <smd name="2" x="8.2" y="0.5" dx="3.8" dy="1" layer="1"/>
 <smd name="3" x="38.35" y="0.5" dx="4.1" dy="1" layer="1"/>
 <smd name="4" x="39.9" y="2.55" dx="1" dy="3.1" layer="1"/>
-<smd name="5" x="39.9" y="8.2" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="5" x="39.9" y="8.2" dx="3.3" dy="1" layer="1" rot="R90"/>
 <smd name="6" x="39.9" y="37.85" dx="1" dy="3.1" layer="1"/>
 <smd name="7" x="38.35" y="39.9" dx="4.1" dy="1" layer="1"/>
 <smd name="8" x="8.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180"/>
