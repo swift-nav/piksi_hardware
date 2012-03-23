@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -300,6 +300,10 @@
 <wire x1="-3.1" y1="1.2" x2="-3.1" y2="1.4" width="0.2" layer="21"/>
 <text x="-1.1" y="3.2" size="1.27" layer="25">&gt;NAME</text>
 <circle x="-3.556" y="3.048" radius="0.359209375" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="2.6" x2="-3.1" y2="-2.6" width="0.2" layer="51"/>
+<wire x1="-3.1" y1="-2.6" x2="3.1" y2="-2.6" width="0.2" layer="51"/>
+<wire x1="3.1" y1="-2.6" x2="3.1" y2="2.6" width="0.2" layer="51"/>
+<wire x1="3.1" y1="2.6" x2="-3.1" y2="2.6" width="0.2" layer="51"/>
 </package>
 <package name="MAX2769">
 <wire x1="2.6264" y1="-2.6264" x2="-2.6264" y2="-2.6264" width="0.254" layer="51"/>
@@ -424,6 +428,10 @@
 <wire x1="1.6" y1="1.6" x2="1.4" y2="1.6" width="0.2" layer="21"/>
 <circle x="-2" y="-2.1" radius="0.282840625" width="0.2" layer="21"/>
 <text x="-2.1" y="-0.7" size="0.8128" layer="25" rot="R90">&gt;NAME</text>
+<wire x1="-1.6" y1="1.6" x2="1.6" y2="1.6" width="0.2" layer="51"/>
+<wire x1="1.6" y1="1.6" x2="1.6" y2="-1.6" width="0.2" layer="51"/>
+<wire x1="1.6" y1="-1.6" x2="-1.6" y2="-1.6" width="0.2" layer="51"/>
+<wire x1="-1.6" y1="-1.6" x2="-1.6" y2="1.6" width="0.2" layer="51"/>
 </package>
 <package name="PT7M8206B33TA5EX">
 <wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.127" layer="21"/>
@@ -440,6 +448,15 @@
 <smd name="5" x="0.95" y="-1.1" dx="0.95" dy="0.45" layer="1" rot="R90"/>
 <text x="-1.524" y="-2.667" size="0.889" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 <text x="-1.397" y="1.778" size="0.889" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<wire x1="-1.55" y1="0.9" x2="1.55" y2="0.9" width="0.1" layer="51"/>
+<wire x1="1.55" y1="0.9" x2="1.55" y2="-0.9" width="0.1" layer="51"/>
+<wire x1="1.55" y1="-0.9" x2="-1.55" y2="-0.9" width="0.1" layer="51"/>
+<wire x1="-1.55" y1="-0.9" x2="-1.55" y2="0.9" width="0.1" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.6" layer="51"/>
+<rectangle x1="-0.25" y1="0.85" x2="0.25" y2="1.6" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.6" layer="51"/>
+<rectangle x1="0.7" y1="-1.6" x2="1.2" y2="-0.85" layer="51" rot="R180"/>
+<rectangle x1="-1.2" y1="-1.6" x2="-0.7" y2="-0.85" layer="51"/>
 </package>
 <package name="LQM2HPN4R7MG0L">
 <wire x1="-0.2032" y1="-1.0668" x2="0.2032" y2="-1.0668" width="0.1524" layer="21"/>
@@ -449,6 +466,10 @@
 <text x="-1.524" y="1.397" size="0.889" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="-1.397" y="-2.286" size="0.889" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 <rectangle x1="-1.2" y1="-1" x2="1.2" y2="1" layer="39"/>
+<wire x1="-1.4" y1="1.15" x2="1.4" y2="1.15" width="0.1" layer="51"/>
+<wire x1="1.4" y1="1.15" x2="1.4" y2="-1.15" width="0.1" layer="51"/>
+<wire x1="1.4" y1="-1.15" x2="-1.4" y2="-1.15" width="0.1" layer="51"/>
+<wire x1="-1.4" y1="-1.15" x2="-1.4" y2="1.15" width="0.1" layer="51"/>
 </package>
 <package name="B4050">
 <wire x1="-1.5" y1="-1.675" x2="1.5" y2="-1.675" width="0.152" layer="21"/>
@@ -463,6 +484,10 @@
 <text x="-1.475" y="2" size="1.27" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="-1.5" y="-3.1" size="1.27" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 <rectangle x1="-1.5" y1="-1.5" x2="1.5" y2="1.5" layer="39"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.2" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.2" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.2" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.2" layer="51"/>
 </package>
 <package name="B3U-1000P">
 <wire x1="-1.5" y1="-1.25" x2="1.5" y2="-1.25" width="0.152" layer="21"/>
@@ -10675,6 +10700,16 @@ Source: www.kingbright.com</description>
 <wire x1="1.55" y1="-0.8" x2="1.45" y2="-0.8" width="0.1" layer="21"/>
 <circle x="-0.95" y="-0.4" radius="0.22360625" width="0.1" layer="21"/>
 <text x="-1.8" y="-0.3" size="0.5" layer="25" rot="R90">&gt;NAME</text>
+<wire x1="-1.5" y1="0.85" x2="1.5" y2="0.85" width="0.1" layer="51"/>
+<wire x1="1.5" y1="0.85" x2="1.5" y2="-0.85" width="0.1" layer="51"/>
+<wire x1="1.5" y1="-0.85" x2="-1.5" y2="-0.85" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="-0.85" x2="-1.5" y2="0.85" width="0.1" layer="51"/>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.9" layer="51"/>
+<rectangle x1="-1.2" y1="0.9" x2="-0.7" y2="1.5" layer="51"/>
+<rectangle x1="-0.25" y1="0.9" x2="0.25" y2="1.5" layer="51"/>
+<rectangle x1="0.7" y1="0.9" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.9" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.9" layer="51"/>
 </package>
 <package name="FT232HQ">
 <smd name="1" x="-3.825" y="2.75" dx="0.25" dy="0.75" layer="1" rot="R90"/>
@@ -10736,6 +10771,10 @@ Source: www.kingbright.com</description>
 <wire x1="4.1" y1="4.1" x2="3.2" y2="4.1" width="0.2" layer="21"/>
 <text x="-3.5" y="4.8" size="0.8128" layer="25">&gt;NAME</text>
 <circle x="-4.5" y="4.5" radius="0.316225" width="0.2" layer="21"/>
+<wire x1="-4.1" y1="4.1" x2="-4.1" y2="-4.1" width="0.2" layer="51"/>
+<wire x1="-4.1" y1="-4.1" x2="4.1" y2="-4.1" width="0.2" layer="51"/>
+<wire x1="4.1" y1="-4.1" x2="4.1" y2="4.1" width="0.2" layer="51"/>
+<wire x1="4.1" y1="4.1" x2="-4.1" y2="4.1" width="0.2" layer="51"/>
 </package>
 <package name="NX5032GA">
 <smd name="1" x="-2" y="0" dx="2" dy="2.4" layer="1"/>
@@ -10748,6 +10787,10 @@ Source: www.kingbright.com</description>
 <wire x1="-2.6" y1="-1.7" x2="-2.6" y2="-1.5" width="0.2" layer="21"/>
 <text x="-0.8" y="2" size="1" layer="25">&gt;NAME</text>
 <rectangle x1="-2.5" y1="-1.6" x2="2.5" y2="1.6" layer="39"/>
+<wire x1="-2.6" y1="1.7" x2="-2.6" y2="-1.7" width="0.2" layer="51"/>
+<wire x1="-2.6" y1="-1.7" x2="2.6" y2="-1.7" width="0.2" layer="51"/>
+<wire x1="2.6" y1="-1.7" x2="2.6" y2="1.7" width="0.2" layer="51"/>
+<wire x1="2.6" y1="1.7" x2="-2.6" y2="1.7" width="0.2" layer="51"/>
 </package>
 <package name="SOD-123">
 <smd name="1" x="-1.6256" y="0" dx="0.9144" dy="1.2192" layer="1"/>
@@ -10763,6 +10806,10 @@ Source: www.kingbright.com</description>
 <wire x1="0.508" y1="0.889" x2="0.508" y2="-0.889" width="0.127" layer="21"/>
 <rectangle x1="-1.3716" y1="-0.8382" x2="1.3716" y2="0.8382" layer="39"/>
 <text x="-0.4572" y="1.2192" size="0.6096" layer="25">&gt;NAME</text>
+<wire x1="-1.4478" y1="0.9144" x2="1.4478" y2="0.9144" width="0.1524" layer="51"/>
+<wire x1="1.4478" y1="0.9144" x2="1.4478" y2="-0.9144" width="0.1524" layer="51"/>
+<wire x1="1.4478" y1="-0.9144" x2="-1.4478" y2="-0.9144" width="0.1524" layer="51"/>
+<wire x1="-1.4478" y1="-0.9144" x2="-1.4478" y2="0.9144" width="0.1524" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -13409,7 +13456,7 @@ Source: www.kingbright.com</description>
 <text x="543.56" y="5.715" size="3.81" layer="94">2.2</text>
 <text x="433.705" y="355.6" size="3.81" layer="97">Outer RF shield</text>
 <text x="158.75" y="308.61" size="2.54" layer="97">Reset Button</text>
-<text x="399.415" y="218.44" size="6.4516" layer="94">FT232H UART to USB</text>
+<text x="399.415" y="218.44" size="6.4516" layer="94">FT232H UART/FIFO to USB</text>
 <text x="535.94" y="101.6" size="1.778" layer="97">Change to 10k?</text>
 </plain>
 <instances>

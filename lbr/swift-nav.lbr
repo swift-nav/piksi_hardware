@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -153,6 +153,10 @@
 <wire x1="4.1" y1="4.1" x2="3.2" y2="4.1" width="0.2" layer="21"/>
 <text x="-3.5" y="4.8" size="0.8128" layer="25">&gt;NAME</text>
 <circle x="-4.5" y="4.5" radius="0.316225" width="0.2" layer="21"/>
+<wire x1="-4.1" y1="4.1" x2="-4.1" y2="-4.1" width="0.2" layer="51"/>
+<wire x1="-4.1" y1="-4.1" x2="4.1" y2="-4.1" width="0.2" layer="51"/>
+<wire x1="4.1" y1="-4.1" x2="4.1" y2="4.1" width="0.2" layer="51"/>
+<wire x1="4.1" y1="4.1" x2="-4.1" y2="4.1" width="0.2" layer="51"/>
 </package>
 <package name="93AA56BT-I/OT">
 <smd name="1" x="-0.95" y="-1.4" dx="0.6" dy="1.1" layer="1"/>
@@ -169,6 +173,16 @@
 <wire x1="1.55" y1="-0.8" x2="1.45" y2="-0.8" width="0.1" layer="21"/>
 <circle x="-0.95" y="-0.4" radius="0.22360625" width="0.1" layer="21"/>
 <text x="-1.8" y="-0.3" size="0.5" layer="25" rot="R90">&gt;NAME</text>
+<wire x1="-1.5" y1="0.85" x2="1.5" y2="0.85" width="0.1" layer="51"/>
+<wire x1="1.5" y1="0.85" x2="1.5" y2="-0.85" width="0.1" layer="51"/>
+<wire x1="1.5" y1="-0.85" x2="-1.5" y2="-0.85" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="-0.85" x2="-1.5" y2="0.85" width="0.1" layer="51"/>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.9" layer="51"/>
+<rectangle x1="-1.2" y1="0.9" x2="-0.7" y2="1.5" layer="51"/>
+<rectangle x1="-0.25" y1="0.9" x2="0.25" y2="1.5" layer="51"/>
+<rectangle x1="0.7" y1="0.9" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.9" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.9" layer="51"/>
 </package>
 <package name="ABLS">
 <smd name="P$1" x="-4.75" y="0" dx="5.6" dy="2.1" layer="1" rot="R180"/>
@@ -211,6 +225,10 @@
 <wire x1="0.508" y1="0.889" x2="0.508" y2="-0.889" width="0.127" layer="21"/>
 <rectangle x1="-1.3716" y1="-0.8382" x2="1.3716" y2="0.8382" layer="39"/>
 <text x="-0.4572" y="1.2192" size="0.6096" layer="25">&gt;NAME</text>
+<wire x1="-1.4478" y1="0.9144" x2="1.4478" y2="0.9144" width="0.1524" layer="51"/>
+<wire x1="1.4478" y1="0.9144" x2="1.4478" y2="-0.9144" width="0.1524" layer="51"/>
+<wire x1="1.4478" y1="-0.9144" x2="-1.4478" y2="-0.9144" width="0.1524" layer="51"/>
+<wire x1="-1.4478" y1="-0.9144" x2="-1.4478" y2="0.9144" width="0.1524" layer="51"/>
 </package>
 <package name="NX5032GA">
 <smd name="1" x="-2" y="0" dx="2" dy="2.4" layer="1"/>
@@ -223,6 +241,10 @@
 <wire x1="-2.6" y1="-1.7" x2="-2.6" y2="-1.5" width="0.2" layer="21"/>
 <text x="-0.8" y="2" size="1" layer="25">&gt;NAME</text>
 <rectangle x1="-2.5" y1="-1.6" x2="2.5" y2="1.6" layer="39"/>
+<wire x1="-2.6" y1="1.7" x2="-2.6" y2="-1.7" width="0.2" layer="51"/>
+<wire x1="-2.6" y1="-1.7" x2="2.6" y2="-1.7" width="0.2" layer="51"/>
+<wire x1="2.6" y1="-1.7" x2="2.6" y2="1.7" width="0.2" layer="51"/>
+<wire x1="2.6" y1="1.7" x2="-2.6" y2="1.7" width="0.2" layer="51"/>
 </package>
 </packages>
 <symbols>
