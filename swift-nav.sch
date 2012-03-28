@@ -13540,8 +13540,9 @@ Source: www.kingbright.com</description>
 <pinref part="X3" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="450.088" y1="282.194" x2="456.438" y2="282.194" width="0.1524" layer="91"/>
-<label x="457.708" y="282.194" size="1.778" layer="95"/>
+<wire x1="347.98" y1="279.4" x2="354.711" y2="279.4" width="0.1524" layer="91"/>
+<label x="355.219" y="279.4" size="1.778" layer="95"/>
+<pinref part="U1" gate="B1" pin="IO_L45N_A0_M1LDQSN_1"/>
 </segment>
 </net>
 <net name="DEBUG5" class="0">
@@ -13551,8 +13552,9 @@ Source: www.kingbright.com</description>
 <pinref part="X3" gate="G$1" pin="3"/>
 </segment>
 <segment>
-<wire x1="450.088" y1="284.734" x2="456.438" y2="284.734" width="0.1524" layer="91"/>
-<label x="457.708" y="284.734" size="1.778" layer="95"/>
+<wire x1="347.98" y1="271.78" x2="354.711" y2="271.78" width="0.1524" layer="91"/>
+<label x="355.346" y="271.78" size="1.778" layer="95"/>
+<pinref part="U1" gate="B1" pin="IO_L46P_FCS_B_M1DQ2_1"/>
 </segment>
 </net>
 <net name="DEBUG4" class="0">
@@ -13562,8 +13564,9 @@ Source: www.kingbright.com</description>
 <pinref part="X3" gate="G$1" pin="4"/>
 </segment>
 <segment>
-<wire x1="450.088" y1="287.274" x2="456.438" y2="287.274" width="0.1524" layer="91"/>
-<label x="457.708" y="287.274" size="1.778" layer="95"/>
+<wire x1="347.98" y1="274.32" x2="354.711" y2="274.32" width="0.1524" layer="91"/>
+<label x="355.346" y="274.32" size="1.778" layer="95"/>
+<pinref part="U1" gate="B1" pin="IO_L46N_FOE_B_M1DQ3_1"/>
 </segment>
 </net>
 <net name="DEBUG3" class="0">
@@ -13573,8 +13576,9 @@ Source: www.kingbright.com</description>
 <pinref part="X3" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<wire x1="450.088" y1="289.814" x2="456.438" y2="289.814" width="0.1524" layer="91"/>
-<label x="457.708" y="289.814" size="1.778" layer="95"/>
+<wire x1="347.98" y1="327.66" x2="354.711" y2="327.66" width="0.1524" layer="91"/>
+<label x="355.346" y="327.66" size="1.778" layer="95"/>
+<pinref part="U1" gate="B1" pin="IO_L35P_A11_M1A7_1"/>
 </segment>
 </net>
 <net name="DEBUG2" class="0">
@@ -13584,8 +13588,9 @@ Source: www.kingbright.com</description>
 <pinref part="X3" gate="G$1" pin="6"/>
 </segment>
 <segment>
-<wire x1="450.088" y1="292.354" x2="456.438" y2="292.354" width="0.1524" layer="91"/>
-<label x="457.708" y="292.354" size="1.778" layer="95"/>
+<wire x1="347.98" y1="325.12" x2="354.711" y2="325.12" width="0.1524" layer="91"/>
+<label x="355.346" y="325.12" size="1.778" layer="95"/>
+<pinref part="U1" gate="B1" pin="IO_L36N_A8_M1BA1_1"/>
 </segment>
 </net>
 <net name="DEBUG1" class="0">
@@ -13595,8 +13600,9 @@ Source: www.kingbright.com</description>
 <pinref part="X3" gate="G$1" pin="7"/>
 </segment>
 <segment>
-<wire x1="450.088" y1="294.894" x2="456.438" y2="294.894" width="0.1524" layer="91"/>
-<label x="457.708" y="294.894" size="1.778" layer="95"/>
+<wire x1="347.98" y1="350.52" x2="354.711" y2="350.52" width="0.1524" layer="91"/>
+<label x="355.346" y="350.52" size="1.778" layer="95"/>
+<pinref part="U1" gate="B1" pin="IO_L31N_A18_M1A12_1"/>
 </segment>
 </net>
 <net name="DEBUG0" class="0">
@@ -13606,8 +13612,9 @@ Source: www.kingbright.com</description>
 <pinref part="X3" gate="G$1" pin="8"/>
 </segment>
 <segment>
-<wire x1="450.088" y1="297.434" x2="456.438" y2="297.434" width="0.1524" layer="91"/>
-<label x="457.708" y="297.434" size="1.778" layer="95"/>
+<wire x1="347.98" y1="360.68" x2="354.711" y2="360.68" width="0.1524" layer="91"/>
+<label x="355.346" y="360.68" size="1.778" layer="95"/>
+<pinref part="U1" gate="B1" pin="IO_L29N_A22_M1A14_1"/>
 </segment>
 </net>
 <net name="TIM2CH4" class="0">
