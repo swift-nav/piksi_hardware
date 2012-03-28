@@ -12766,19 +12766,6 @@ Source: www.kingbright.com</description>
 <pinref part="C21" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="190.5" y1="369.57" x2="190.5" y2="367.03" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="367.03" x2="190.5" y2="346.71" width="0.1524" layer="91"/>
-<wire x1="188.468" y1="346.71" x2="190.5" y2="346.71" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="367.03" x2="180.34" y2="367.03" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="367.03" x2="190.5" y2="367.03" width="0.1524" layer="91"/>
-<junction x="180.34" y="367.03"/>
-<junction x="190.5" y="367.03"/>
-<pinref part="VCC9" gate="G$1" pin="VCCIO"/>
-<pinref part="C48" gate="G$1" pin="1"/>
-<pinref part="C47" gate="G$1" pin="1"/>
-<pinref part="U13" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
 <wire x1="147.32" y1="369.57" x2="147.32" y2="367.03" width="0.1524" layer="91"/>
 <pinref part="VCC11" gate="G$1" pin="VCCIO"/>
 <pinref part="R13" gate="G$1" pin="2"/>
@@ -13043,6 +13030,19 @@ Source: www.kingbright.com</description>
 <pinref part="C106" gate="G$1" pin="1"/>
 <wire x1="181.229" y1="145.034" x2="192.151" y2="145.034" width="0.1524" layer="91"/>
 <junction x="181.229" y="145.034"/>
+</segment>
+<segment>
+<pinref part="U13" gate="G$1" pin="VCC"/>
+<wire x1="188.468" y1="346.71" x2="190.5" y2="346.71" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="369.57" x2="190.5" y2="367.03" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="367.03" x2="180.34" y2="367.03" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="367.03" x2="190.5" y2="367.03" width="0.1524" layer="91"/>
+<junction x="180.34" y="367.03"/>
+<pinref part="VCC9" gate="G$1" pin="VCCIO"/>
+<pinref part="C48" gate="G$1" pin="1"/>
+<pinref part="C47" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="346.71" x2="190.5" y2="367.03" width="0.1524" layer="91"/>
+<junction x="190.5" y="367.03"/>
 </segment>
 </net>
 <net name="VCC" class="0">
