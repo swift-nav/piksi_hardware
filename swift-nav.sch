@@ -474,7 +474,7 @@
 <package name="B4050">
 <wire x1="-1.5" y1="-1.675" x2="1.5" y2="-1.675" width="0.152" layer="21"/>
 <wire x1="-1.5" y1="1.675" x2="1.5" y2="1.675" width="0.152" layer="21"/>
-<circle x="-2.5" y="2.1" radius="0.325" width="0.152" layer="21"/>
+<circle x="-2.0428" y="1.9222" radius="0.254" width="0.127" layer="21"/>
 <smd name="1" x="-1" y="1.2" dx="2" dy="0.6" layer="1"/>
 <smd name="2" x="-1.3" y="0" dx="1.4" dy="0.6" layer="1"/>
 <smd name="3" x="-1.3" y="-1.2" dx="1.4" dy="0.6" layer="1"/>
@@ -10673,7 +10673,7 @@ Source: www.kingbright.com</description>
 <smd name="2" x="1.51" y="-0.68" dx="0.78" dy="0.87" layer="1"/>
 <smd name="3" x="1.51" y="0.68" dx="0.78" dy="0.87" layer="1"/>
 <smd name="4" x="-1.51" y="0.68" dx="0.78" dy="0.87" layer="1"/>
-<circle x="-2.91" y="-0.71" radius="0.436575" width="0.127" layer="21"/>
+<circle x="-0.5986" y="-0.6846" radius="0.3302" width="0.127" layer="21"/>
 <wire x1="-1.68" y1="0.07" x2="-1.68" y2="-0.07" width="0.127" layer="21"/>
 <wire x1="1.67" y1="0.07" x2="1.67" y2="-0.07" width="0.127" layer="21"/>
 <wire x1="-1.67" y1="1.31" x2="1.67" y2="1.31" width="0.127" layer="21"/>
