@@ -361,52 +361,52 @@
 <wire x1="40.626" y1="-0.254" x2="40.626" y2="40.626" width="0.1524" layer="21"/>
 <wire x1="40.626" y1="40.626" x2="-0.254" y2="40.626" width="0.1524" layer="21"/>
 <wire x1="-0.254" y1="40.626" x2="-0.254" y2="-0.254" width="0.1524" layer="21"/>
-<smd name="1" x="2.05" y="0.5" dx="4.1" dy="1" layer="1"/>
-<smd name="2" x="8.2" y="0.5" dx="3.8" dy="1" layer="1"/>
-<smd name="3" x="38.35" y="0.5" dx="4.1" dy="1" layer="1"/>
-<smd name="4" x="39.9" y="2.55" dx="1" dy="3.1" layer="1"/>
-<smd name="5" x="39.9" y="8.2" dx="3.3" dy="1" layer="1" rot="R90"/>
-<smd name="6" x="39.9" y="37.85" dx="1" dy="3.1" layer="1"/>
-<smd name="7" x="38.35" y="39.9" dx="4.1" dy="1" layer="1"/>
-<smd name="8" x="8.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180"/>
-<smd name="9" x="2.05" y="39.9" dx="4.1" dy="1" layer="1"/>
-<smd name="10" x="0.5" y="37.85" dx="1" dy="3.1" layer="1"/>
-<smd name="11" x="0.5" y="8.2" dx="3.8" dy="1" layer="1" rot="R270"/>
-<smd name="12" x="0.5" y="2.55" dx="1" dy="3.1" layer="1"/>
-<smd name="13" x="14.2" y="0.5" dx="3.8" dy="1" layer="1"/>
-<smd name="14" x="20.2" y="0.5" dx="3.8" dy="1" layer="1"/>
-<smd name="15" x="26.2" y="0.5" dx="3.8" dy="1" layer="1"/>
-<smd name="16" x="32.2" y="0.5" dx="3.8" dy="1" layer="1"/>
-<smd name="17" x="39.9" y="14.2" dx="3.8" dy="1" layer="1" rot="R90"/>
-<smd name="18" x="39.9" y="20.2" dx="3.8" dy="1" layer="1" rot="R90"/>
-<smd name="19" x="39.9" y="32.2" dx="3.8" dy="1" layer="1" rot="R90"/>
-<smd name="21" x="39.9" y="26.2" dx="3.8" dy="1" layer="1" rot="R90"/>
-<smd name="20" x="0.5" y="14.2" dx="3.8" dy="1" layer="1" rot="R270"/>
-<smd name="22" x="0.5" y="20.2" dx="3.8" dy="1" layer="1" rot="R270"/>
-<smd name="23" x="0.5" y="26.2" dx="3.8" dy="1" layer="1" rot="R270"/>
-<smd name="24" x="0.5" y="32.2" dx="3.8" dy="1" layer="1" rot="R270"/>
-<smd name="25" x="14.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180"/>
-<smd name="26" x="20.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180"/>
-<smd name="27" x="26.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180"/>
-<smd name="28" x="32.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="1" x="2.05" y="0.5" dx="4.1" dy="1" layer="1" cream="no"/>
+<smd name="2" x="8.2" y="0.5" dx="3.8" dy="1" layer="1" cream="no"/>
+<smd name="3" x="38.35" y="0.5" dx="4.1" dy="1" layer="1" cream="no"/>
+<smd name="4" x="39.9" y="2.55" dx="1" dy="3.1" layer="1" cream="no"/>
+<smd name="5" x="39.9" y="8.2" dx="3.3" dy="1" layer="1" rot="R90" cream="no"/>
+<smd name="6" x="39.9" y="37.85" dx="1" dy="3.1" layer="1" cream="no"/>
+<smd name="7" x="38.35" y="39.9" dx="4.1" dy="1" layer="1" cream="no"/>
+<smd name="8" x="8.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180" cream="no"/>
+<smd name="9" x="2.05" y="39.9" dx="4.1" dy="1" layer="1" cream="no"/>
+<smd name="10" x="0.5" y="37.85" dx="1" dy="3.1" layer="1" cream="no"/>
+<smd name="11" x="0.5" y="8.2" dx="3.8" dy="1" layer="1" rot="R270" cream="no"/>
+<smd name="12" x="0.5" y="2.55" dx="1" dy="3.1" layer="1" cream="no"/>
+<smd name="13" x="14.2" y="0.5" dx="3.8" dy="1" layer="1" cream="no"/>
+<smd name="14" x="20.2" y="0.5" dx="3.8" dy="1" layer="1" cream="no"/>
+<smd name="15" x="26.2" y="0.5" dx="3.8" dy="1" layer="1" cream="no"/>
+<smd name="16" x="32.2" y="0.5" dx="3.8" dy="1" layer="1" cream="no"/>
+<smd name="17" x="39.9" y="14.2" dx="3.8" dy="1" layer="1" rot="R90" cream="no"/>
+<smd name="18" x="39.9" y="20.2" dx="3.8" dy="1" layer="1" rot="R90" cream="no"/>
+<smd name="19" x="39.9" y="32.2" dx="3.8" dy="1" layer="1" rot="R90" cream="no"/>
+<smd name="21" x="39.9" y="26.2" dx="3.8" dy="1" layer="1" rot="R90" cream="no"/>
+<smd name="20" x="0.5" y="14.2" dx="3.8" dy="1" layer="1" rot="R270" cream="no"/>
+<smd name="22" x="0.5" y="20.2" dx="3.8" dy="1" layer="1" rot="R270" cream="no"/>
+<smd name="23" x="0.5" y="26.2" dx="3.8" dy="1" layer="1" rot="R270" cream="no"/>
+<smd name="24" x="0.5" y="32.2" dx="3.8" dy="1" layer="1" rot="R270" cream="no"/>
+<smd name="25" x="14.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180" cream="no"/>
+<smd name="26" x="20.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180" cream="no"/>
+<smd name="27" x="26.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180" cream="no"/>
+<smd name="28" x="32.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180" cream="no"/>
 </package>
 <package name="BMI-S-202">
 <wire x1="-0.254" y1="-0.254" x2="17.526" y2="-0.254" width="0.1524" layer="21"/>
 <wire x1="17.526" y1="-0.254" x2="17.526" y2="17.526" width="0.1524" layer="21"/>
 <wire x1="17.526" y1="17.526" x2="-0.254" y2="17.526" width="0.1524" layer="21"/>
 <wire x1="-0.254" y1="17.526" x2="-0.254" y2="-0.254" width="0.1524" layer="21"/>
-<smd name="1" x="2.275" y="0.5" dx="4.55" dy="1" layer="1"/>
-<smd name="2" x="8.65" y="0.5" dx="3.8" dy="1" layer="1"/>
-<smd name="3" x="15.025" y="0.5" dx="4.55" dy="1" layer="1"/>
-<smd name="4" x="16.8" y="2.775" dx="1" dy="3.55" layer="1"/>
-<smd name="5" x="16.8" y="8.65" dx="3.8" dy="1" layer="1" rot="R90"/>
-<smd name="6" x="16.8" y="14.525" dx="1" dy="3.55" layer="1"/>
-<smd name="7" x="15.025" y="16.8" dx="4.55" dy="1" layer="1"/>
-<smd name="8" x="8.65" y="16.8" dx="3.8" dy="1" layer="1" rot="R180"/>
-<smd name="9" x="2.148" y="16.8" dx="4.296" dy="1" layer="1"/>
-<smd name="10" x="0.5" y="14.525" dx="1" dy="3.55" layer="1"/>
-<smd name="11" x="0.5" y="8.65" dx="3.8" dy="1" layer="1" rot="R270"/>
-<smd name="12" x="0.5" y="2.775" dx="1" dy="3.55" layer="1"/>
+<smd name="1" x="2.275" y="0.5" dx="4.55" dy="1" layer="1" cream="no"/>
+<smd name="2" x="8.65" y="0.5" dx="3.8" dy="1" layer="1" cream="no"/>
+<smd name="3" x="15.025" y="0.5" dx="4.55" dy="1" layer="1" cream="no"/>
+<smd name="4" x="16.8" y="2.775" dx="1" dy="3.55" layer="1" cream="no"/>
+<smd name="5" x="16.8" y="8.65" dx="3.8" dy="1" layer="1" rot="R90" cream="no"/>
+<smd name="6" x="16.8" y="14.525" dx="1" dy="3.55" layer="1" cream="no"/>
+<smd name="7" x="15.025" y="16.8" dx="4.55" dy="1" layer="1" cream="no"/>
+<smd name="8" x="8.65" y="16.8" dx="3.8" dy="1" layer="1" rot="R180" cream="no"/>
+<smd name="9" x="2.148" y="16.8" dx="4.296" dy="1" layer="1" cream="no"/>
+<smd name="10" x="0.5" y="14.525" dx="1" dy="3.55" layer="1" cream="no"/>
+<smd name="11" x="0.5" y="8.65" dx="3.8" dy="1" layer="1" rot="R270" cream="no"/>
+<smd name="12" x="0.5" y="2.775" dx="1" dy="3.55" layer="1" cream="no"/>
 </package>
 <package name="DFN10">
 <smd name="1" x="-1" y="-1.75" dx="0.68" dy="0.25" layer="1" rot="R90"/>
