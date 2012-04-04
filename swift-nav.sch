@@ -18267,7 +18267,7 @@ Source: www.kingbright.com</description>
 <wire x1="86.36" y1="142.24" x2="96.52" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="N$3333" class="0">
 <segment>
 <wire x1="86.36" y1="133.35" x2="96.52" y2="133.35" width="0.1524" layer="91"/>
 </segment>
