@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,15 +23,15 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -49,7 +49,7 @@
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -88,8 +88,8 @@
 <layer number="111" name="Text" color="15" fill="1" visible="no" active="yes"/>
 <layer number="112" name="2Restrict" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
-<layer number="121" name="_tplace" color="14" fill="1" visible="no" active="yes"/>
-<layer number="122" name="_bplace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tplace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bplace" color="14" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="14" fill="1" visible="no" active="yes"/>
@@ -5119,7 +5119,7 @@ design rules under a new name.</description>
 <element name="JP7" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="10.984" y="11.61" rot="MR270"/>
 <element name="JP8" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="44.854" y="7.873" rot="R90"/>
 <element name="JP9" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="14.2586" y="51.838" rot="R90"/>
-<element name="JP10" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="14.984" y="7.907" rot="R90"/>
+<element name="JP10" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="12.234" y="6.007" rot="R90"/>
 <element name="C15" library="rcl" package="C0603K" value="DNP" x="38.3206375" y="26.8416375" rot="R225"/>
 <element name="LED1" library="led" package="CHIP-LED0603" value="RED" x="32.893" y="5.5292" rot="R270"/>
 <element name="LED2" library="led" package="CHIP-LED0603" value="GREEN" x="38.8874" y="5.5038" rot="R270"/>
@@ -5912,7 +5912,7 @@ design rules under a new name.</description>
 <via x="8.1026" y="25.9334" extent="1-16" drill="0.3"/>
 <via x="7.0104" y="16.5354" extent="1-16" drill="0.3"/>
 <via x="7.0104" y="13.7922" extent="1-16" drill="0.3"/>
-<via x="13.6428" y="6.4444" extent="1-16" drill="0.3"/>
+<via x="13.9928" y="6.7944" extent="1-16" drill="0.3"/>
 <via x="19.7104" y="7.0866" extent="1-16" drill="0.3"/>
 <via x="24.7904" y="6.3246" extent="1-16" drill="0.3"/>
 <via x="28.0924" y="6.3246" extent="1-16" drill="0.3"/>
