@@ -86,6 +86,7 @@
 <layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="Text" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="2Restrict" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -9116,15 +9117,19 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <library name="aspirin">
 <packages>
 <package name="FIDUCIAL-1.5X3">
-<circle x="0" y="0" radius="0.9055" width="1.27" layer="29"/>
+<circle x="0" y="0" radius="0.9055" width="1.27" layer="41"/>
 <smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<circle x="0" y="0" radius="0.9055" width="1.27" layer="29"/>
+<circle x="0" y="0" radius="0.9055" width="1.27" layer="39"/>
 </package>
 <package name="FIDUCIAL-1X2">
 <smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
 </package>
 <package name="FIDUCIAL-1X2.5">
-<circle x="0" y="0" radius="0.9" width="1.27" layer="29"/>
+<circle x="0" y="0" radius="0.9" width="1.27" layer="41"/>
 <smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+<circle x="0" y="0" radius="0.9" width="1.27" layer="29"/>
+<circle x="0" y="0" radius="0.9" width="1.27" layer="41"/>
 </package>
 </packages>
 <symbols>
@@ -14583,16 +14588,16 @@ Source: www.kingbright.com</description>
 <wire x1="0.635" y1="0" x2="0.635" y2="-1.7145" width="0.127" layer="51"/>
 <wire x1="-0.635" y1="-1.7145" x2="-0.635" y2="0" width="0.127" layer="51"/>
 <wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.127" layer="51"/>
-<pad name="1" x="-2.54" y="-0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="2" x="-2.54" y="0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="3" x="-1.27" y="-0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="4" x="-1.27" y="0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="5" x="0" y="-0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="6" x="0" y="0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="7" x="1.27" y="-0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="8" x="1.27" y="0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="9" x="2.54" y="-0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="10" x="2.54" y="0.635" drill="0.71" diameter="1.0668" rot="R180"/>
+<pad name="1" x="-2.54" y="-0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="2" x="-2.54" y="0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="3" x="-1.27" y="-0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="4" x="-1.27" y="0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="5" x="0" y="-0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="6" x="0" y="0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="7" x="1.27" y="-0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="8" x="1.27" y="0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="9" x="2.54" y="-0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="10" x="2.54" y="0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
 <text x="-3.175" y="1.905" size="0.635" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="-3.175" y="-2.54" size="0.635" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 </package>

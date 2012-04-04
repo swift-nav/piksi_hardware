@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -22,16 +22,16 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -86,9 +86,10 @@
 <layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
 <layer number="111" name="Text" color="15" fill="1" visible="no" active="yes"/>
+<layer number="112" name="2Restrict" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
-<layer number="121" name="_tplace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bplace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tplace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bplace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="14" fill="1" visible="no" active="yes"/>
@@ -1191,8 +1192,10 @@ Metric Code Size 3225</description>
 <library name="aspirin">
 <packages>
 <package name="FIDUCIAL-1.5X3">
-<circle x="0" y="0" radius="0.9055" width="1.27" layer="29"/>
+<circle x="0" y="0" radius="0.9055" width="1.27" layer="41"/>
 <smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<circle x="0" y="0" radius="0.9055" width="1.27" layer="29"/>
+<circle x="0" y="0" radius="0.9055" width="1.27" layer="39"/>
 </package>
 </packages>
 </library>
@@ -4823,16 +4826,16 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <wire x1="0.635" y1="0" x2="0.635" y2="-1.7145" width="0.127" layer="51"/>
 <wire x1="-0.635" y1="-1.7145" x2="-0.635" y2="0" width="0.127" layer="51"/>
 <wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.127" layer="51"/>
-<pad name="1" x="-2.54" y="-0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="2" x="-2.54" y="0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="3" x="-1.27" y="-0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="4" x="-1.27" y="0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="5" x="0" y="-0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="6" x="0" y="0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="7" x="1.27" y="-0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="8" x="1.27" y="0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="9" x="2.54" y="-0.635" drill="0.71" diameter="1.0668" rot="R180"/>
-<pad name="10" x="2.54" y="0.635" drill="0.71" diameter="1.0668" rot="R180"/>
+<pad name="1" x="-2.54" y="-0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="2" x="-2.54" y="0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="3" x="-1.27" y="-0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="4" x="-1.27" y="0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="5" x="0" y="-0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="6" x="0" y="0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="7" x="1.27" y="-0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="8" x="1.27" y="0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="9" x="2.54" y="-0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
+<pad name="10" x="2.54" y="0.635" drill="0.71" diameter="1.016" shape="octagon" rot="R180"/>
 <text x="-3.175" y="1.905" size="0.635" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="-3.175" y="-2.54" size="0.635" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 </package>
@@ -5111,9 +5114,9 @@ design rules under a new name.</description>
 <element name="SHLD2" library="jobygnss" package="BMI-S-208" value="BMI-S-208" x="9.686" y="50.11" rot="R270"/>
 <element name="R28" library="pel_dipol_comp" package="0402-RES" value="150" x="17.907" y="12.446" rot="R270"/>
 <element name="R30" library="pel_dipol_comp" package="0402-RES" value="150" x="16.6116" y="12.446" rot="R90"/>
-<element name="JP5" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="44.854" y="7.872" rot="MR180"/>
+<element name="JP5" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="50.804" y="11.872" rot="MR180"/>
 <element name="JP6" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="8.3586" y="47.138" rot="MR270"/>
-<element name="JP7" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="14.984" y="7.91" rot="MR270"/>
+<element name="JP7" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="11.884" y="9.06" rot="MR270"/>
 <element name="JP8" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="44.854" y="7.873" rot="R90"/>
 <element name="JP9" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="14.2586" y="51.838" rot="R90"/>
 <element name="JP10" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="14.984" y="7.907" rot="R90"/>
