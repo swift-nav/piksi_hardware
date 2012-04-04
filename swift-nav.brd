@@ -4777,7 +4777,6 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <rectangle x1="4.2799" y1="11.4935" x2="4.4577" y2="11.5189" layer="122"/>
 <rectangle x1="4.3307" y1="11.5189" x2="4.4577" y2="11.5443" layer="122"/>
 <rectangle x1="4.3815" y1="11.5443" x2="4.4577" y2="11.5697" layer="122"/>
-<text x="0" y="-0.127" size="0.0508" layer="122" font="vector">/home/fnoble/Swift-Nav-Docs/logo/flowRoot42012.bmp</text>
 </package>
 <package name="M3-PAD">
 <description>&lt;b&gt;MOUNTING PAD&lt;/b&gt; 3.0 mm, round</description>
