@@ -14996,6 +14996,8 @@ Source: www.kingbright.com</description>
 <part name="H2" library="swift-nav" deviceset="MOUNT-PAD-ROUND" device="M3"/>
 <part name="H3" library="swift-nav" deviceset="MOUNT-PAD-ROUND" device="M3"/>
 <part name="H4" library="swift-nav" deviceset="MOUNT-PAD-ROUND" device="M3"/>
+<part name="R8" library="pel_dipol_comp" deviceset="RESISTOR" device="-0402" value="10K"/>
+<part name="GND79" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17232,8 +17234,8 @@ Source: www.kingbright.com</description>
 <instance part="JP10" gate="G$1" x="25.4" y="43.18"/>
 <instance part="LED1" gate="G$1" x="162.56" y="243.84"/>
 <instance part="LED2" gate="G$1" x="172.72" y="243.84"/>
-<instance part="P+7" gate="1" x="71.12" y="218.44" smashed="yes">
-<attribute name="VALUE" x="69.85" y="219.71" size="1.778" layer="96"/>
+<instance part="P+7" gate="1" x="86.36" y="213.36" smashed="yes">
+<attribute name="VALUE" x="85.09" y="214.63" size="1.778" layer="96"/>
 </instance>
 <instance part="GND2" gate="1" x="347.98" y="286.385"/>
 <instance part="GND3" gate="1" x="152.4" y="302.26"/>
@@ -17384,7 +17386,7 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="379.984" y="76.581" size="1.778" layer="96"/>
 </instance>
 <instance part="GND73" gate="1" x="377.19" y="63.5"/>
-<instance part="D1" gate="G$1" x="58.42" y="205.74"/>
+<instance part="D1" gate="G$1" x="78.74" y="205.74"/>
 <instance part="X5" gate="G$1" x="36.83" y="138.43" rot="MR180"/>
 <instance part="X6" gate="G$1" x="30.48" y="335.28" rot="R180"/>
 <instance part="X1" gate="G$1" x="29.21" y="285.75" rot="R180"/>
@@ -17406,6 +17408,8 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="49.022" y="299.72" size="1.778" layer="96"/>
 </instance>
 <instance part="GND54" gate="1" x="48.26" y="275.59"/>
+<instance part="R8" gate="G$1" x="71.12" y="200.66" rot="R90"/>
+<instance part="GND79" gate="1" x="71.12" y="193.04"/>
 </instances>
 <busses>
 </busses>
@@ -17754,6 +17758,10 @@ Source: www.kingbright.com</description>
 <pinref part="GND54" gate="1" pin="GND"/>
 <wire x1="48.26" y1="290.83" x2="48.26" y2="278.13" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="GND79" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VCCIO" class="0">
@@ -18292,9 +18300,9 @@ Source: www.kingbright.com</description>
 <net name="V+" class="0">
 <segment>
 <pinref part="P+7" gate="1" pin="V+"/>
-<wire x1="71.12" y1="205.74" x2="71.12" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="205.74" x2="86.36" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="205.74" x2="63.5" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="205.74" x2="83.82" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="35.56" y1="337.82" x2="44.45" y2="337.82" width="0.1524" layer="91"/>
@@ -18473,18 +18481,20 @@ Source: www.kingbright.com</description>
 </net>
 <net name="V_USB" class="0">
 <segment>
+<wire x1="327.66" y1="312.42" x2="332.74" y2="312.42" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="PB0-ADC8/TIM3CH3-TIM1CH2N"/>
+<label x="332.74" y="312.42" size="1.778" layer="95"/>
+</segment>
+<segment>
 <wire x1="40.64" y1="200.66" x2="50.8" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="J6" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="200.66" x2="50.8" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="205.74" x2="71.12" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="205.74" x2="53.34" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="205.74" x2="50.8" y2="215.9" width="0.1524" layer="91"/>
-<junction x="50.8" y="205.74"/>
-<wire x1="50.8" y1="215.9" x2="55.88" y2="215.9" width="0.1524" layer="91"/>
-<label x="55.88" y="215.9" size="1.778" layer="95"/>
-<wire x1="327.66" y1="312.42" x2="332.74" y2="312.42" width="0.1524" layer="91"/>
-<label x="332.74" y="312.42" size="1.778" layer="95"/>
-<pinref part="U3" gate="G$1" pin="PB0-ADC8/TIM3CH3-TIM1CH2N"/>
+<wire x1="71.12" y1="205.74" x2="73.66" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<junction x="71.12" y="205.74"/>
+<label x="53.34" y="205.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FTDI_ADBUS5" class="0">
