@@ -11689,8 +11689,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="VCC10" library="supply1" deviceset="VCCIO" device=""/>
 <part name="VCC11" library="supply1" deviceset="VCCIO" device=""/>
 <part name="VCC12" library="supply1" deviceset="VCCIO" device=""/>
-<part name="C47" library="rcl" deviceset="C-EU" device="C0603K" value="1uF"/>
-<part name="C48" library="rcl" deviceset="C-EU" device="C0402" value="0.01uF"/>
+<part name="C48" library="rcl" deviceset="C-EU" device="C0402" value="0.1uF"/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
 <part name="R14" library="rcl" deviceset="R-US_" device="R0402" value="10K"/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
@@ -12085,8 +12084,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="VCC10" gate="G$1" x="198.12" y="372.11"/>
 <instance part="VCC11" gate="G$1" x="147.32" y="372.11"/>
 <instance part="VCC12" gate="G$1" x="154.94" y="372.11"/>
-<instance part="C47" gate="G$1" x="180.34" y="364.49"/>
-<instance part="C48" gate="G$1" x="170.18" y="364.49"/>
+<instance part="C48" gate="G$1" x="180.34" y="364.49"/>
 <instance part="GND36" gate="1" x="180.34" y="354.33"/>
 <instance part="R14" gate="G$1" x="168.91" y="306.07" smashed="yes" rot="R270">
 <attribute name="NAME" x="170.18" y="302.4886" size="1.778" layer="95"/>
@@ -12520,11 +12518,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="U13" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="170.18" y1="359.41" x2="180.34" y2="359.41" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="359.41" x2="180.34" y2="356.87" width="0.1524" layer="91"/>
-<junction x="180.34" y="359.41"/>
 <pinref part="C48" gate="G$1" pin="2"/>
-<pinref part="C47" gate="G$1" pin="2"/>
 <pinref part="GND36" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -13393,12 +13388,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="U13" gate="G$1" pin="VCC"/>
 <wire x1="188.468" y1="346.71" x2="190.5" y2="346.71" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="369.57" x2="190.5" y2="367.03" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="367.03" x2="180.34" y2="367.03" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="367.03" x2="190.5" y2="367.03" width="0.1524" layer="91"/>
-<junction x="180.34" y="367.03"/>
 <pinref part="VCC9" gate="G$1" pin="VCCIO"/>
 <pinref part="C48" gate="G$1" pin="1"/>
-<pinref part="C47" gate="G$1" pin="1"/>
 <wire x1="190.5" y1="346.71" x2="190.5" y2="367.03" width="0.1524" layer="91"/>
 <junction x="190.5" y="367.03"/>
 </segment>
