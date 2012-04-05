@@ -8,8 +8,8 @@
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -88,7 +88,7 @@
 <layer number="111" name="Text" color="15" fill="1" visible="no" active="yes"/>
 <layer number="112" name="2Restrict" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
-<layer number="121" name="_tplace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tplace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bplace" color="14" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -1933,7 +1933,6 @@ design rules under a new name.</description>
 <element name="X1" library="pel_molex" package="PB-53261-05" value="" x="41.0718" y="52.2832" rot="R180"/>
 <element name="X2" library="pel_molex" package="PB-53261-08" value="" x="23.5966" y="52.2832" rot="R180"/>
 <element name="C74" library="rcl" package="C0603K" value="0.047uF" x="16.1798" y="25.273" rot="R180"/>
-<element name="H1" library="swift-nav" package="M3-PAD" value="MOUNT-PAD-ROUNDM3" x="7.4" y="7.4"/>
 <element name="H2" library="swift-nav" package="M3-PAD" value="MOUNT-PAD-ROUNDM3" x="52.4" y="7.4"/>
 <element name="H3" library="swift-nav" package="M3-PAD" value="MOUNT-PAD-ROUNDM3" x="7.4" y="52.4"/>
 <element name="H4" library="swift-nav" package="M3-PAD" value="MOUNT-PAD-ROUNDM3" x="52.4" y="52.4"/>
@@ -2740,7 +2739,6 @@ design rules under a new name.</description>
 <via x="51.5112" y="28.506" extent="1-16" drill="0.3"/>
 <via x="52.9844" y="23.868" extent="1-16" drill="0.3"/>
 <via x="51.5112" y="23.868" extent="1-16" drill="0.3"/>
-<contactref element="H1" pad="B3,0"/>
 <contactref element="H2" pad="B3,0"/>
 <contactref element="H4" pad="B3,0"/>
 <contactref element="H3" pad="B3,0"/>
@@ -2801,6 +2799,8 @@ design rules under a new name.</description>
 <wire x1="32.0154" y1="41.5036" x2="32.0154" y2="41.6846" width="0.2032" layer="1"/>
 <wire x1="32.0154" y1="41.6846" x2="31.7" y2="42" width="0.2032" layer="1"/>
 <wire x1="31.7" y1="42" x2="31.7" y2="42.7" width="0.2032" layer="1"/>
+<contactref element="H5" pad="B3,0"/>
+<wire x1="9.9314" y1="9.9314" x2="8" y2="8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="R2" pad="1"/>

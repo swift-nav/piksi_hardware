@@ -11892,7 +11892,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="P+11" library="supply1" deviceset="V+" device=""/>
 <part name="VCC8" library="supply1" deviceset="VCCIO" device=""/>
 <part name="GND54" library="supply1" deviceset="GND" device=""/>
-<part name="H1" library="swift-nav" deviceset="MOUNT-PAD-ROUND" device="M3"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="H2" library="swift-nav" deviceset="MOUNT-PAD-ROUND" device="M3"/>
 <part name="H3" library="swift-nav" deviceset="MOUNT-PAD-ROUND" device="M3"/>
@@ -12260,7 +12259,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 </instance>
 <instance part="GND78" gate="1" x="192.151" y="133.35"/>
 <instance part="X2" gate="G$1" x="486.41" y="358.14"/>
-<instance part="H1" gate="G$1" x="38.1" y="15.24"/>
 <instance part="GND8" gate="1" x="33.02" y="10.16"/>
 <instance part="H2" gate="G$1" x="38.1" y="22.86"/>
 <instance part="H3" gate="G$1" x="38.1" y="30.48"/>
@@ -12275,7 +12273,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="NAME" x="286.258" y="159.131" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="292.608" y="154.051" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="H5" gate="G$1" x="50.419" y="33.274"/>
+<instance part="H5" gate="G$1" x="38.1" y="15.24"/>
 <instance part="VDD1" gate="G$1" x="122.174" y="212.598"/>
 <instance part="VDD2" gate="G$1" x="421.005" y="174.752"/>
 </instances>
@@ -12838,7 +12836,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <junction x="169.545" y="137.414"/>
 </segment>
 <segment>
-<pinref part="H1" gate="G$1" pin="MOUNT"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="35.56" y1="15.24" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="15.24" x2="33.02" y2="12.7" width="0.1524" layer="91"/>
@@ -12854,6 +12851,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="33.02" y1="30.48" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="30.48" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
 <junction x="33.02" y="30.48"/>
+<pinref part="H5" gate="G$1" pin="MOUNT"/>
 </segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="G"/>
