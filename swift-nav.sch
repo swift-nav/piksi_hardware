@@ -10905,9 +10905,9 @@ Source: www.kingbright.com</description>
 </package>
 <package name="M3-PAD">
 <description>&lt;b&gt;MOUNTING PAD&lt;/b&gt; 3.0 mm, round</description>
-<pad name="B3,0" x="0" y="0" drill="3.5" diameter="6" thermals="no"/>
-<circle x="0" y="0" radius="1.5" width="3" layer="40"/>
-<circle x="0" y="0" radius="1.5" width="3" layer="39"/>
+<pad name="B3,0" x="0" y="0" drill="3.5" diameter="5.5" thermals="no"/>
+<circle x="0" y="0" radius="1.4492" width="3" layer="40"/>
+<circle x="0" y="0" radius="1.4492" width="3" layer="39"/>
 </package>
 </packages>
 <symbols>

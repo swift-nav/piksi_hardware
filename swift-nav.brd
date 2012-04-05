@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.2" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1530,9 +1530,9 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 </package>
 <package name="M3-PAD">
 <description>&lt;b&gt;MOUNTING PAD&lt;/b&gt; 3.0 mm, round</description>
-<pad name="B3,0" x="0" y="0" drill="3.5" diameter="6" thermals="no"/>
-<circle x="0" y="0" radius="1.5" width="3" layer="40"/>
-<circle x="0" y="0" radius="1.5" width="3" layer="39"/>
+<pad name="B3,0" x="0" y="0" drill="3.5" diameter="5.5" thermals="no"/>
+<circle x="0" y="0" radius="1.4492" width="3" layer="40"/>
+<circle x="0" y="0" radius="1.4492" width="3" layer="39"/>
 </package>
 </packages>
 </library>
