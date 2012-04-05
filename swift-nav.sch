@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
@@ -11578,7 +11578,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C0402" value="100pF"/>
 <part name="C13" library="rcl" deviceset="C-EU" device="C0402" value="0.1uF"/>
-<part name="L1" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="250nH/DNP"/>
+<part name="L1" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="250nH"/>
 <part name="C14" library="rcl" deviceset="C-EU" device="C0402" value="100pF"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="R0402" value="20k"/>
@@ -11884,6 +11884,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-PCHANNEL" device="SMD"/>
 <part name="GND80" library="supply1" deviceset="GND" device=""/>
 <part name="C95" library="rcl" deviceset="C-EU" device="C0402" value="100pF"/>
+<part name="L3" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="250nH/DNP"/>
 </parts>
 <sheets>
 <sheet>
@@ -12247,6 +12248,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="C95" gate="G$1" x="327.533" y="167.132" smashed="yes" rot="R90">
 <attribute name="NAME" x="325.374" y="167.386" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="338.074" y="167.386" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="L3" gate="G$1" x="286.258" y="154.686" smashed="yes" rot="R180">
+<attribute name="NAME" x="286.258" y="159.131" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="292.608" y="154.051" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -12886,6 +12891,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="C12" gate="G$1" pin="1"/>
 <pinref part="C13" gate="G$1" pin="1"/>
 <pinref part="U10" gate="_ANA" pin="ANT_BIAS"/>
+<pinref part="L3" gate="G$1" pin="1"/>
+<wire x1="305.435" y1="146.05" x2="286.258" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="286.258" y1="146.05" x2="286.258" y2="149.606" width="0.1524" layer="91"/>
+<junction x="305.435" y="146.05"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -13903,7 +13912,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
 <pinref part="U5" gate="G$1" pin="1"/>
-<wire x1="289.179" y1="167.132" x2="263.906" y2="167.132" width="0.1524" layer="91"/>
+<wire x1="289.179" y1="167.132" x2="286.258" y2="167.132" width="0.1524" layer="91"/>
+<pinref part="L3" gate="G$1" pin="2"/>
+<wire x1="286.258" y1="167.132" x2="263.906" y2="167.132" width="0.1524" layer="91"/>
+<wire x1="286.258" y1="159.766" x2="286.258" y2="167.132" width="0.1524" layer="91"/>
+<junction x="286.258" y="167.132"/>
 </segment>
 </net>
 <net name="FTDI_CLKOUT" class="0">
