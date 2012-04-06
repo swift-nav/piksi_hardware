@@ -11938,7 +11938,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="R8" library="pel_dipol_comp" deviceset="RESISTOR" device="-0402" value="10K"/>
 <part name="GND79" library="supply1" deviceset="GND" device=""/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="TRACE"/>
-<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-PCHANNEL" device="SMD"/>
+<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-PCHANNEL" device="SMD" value="IRLML6401"/>
 <part name="GND80" library="supply1" deviceset="GND" device=""/>
 <part name="C95" library="rcl" deviceset="C-EU" device="C0402" value="100pF"/>
 <part name="L3" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="250nH/DNP"/>
@@ -11982,6 +11982,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="167.894" y="176.784" size="2.54" layer="97">Spartan Patch Side Optional Bypass - VCCIO</text>
 <text x="167.894" y="150.114" size="2.54" layer="97">Spartan Patch Side Optional Bypass - VCCIO</text>
 <text x="86.36" y="357.124" size="2.54" layer="97">10k?</text>
+<text x="40.64" y="203.2" size="1.778" layer="97">Any low Rdson</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="46.355" y="42.545"/>

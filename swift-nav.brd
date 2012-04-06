@@ -26,9 +26,9 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -88,7 +88,7 @@
 <layer number="111" name="Text" color="15" fill="1" visible="no" active="yes"/>
 <layer number="112" name="2Restrict" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
-<layer number="121" name="_tplace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tplace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bplace" color="14" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -339,6 +339,7 @@
 <wire x1="40.386" y1="8.7376" x2="39.9796" y2="9.144" width="0.2032" layer="121" curve="90"/>
 <wire x1="39.9796" y1="9.144" x2="37.7444" y2="9.144" width="0.2032" layer="121"/>
 <wire x1="37.7444" y1="9.144" x2="37.338" y2="8.7376" width="0.2032" layer="121" curve="90"/>
+<text x="46.7868" y="45.847" size="1.27" layer="122" font="vector" ratio="15" rot="MR0">V+ max 5.5V</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -1977,7 +1978,7 @@ design rules under a new name.</description>
 <element name="H4" library="swift-nav" package="M3-PAD" value="MOUNT-PAD-ROUNDM3" x="51.8" y="51.8"/>
 <element name="R8" library="pel_dipol_comp" package="0402-RES" value="10K" x="19.8824" y="14.6354" rot="R180"/>
 <element name="SJ1" library="SparkFun-Passives" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="16.5862" y="14.9098"/>
-<element name="Q1" library="SparkFun-DiscreteSemi" package="SOT23-3" value="MOSFET-PCHANNELSMD" x="23.368" y="14.4018"/>
+<element name="Q1" library="SparkFun-DiscreteSemi" package="SOT23-3" value="IRLML6401" x="23.368" y="14.4018"/>
 <element name="C95" library="rcl" package="C0402" value="100pF" x="39.0218375" y="27.138996875" rot="R315"/>
 <element name="L3" library="pel_dipol_comp" package="0402-IND" value="250nH/DNP" x="35.3822" y="29.1846" rot="R180"/>
 <element name="H5" library="swift-nav" package="M3-PAD" value="MOUNT-PAD-ROUNDM3" x="8" y="8"/>
