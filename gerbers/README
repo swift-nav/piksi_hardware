@@ -17,3 +17,4 @@ swift-nav.silk_bottom Bottom silkscreen layer
 swift-nav.drill       Excellon drill file
 swift-nav.drill_rack  Drill tool list
 
+swift-nav.mech        Board mechanical outline
