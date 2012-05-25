@@ -11624,9 +11624,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="H5" library="swift-nav" deviceset="MOUNT-PAD-ROUND" device="M3"/>
 <part name="SHLD2" library="jobygnss" deviceset="BMI-S-208" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="JP5" library="aspirin" deviceset="FIDUCIAL" device="1.5X3"/>
-<part name="JP6" library="aspirin" deviceset="FIDUCIAL" device="1.5X3"/>
-<part name="JP7" library="aspirin" deviceset="FIDUCIAL" device="1.5X3"/>
 <part name="JP8" library="aspirin" deviceset="FIDUCIAL" device="1.5X3"/>
 <part name="JP9" library="aspirin" deviceset="FIDUCIAL" device="1.5X3"/>
 <part name="JP10" library="aspirin" deviceset="FIDUCIAL" device="1.5X3"/>
@@ -15093,26 +15090,23 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="10.16" y="111.76" size="5.08" layer="91" rot="MR180">UART3</text>
 <text x="269.24" y="10.16" size="3.81" layer="94" rot="R180">2.3</text>
 <text x="175.26" y="25.4" size="5.08" layer="94">Connectors / Misc</text>
-<text x="202.565" y="142.24" size="5.08" layer="91">Mounting Holes</text>
-<text x="210.185" y="91.44" size="5.08" layer="91">Fiducials</text>
+<text x="200.025" y="137.16" size="5.08" layer="91">Mounting Holes</text>
+<text x="210.185" y="81.28" size="5.08" layer="91">Fiducials</text>
 </plain>
 <instances>
-<instance part="GND8" gate="1" x="205.74" y="106.68"/>
-<instance part="H2" gate="G$1" x="210.82" y="119.38"/>
-<instance part="H3" gate="G$1" x="210.82" y="127"/>
-<instance part="H4" gate="G$1" x="210.82" y="134.62"/>
-<instance part="H5" gate="G$1" x="210.82" y="111.76"/>
+<instance part="GND8" gate="1" x="203.2" y="101.6"/>
+<instance part="H2" gate="G$1" x="208.28" y="114.3"/>
+<instance part="H3" gate="G$1" x="208.28" y="121.92"/>
+<instance part="H4" gate="G$1" x="208.28" y="129.54"/>
+<instance part="H5" gate="G$1" x="208.28" y="106.68"/>
 <instance part="SHLD2" gate="G$1" x="208.28" y="168.91" smashed="yes">
 <attribute name="NAME" x="213.36" y="189.23" size="1.778" layer="95"/>
 <attribute name="VALUE" x="213.36" y="186.69" size="1.778" layer="96"/>
 </instance>
 <instance part="GND4" gate="1" x="233.68" y="153.67"/>
-<instance part="JP5" gate="G$1" x="223.52" y="83.82"/>
-<instance part="JP6" gate="G$1" x="223.52" y="76.2"/>
-<instance part="JP7" gate="G$1" x="223.52" y="68.58"/>
-<instance part="JP8" gate="G$1" x="223.52" y="60.96"/>
-<instance part="JP9" gate="G$1" x="223.52" y="53.34"/>
-<instance part="JP10" gate="G$1" x="223.52" y="45.72"/>
+<instance part="JP8" gate="G$1" x="223.52" y="73.66"/>
+<instance part="JP9" gate="G$1" x="223.52" y="66.04"/>
+<instance part="JP10" gate="G$1" x="223.52" y="58.42"/>
 <instance part="GND43" gate="1" x="76.2" y="43.18"/>
 <instance part="GND44" gate="1" x="116.84" y="93.98"/>
 <instance part="J6" gate="G$1" x="101.6" y="111.76" smashed="yes" rot="MR0">
@@ -15161,20 +15155,20 @@ We've spent an enormous amount of time creating and checking these footprints an
 <net name="GND" class="0">
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="208.28" y1="111.76" x2="205.74" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="111.76" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="106.68" x2="203.2" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="106.68" x2="203.2" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="H2" gate="G$1" pin="MOUNT"/>
-<wire x1="208.28" y1="119.38" x2="205.74" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="119.38" x2="205.74" y2="111.76" width="0.1524" layer="91"/>
-<junction x="205.74" y="111.76"/>
+<wire x1="205.74" y1="114.3" x2="203.2" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="114.3" x2="203.2" y2="106.68" width="0.1524" layer="91"/>
+<junction x="203.2" y="106.68"/>
 <pinref part="H4" gate="G$1" pin="MOUNT"/>
-<wire x1="208.28" y1="134.62" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="134.62" x2="205.74" y2="127" width="0.1524" layer="91"/>
-<junction x="205.74" y="119.38"/>
+<wire x1="205.74" y1="129.54" x2="203.2" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="129.54" x2="203.2" y2="121.92" width="0.1524" layer="91"/>
+<junction x="203.2" y="114.3"/>
 <pinref part="H3" gate="G$1" pin="MOUNT"/>
-<wire x1="205.74" y1="127" x2="205.74" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="127" x2="205.74" y2="127" width="0.1524" layer="91"/>
-<junction x="205.74" y="127"/>
+<wire x1="203.2" y1="121.92" x2="203.2" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="121.92" x2="203.2" y2="121.92" width="0.1524" layer="91"/>
+<junction x="203.2" y="121.92"/>
 <pinref part="H5" gate="G$1" pin="MOUNT"/>
 </segment>
 <segment>
