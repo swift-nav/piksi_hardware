@@ -6693,7 +6693,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="U10" library="jobygnss" deviceset="MAX2769" device=""/>
 <part name="C12" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0402" value="100pF"/>
 <part name="C13" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0402" value="0.47uF"/>
-<part name="L1" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="29nH"/>
+<part name="L1" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="29nH / DNP"/>
 <part name="L3" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="29nH"/>
 <part name="R12" library="pel_dipol_comp" deviceset="RESISTOR" device="-0402" value="10k"/>
 <part name="VCC37" library="supply1" deviceset="VCCIO" device=""/>
@@ -8400,7 +8400,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="VALUE" x="318.77" y="229.87" size="2.54" layer="96"/>
 </instance>
 <instance part="U8" gate="G$1" x="187.96" y="129.54"/>
-<instance part="GND40" gate="1" x="86.36" y="203.2"/>
+<instance part="GND40" gate="1" x="88.9" y="203.2"/>
 <instance part="U4" gate="U$1" x="119.38" y="147.32"/>
 <instance part="U5" gate="G$1" x="22.86" y="223.52"/>
 <instance part="GND7" gate="1" x="30.48" y="220.98"/>
@@ -8419,9 +8419,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="VDD2" gate="G$1" x="297.18" y="233.68"/>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
 <instance part="FRAME4" gate="G$2" x="325.12" y="0"/>
-<instance part="C16" gate="G$1" x="76.2" y="218.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="78.74" y="223.52" size="1.778" layer="95"/>
-<attribute name="VALUE" x="78.74" y="220.98" size="1.778" layer="96"/>
+<instance part="C16" gate="G$1" x="78.74" y="218.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="81.28" y="223.52" size="1.778" layer="95"/>
+<attribute name="VALUE" x="81.28" y="220.98" size="1.778" layer="96"/>
 </instance>
 <instance part="U9" gate="U1" x="119.38" y="218.44"/>
 <instance part="GND70" gate="1" x="119.38" y="200.66"/>
@@ -8490,13 +8490,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="VALUE" x="81.28" y="33.02" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND84" gate="1" x="83.82" y="22.86"/>
-<instance part="L4" gate="G$1" x="96.52" y="218.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="93.98" y="223.52" size="1.778" layer="95"/>
-<attribute name="VALUE" x="93.98" y="220.98" size="1.778" layer="96"/>
+<instance part="L4" gate="G$1" x="99.06" y="218.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="96.52" y="223.52" size="1.778" layer="95"/>
+<attribute name="VALUE" x="96.52" y="220.98" size="1.778" layer="96"/>
 </instance>
-<instance part="L5" gate="G$1" x="86.36" y="210.82" smashed="yes" rot="R180">
-<attribute name="NAME" x="88.9" y="210.82" size="1.778" layer="95"/>
-<attribute name="VALUE" x="88.9" y="208.28" size="1.778" layer="96"/>
+<instance part="L5" gate="G$1" x="88.9" y="210.82" smashed="yes" rot="R180">
+<attribute name="NAME" x="91.44" y="210.82" size="1.778" layer="95"/>
+<attribute name="VALUE" x="91.44" y="208.28" size="1.778" layer="96"/>
 </instance>
 <instance part="GND62" gate="1" x="48.26" y="177.8"/>
 <instance part="C36" gate="G$1" x="55.88" y="185.42" smashed="yes" rot="R180">
@@ -8946,7 +8946,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <net name="N$14" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="218.44" x2="68.58" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="218.44" x2="68.58" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="218.44" x2="25.4" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="210.82" x2="68.58" y2="218.44" width="0.1524" layer="91"/>
 <junction x="68.58" y="218.44"/>
@@ -8957,10 +8957,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <net name="N$35" class="0">
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="218.44" x2="86.36" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="218.44" x2="91.44" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="215.9" x2="86.36" y2="218.44" width="0.1524" layer="91"/>
-<junction x="86.36" y="218.44"/>
+<wire x1="83.82" y1="218.44" x2="88.9" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="218.44" x2="93.98" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="215.9" x2="88.9" y2="218.44" width="0.1524" layer="91"/>
+<junction x="88.9" y="218.44"/>
 <pinref part="L4" gate="G$1" pin="1"/>
 <pinref part="L5" gate="G$1" pin="2"/>
 </segment>
@@ -8979,7 +8979,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <net name="N$2" class="0">
 <segment>
 <pinref part="U9" gate="U1" pin="RFIN"/>
-<wire x1="101.6" y1="218.44" x2="104.14" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="L4" gate="G$1" pin="2"/>
 </segment>
 </net>
