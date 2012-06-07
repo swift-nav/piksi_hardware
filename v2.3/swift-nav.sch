@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4614,32 +4614,32 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="0.95" y1="0.5" x2="0.95" y2="-0.5" width="0.0508" layer="39"/>
 <wire x1="0.95" y1="-0.5" x2="-0.95" y2="-0.5" width="0.0508" layer="39"/>
 <wire x1="-0.95" y1="-0.5" x2="-0.95" y2="0.5" width="0.0508" layer="39"/>
-<wire x1="-0.508" y1="0.2032" x2="0.508" y2="0.2032" width="0.2032" layer="51"/>
-<wire x1="-0.508" y1="-0.2032" x2="0.508" y2="-0.2032" width="0.2032" layer="51"/>
+<wire x1="-0.4064" y1="0.1524" x2="0.4064" y2="0.1524" width="0.2032" layer="51"/>
+<wire x1="-0.4064" y1="-0.1524" x2="0.4064" y2="-0.1524" width="0.2032" layer="51"/>
 <wire x1="0" y1="0.01" x2="0" y2="-0.01" width="0.1524" layer="21"/>
 <smd name="P$1" x="-0.5" y="0" dx="0.5" dy="0.6" layer="1"/>
 <smd name="P$2" x="0.5" y="0" dx="0.5" dy="0.6" layer="1"/>
 <text x="-1.143" y="0.8382" size="0.635" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="-1.143" y="-1.2954" size="0.635" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 <rectangle x1="-0.2032" y1="-0.4064" x2="0.2032" y2="0.4064" layer="35"/>
-<rectangle x1="-0.7112" y1="-0.3048" x2="-0.4064" y2="0.3048" layer="51"/>
-<rectangle x1="0.4064" y1="-0.3048" x2="0.7112" y2="0.3048" layer="51"/>
+<rectangle x1="-0.508" y1="-0.254" x2="-0.254" y2="0.254" layer="51"/>
+<rectangle x1="0.254" y1="-0.254" x2="0.508" y2="0.254" layer="51"/>
 </package>
 <package name="0603-CAP">
 <wire x1="-1.175" y1="0.725" x2="1.175" y2="0.725" width="0.0508" layer="39"/>
 <wire x1="1.175" y1="0.725" x2="1.175" y2="-0.725" width="0.0508" layer="39"/>
 <wire x1="1.175" y1="-0.725" x2="-1.175" y2="-0.725" width="0.0508" layer="39"/>
 <wire x1="-1.175" y1="-0.725" x2="-1.175" y2="0.725" width="0.0508" layer="39"/>
-<wire x1="-0.508" y1="0.2032" x2="0.508" y2="0.2032" width="0.2032" layer="51"/>
-<wire x1="-0.508" y1="-0.2032" x2="0.508" y2="-0.2032" width="0.2032" layer="51"/>
+<wire x1="-0.7112" y1="0.3048" x2="0.7112" y2="0.3048" width="0.2032" layer="51"/>
 <wire x1="0" y1="0.0508" x2="0" y2="-0.0508" width="0.5" layer="21"/>
 <smd name="P$1" x="-0.75" y="0" dx="0.6" dy="0.9" layer="1"/>
 <smd name="P$2" x="0.75" y="0" dx="0.6" dy="0.9" layer="1"/>
 <text x="-1.143" y="0.8382" size="0.635" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="-1.143" y="-1.2954" size="0.635" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 <rectangle x1="-0.2032" y1="-0.4064" x2="0.2032" y2="0.4064" layer="35"/>
-<rectangle x1="-0.7112" y1="-0.3048" x2="-0.4064" y2="0.3048" layer="51"/>
-<rectangle x1="0.4064" y1="-0.3048" x2="0.7112" y2="0.3048" layer="51"/>
+<wire x1="-0.7112" y1="-0.3048" x2="0.7112" y2="-0.3048" width="0.2032" layer="51"/>
+<rectangle x1="-0.8128" y1="-0.4064" x2="-0.508" y2="0.4064" layer="51"/>
+<rectangle x1="0.508" y1="-0.4064" x2="0.8128" y2="0.4064" layer="51"/>
 </package>
 <package name="0603-SF-CAP">
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
@@ -6708,6 +6708,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="C36" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0402" value="100pF"/>
 <part name="C41" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0402" value="0.47uF"/>
 <part name="P+3" library="supply1" deviceset="V+" device=""/>
+<part name="C43" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0402" value="0.47uF"/>
+<part name="C46" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0402" value="0.47uF"/>
+<part name="C78" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0603" value="4.7uF"/>
+<part name="C80" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0402" value="0.47uF"/>
+<part name="C81" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0402" value="0.47uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -7919,7 +7924,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <sheet>
 <plain>
 <text x="180.34" y="185.42" size="2.54" layer="97">Spartan 6 Bypass - VCCAUX</text>
-<text x="187.96" y="152.4" size="2.54" layer="97">Spartan 6 Bypass - VCCINT</text>
+<text x="172.72" y="152.4" size="2.54" layer="97">Spartan 6 Bypass - VCCINT</text>
 <text x="198.12" y="86.36" size="2.54" layer="97">Spartan 6 Bypass - Bank 3</text>
 <text x="147.32" y="121.92" size="2.54" layer="97">Spartan 6 Bypass - Bank 0</text>
 <text x="200.66" y="121.92" size="2.54" layer="97">Spartan 6 Bypass - Bank 1</text>
@@ -7932,11 +7937,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="C8" gate="G$1" x="177.8" y="180.34"/>
 <instance part="C22" gate="G$1" x="190.5" y="180.34"/>
 <instance part="C23" gate="G$1" x="203.2" y="180.34"/>
-<instance part="C28" gate="G$1" x="182.88" y="147.32"/>
-<instance part="C29" gate="G$1" x="193.04" y="147.32"/>
-<instance part="C30" gate="G$1" x="203.2" y="147.32"/>
-<instance part="C31" gate="G$1" x="213.36" y="147.32"/>
-<instance part="GND24" gate="1" x="226.06" y="137.16"/>
+<instance part="C28" gate="G$1" x="167.64" y="147.32"/>
+<instance part="C29" gate="G$1" x="177.8" y="147.32"/>
+<instance part="C30" gate="G$1" x="187.96" y="147.32"/>
+<instance part="C31" gate="G$1" x="198.12" y="147.32"/>
+<instance part="GND24" gate="1" x="248.92" y="137.16"/>
 <instance part="GND25" gate="1" x="215.9" y="170.18"/>
 <instance part="U1" gate="BGND" x="43.18" y="124.46"/>
 <instance part="U1" gate="BVCCAUX" x="81.28" y="127"/>
@@ -7944,7 +7949,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="VCC4" gate="G$1" x="88.9" y="142.24"/>
 <instance part="VCC5" gate="G$1" x="177.8" y="187.96"/>
 <instance part="VCC6" gate="G$1" x="124.46" y="142.24"/>
-<instance part="VCC7" gate="G$1" x="182.88" y="154.94"/>
+<instance part="VCC7" gate="G$1" x="137.16" y="154.94"/>
 <instance part="C60" gate="G$1" x="213.36" y="71.12"/>
 <instance part="C62" gate="G$1" x="223.52" y="71.12"/>
 <instance part="C63" gate="G$1" x="233.68" y="71.12"/>
@@ -7966,13 +7971,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="C86" gate="G$1" x="157.48" y="106.68"/>
 <instance part="C87" gate="G$1" x="203.2" y="71.12"/>
 <instance part="C21" gate="G$1" x="215.9" y="180.34"/>
-<instance part="C24" gate="G$1" x="226.06" y="147.32"/>
-<instance part="C10" gate="G$1" x="172.72" y="147.32"/>
-<instance part="C17" gate="G$1" x="162.56" y="147.32"/>
+<instance part="C24" gate="G$1" x="248.92" y="147.32"/>
+<instance part="C10" gate="G$1" x="157.48" y="147.32"/>
+<instance part="C17" gate="G$1" x="147.32" y="147.32"/>
 <instance part="C25" gate="G$1" x="203.2" y="106.68"/>
 <instance part="C26" gate="G$1" x="160.02" y="71.12"/>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
 <instance part="FRAME3" gate="G$2" x="172.72" y="0"/>
+<instance part="C43" gate="G$1" x="208.28" y="147.32"/>
+<instance part="C46" gate="G$1" x="218.44" y="147.32"/>
+<instance part="C78" gate="G$1" x="137.16" y="147.32"/>
+<instance part="C80" gate="G$1" x="238.76" y="147.32"/>
+<instance part="C81" gate="G$1" x="228.6" y="147.32"/>
 </instances>
 <busses>
 </busses>
@@ -7993,15 +8003,19 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="C21" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="226.06" y1="139.7" x2="226.06" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="142.24" x2="213.36" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="142.24" x2="203.2" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="142.24" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="142.24" x2="182.88" y2="142.24" width="0.1524" layer="91"/>
-<junction x="226.06" y="142.24"/>
-<junction x="193.04" y="142.24"/>
-<junction x="203.2" y="142.24"/>
-<junction x="213.36" y="142.24"/>
+<wire x1="248.92" y1="139.7" x2="248.92" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="142.24" x2="238.76" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="142.24" x2="228.6" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="142.24" x2="218.44" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="142.24" x2="208.28" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="142.24" x2="198.12" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="142.24" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="142.24" x2="177.8" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="142.24" x2="167.64" y2="142.24" width="0.1524" layer="91"/>
+<junction x="248.92" y="142.24"/>
+<junction x="177.8" y="142.24"/>
+<junction x="187.96" y="142.24"/>
+<junction x="198.12" y="142.24"/>
 <pinref part="GND24" gate="1" pin="GND"/>
 <pinref part="C28" gate="G$1" pin="2"/>
 <pinref part="C29" gate="G$1" pin="2"/>
@@ -8009,11 +8023,22 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="C31" gate="G$1" pin="2"/>
 <pinref part="C24" gate="G$1" pin="2"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="182.88" y1="142.24" x2="172.72" y2="142.24" width="0.1524" layer="91"/>
-<junction x="182.88" y="142.24"/>
+<wire x1="167.64" y1="142.24" x2="157.48" y2="142.24" width="0.1524" layer="91"/>
+<junction x="167.64" y="142.24"/>
 <pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="142.24" x2="162.56" y2="142.24" width="0.1524" layer="91"/>
-<junction x="172.72" y="142.24"/>
+<wire x1="157.48" y1="142.24" x2="147.32" y2="142.24" width="0.1524" layer="91"/>
+<junction x="157.48" y="142.24"/>
+<pinref part="C43" gate="G$1" pin="2"/>
+<junction x="208.28" y="142.24"/>
+<pinref part="C46" gate="G$1" pin="2"/>
+<junction x="218.44" y="142.24"/>
+<pinref part="C78" gate="G$1" pin="2"/>
+<junction x="147.32" y="142.24"/>
+<wire x1="137.16" y1="142.24" x2="147.32" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="C80" gate="G$1" pin="2"/>
+<junction x="238.76" y="142.24"/>
+<pinref part="C81" gate="G$1" pin="2"/>
+<junction x="228.6" y="142.24"/>
 </segment>
 <segment>
 <wire x1="48.26" y1="154.94" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
@@ -8207,26 +8232,42 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="VCC6" gate="G$1" pin="VCCINT"/>
 </segment>
 <segment>
-<wire x1="182.88" y1="152.4" x2="182.88" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="149.86" x2="193.04" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="149.86" x2="203.2" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="149.86" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="149.86" x2="226.06" y2="149.86" width="0.1524" layer="91"/>
-<junction x="182.88" y="149.86"/>
-<junction x="193.04" y="149.86"/>
-<junction x="203.2" y="149.86"/>
-<junction x="213.36" y="149.86"/>
+<wire x1="167.64" y1="149.86" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="149.86" x2="187.96" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="149.86" x2="198.12" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="149.86" x2="208.28" y2="149.86" width="0.1524" layer="91"/>
+<junction x="167.64" y="149.86"/>
+<junction x="177.8" y="149.86"/>
+<junction x="187.96" y="149.86"/>
+<junction x="198.12" y="149.86"/>
 <pinref part="C28" gate="G$1" pin="1"/>
 <pinref part="C29" gate="G$1" pin="1"/>
 <pinref part="C30" gate="G$1" pin="1"/>
 <pinref part="C31" gate="G$1" pin="1"/>
-<pinref part="VCC7" gate="G$1" pin="VCCINT"/>
 <pinref part="C24" gate="G$1" pin="1"/>
-<pinref part="C17" gate="G$1" pin="1"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="149.86" x2="172.72" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="149.86" x2="182.88" y2="149.86" width="0.1524" layer="91"/>
-<junction x="172.72" y="149.86"/>
+<wire x1="208.28" y1="149.86" x2="218.44" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="149.86" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="149.86" x2="238.76" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="149.86" x2="248.92" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="149.86" x2="167.64" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="149.86" x2="147.32" y2="149.86" width="0.1524" layer="91"/>
+<junction x="157.48" y="149.86"/>
+<junction x="147.32" y="149.86"/>
+<pinref part="C43" gate="G$1" pin="1"/>
+<junction x="208.28" y="149.86"/>
+<pinref part="C46" gate="G$1" pin="1"/>
+<junction x="218.44" y="149.86"/>
+<pinref part="C78" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="149.86" x2="137.16" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="VCC7" gate="G$1" pin="VCCINT"/>
+<wire x1="137.16" y1="152.4" x2="137.16" y2="149.86" width="0.1524" layer="91"/>
+<junction x="137.16" y="149.86"/>
+<pinref part="C80" gate="G$1" pin="1"/>
+<junction x="238.76" y="149.86"/>
+<pinref part="C81" gate="G$1" pin="1"/>
+<junction x="228.6" y="149.86"/>
 </segment>
 </net>
 <net name="VCCIO" class="0">
