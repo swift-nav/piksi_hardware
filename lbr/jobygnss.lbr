@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
@@ -787,45 +787,45 @@ Source: Samtec SSW.pdf</description>
 <smd name="26" x="20.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180" cream="no"/>
 <smd name="27" x="26.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180" cream="no"/>
 <smd name="28" x="32.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180" cream="no"/>
-<polygon width="0" layer="1">
+<polygon width="0.000253125" layer="1">
 <vertex x="1" y="40.4"/>
 <vertex x="0" y="39.4"/>
 <vertex x="1" y="39.4"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.000253125" layer="1">
 <vertex x="40.4" y="39.4"/>
 <vertex x="39.4" y="40.4"/>
 <vertex x="39.4" y="39.4"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.000253125" layer="1">
 <vertex x="39.4" y="0"/>
 <vertex x="40.4" y="1"/>
 <vertex x="39.4" y="1"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.000253125" layer="1">
 <vertex x="0" y="1"/>
 <vertex x="1" y="0"/>
 <vertex x="1" y="1"/>
 </polygon>
-<polygon width="0" layer="29">
-<vertex x="-0.0746" y="39.4365"/>
-<vertex x="0.9635" y="40.4746"/>
-<vertex x="0.9635" y="39.4365"/>
+<polygon width="0.05" layer="29">
+<vertex x="39.5" y="39.5"/>
+<vertex x="39.5" y="40.425"/>
+<vertex x="40.425" y="39.5"/>
 </polygon>
-<polygon width="0" layer="29">
-<vertex x="0.9635" y="-0.0746"/>
-<vertex x="-0.0746" y="0.9635"/>
-<vertex x="0.9635" y="0.9635"/>
+<polygon width="0.05" layer="29">
+<vertex x="0.9" y="39.5"/>
+<vertex x="0.9" y="40.425"/>
+<vertex x="-0.025" y="39.5"/>
 </polygon>
-<polygon width="0" layer="29">
-<vertex x="40.4846" y="0.9635"/>
-<vertex x="39.4465" y="-0.0746"/>
-<vertex x="39.4465" y="0.9635"/>
+<polygon width="0.05" layer="29">
+<vertex x="-0.025" y="0.9"/>
+<vertex x="0.9" y="0.9"/>
+<vertex x="0.9" y="-0.025"/>
 </polygon>
-<polygon width="0" layer="29">
-<vertex x="39.431" y="40.4696"/>
-<vertex x="40.4691" y="39.4315"/>
-<vertex x="39.431" y="39.4315"/>
+<polygon width="0.05" layer="29">
+<vertex x="39.5" y="-0.025"/>
+<vertex x="40.425" y="0.9"/>
+<vertex x="39.5" y="0.9"/>
 </polygon>
 </package>
 <package name="LTST-C195KGJRKT">
