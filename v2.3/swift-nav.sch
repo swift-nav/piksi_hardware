@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -340,7 +340,7 @@
 <smd name="7" x="3" y="0.64" dx="1.2" dy="0.4" layer="1" rot="R180"/>
 <smd name="6" x="3" y="-0.64" dx="1.2" dy="0.4" layer="1" rot="R180"/>
 <smd name="5" x="3" y="-1.9" dx="1.2" dy="0.4" layer="1" rot="R180"/>
-<smd name="9" x="0" y="0" dx="3.4" dy="4" layer="1"/>
+<smd name="9" x="0" y="0" dx="3.4" dy="4" layer="1" cream="no"/>
 <wire x1="-3.1" y1="2.3" x2="-3.1" y2="2.6" width="0.2" layer="21"/>
 <wire x1="-3.1" y1="2.6" x2="3.1" y2="2.6" width="0.2" layer="21"/>
 <wire x1="3.1" y1="2.6" x2="3.1" y2="2.3" width="0.2" layer="21"/>
@@ -359,6 +359,14 @@
 <wire x1="-3.1" y1="-2.6" x2="3.1" y2="-2.6" width="0.2" layer="51"/>
 <wire x1="3.1" y1="-2.6" x2="3.1" y2="2.6" width="0.2" layer="51"/>
 <wire x1="3.1" y1="2.6" x2="-3.1" y2="2.6" width="0.2" layer="51"/>
+<rectangle x1="-1.27" y1="-0.73025" x2="-0.254" y2="-0.22225" layer="31"/>
+<rectangle x1="-1.27" y1="0.22225" x2="-0.254" y2="0.73025" layer="31"/>
+<rectangle x1="-1.27" y1="1.143" x2="-0.254" y2="1.651" layer="31"/>
+<rectangle x1="-1.27" y1="-1.651" x2="-0.254" y2="-1.143" layer="31"/>
+<rectangle x1="0.254" y1="-0.73025" x2="1.27" y2="-0.22225" layer="31"/>
+<rectangle x1="0.254" y1="0.22225" x2="1.27" y2="0.73025" layer="31"/>
+<rectangle x1="0.254" y1="1.143" x2="1.27" y2="1.651" layer="31"/>
+<rectangle x1="0.254" y1="-1.651" x2="1.27" y2="-1.143" layer="31"/>
 </package>
 <package name="B3U-1000P">
 <wire x1="-1.5" y1="-1.25" x2="1.5" y2="-1.25" width="0.152" layer="21"/>
@@ -457,7 +465,7 @@
 <smd name="8" x="0" y="1.75" dx="0.68" dy="0.25" layer="1" rot="R270"/>
 <smd name="9" x="-0.5" y="1.75" dx="0.68" dy="0.25" layer="1" rot="R270"/>
 <smd name="10" x="-1" y="1.75" dx="0.68" dy="0.25" layer="1" rot="R270"/>
-<smd name="11" x="0" y="0" dx="1.65" dy="2.38" layer="1" rot="R270"/>
+<smd name="11" x="0" y="0" dx="1.65" dy="2.38" layer="1" rot="R270" cream="no"/>
 <wire x1="-1.4" y1="1.6" x2="-1.6" y2="1.6" width="0.2" layer="21"/>
 <wire x1="-1.6" y1="1.6" x2="-1.6" y2="-1.6" width="0.2" layer="21"/>
 <wire x1="-1.6" y1="-1.6" x2="-1.4" y2="-1.6" width="0.2" layer="21"/>
@@ -470,12 +478,18 @@
 <wire x1="1.6" y1="1.6" x2="1.6" y2="-1.6" width="0.2" layer="51"/>
 <wire x1="1.6" y1="-1.6" x2="-1.6" y2="-1.6" width="0.2" layer="51"/>
 <wire x1="-1.6" y1="-1.6" x2="-1.6" y2="1.6" width="0.2" layer="51"/>
+<rectangle x1="0.53975" y1="0.1905" x2="0.98425" y2="0.635" layer="31"/>
+<rectangle x1="-0.22225" y1="0.1905" x2="0.22225" y2="0.635" layer="31"/>
+<rectangle x1="-0.98425" y1="0.1905" x2="-0.53975" y2="0.635" layer="31"/>
+<rectangle x1="-0.98425" y1="-0.635" x2="-0.53975" y2="-0.1905" layer="31"/>
+<rectangle x1="-0.22225" y1="-0.635" x2="0.22225" y2="-0.1905" layer="31"/>
+<rectangle x1="0.53975" y1="-0.635" x2="0.98425" y2="-0.1905" layer="31"/>
 </package>
 <package name="LQM2HPN4R7MG0L">
 <wire x1="-0.2032" y1="-1.0668" x2="0.2032" y2="-1.0668" width="0.1524" layer="21"/>
 <wire x1="0.2032" y1="1.0668" x2="-0.2032" y2="1.0668" width="0.1524" layer="21"/>
-<smd name="1" x="-0.95" y="0" dx="1.2" dy="2.2" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.2" dy="2.2" layer="1"/>
+<smd name="1" x="-0.95" y="0" dx="1.2" dy="2.2" layer="1" cream="no"/>
+<smd name="2" x="0.95" y="0" dx="1.2" dy="2.2" layer="1" cream="no"/>
 <text x="-1.524" y="1.397" size="0.889" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="-1.397" y="-2.286" size="0.889" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 <rectangle x1="-1.2" y1="-1" x2="1.2" y2="1" layer="39"/>
@@ -483,6 +497,8 @@
 <wire x1="1.4" y1="1.15" x2="1.4" y2="-1.15" width="0.1" layer="51"/>
 <wire x1="1.4" y1="-1.15" x2="-1.4" y2="-1.15" width="0.1" layer="51"/>
 <wire x1="-1.4" y1="-1.15" x2="-1.4" y2="1.15" width="0.1" layer="51"/>
+<rectangle x1="-1.4605" y1="-1.016" x2="-0.4445" y2="1.016" layer="31"/>
+<rectangle x1="0.4445" y1="-1.016" x2="1.4605" y2="1.016" layer="31"/>
 </package>
 <package name="PT7M8206B33TA5EX">
 <wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.127" layer="21"/>
@@ -4319,7 +4335,7 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="PB2/BOOT1" x="55.88" y="38.1" length="middle" rot="R180"/>
 <pin name="PB10-I2C2SCL/USART3TX-TIM2CH3" x="55.88" y="-12.7" length="middle" rot="R180"/>
 <pin name="PB11-I2C2SDA/USART3RX-TIM2CH4" x="55.88" y="-15.24" length="middle" rot="R180"/>
-<pin name="VCAP_1" x="55.88" y="5.08" length="middle" direction="sup" rot="R180"/>
+<pin name="VSS1" x="55.88" y="5.08" length="middle" direction="sup" rot="R180"/>
 <pin name="VDD1" x="55.88" y="7.62" length="middle" direction="sup" rot="R180"/>
 <pin name="PB12-SPI2NSS/I2C2SMBAI/USART3CK/TIM1BKIN" x="55.88" y="-17.78" length="middle" rot="R180"/>
 <pin name="PB13-SPI2SCK/USART3CTS/TIM1CH1N" x="55.88" y="-20.32" length="middle" rot="R180"/>
@@ -4331,7 +4347,7 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="PA11-USART1CTS/CANRX/USBDM/TIM1CH4" x="-55.88" y="-12.7" length="middle"/>
 <pin name="PA12-USART1RTS/CANTX/USBDP/TIM1ETR" x="-55.88" y="-15.24" length="middle"/>
 <pin name="PA13/JTMS/SWDIO" x="-55.88" y="-17.78" length="middle"/>
-<pin name="VCAP_2" x="55.88" y="2.54" length="middle" direction="sup" rot="R180"/>
+<pin name="VSS2" x="55.88" y="2.54" length="middle" direction="sup" rot="R180"/>
 <pin name="VDD2" x="55.88" y="10.16" length="middle" direction="sup" rot="R180"/>
 <pin name="PA14/JTCK/SWCLK" x="-55.88" y="-20.32" length="middle"/>
 <pin name="PA15/JTDI-TIM2CH1ETR/SPI1NSS" x="-55.88" y="-22.86" length="middle"/>
@@ -4343,7 +4359,7 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="BOOT0" x="55.88" y="20.32" length="middle" direction="in" rot="R180"/>
 <pin name="PB8-TIM4CH3-I2C1SCL/CANRX" x="55.88" y="-7.62" length="middle" rot="R180"/>
 <pin name="PB9-TIM4CH4-I2C1SDA/CANTX" x="55.88" y="-10.16" length="middle" rot="R180"/>
-<pin name="VSS1" x="55.88" y="0" length="middle" direction="sup" rot="R180"/>
+<pin name="VSS3" x="55.88" y="0" length="middle" direction="sup" rot="R180"/>
 <pin name="VDD3" x="55.88" y="12.7" length="middle" direction="sup" rot="R180"/>
 <pin name="PC0-ADC10" x="-55.88" y="-27.94" length="middle"/>
 <pin name="PC1-ADC11" x="-55.88" y="-30.48" length="middle"/>
@@ -4360,12 +4376,12 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="PC12--USART3CK" x="55.88" y="-40.64" length="middle" rot="R180"/>
 <pin name="PD2-TIM3ETR" x="55.88" y="-45.72" length="middle" rot="R180"/>
 <pin name="VDD4" x="55.88" y="15.24" length="middle" rot="R180"/>
-<pin name="VSS2" x="55.88" y="-2.54" length="middle" rot="R180"/>
+<pin name="VSS4" x="55.88" y="-2.54" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="STM32-M-64-LQFP" prefix="U">
-<description>STM32F405 64pin LQFP</description>
+<description>STM32F103 Medium Density 64pin LQFP</description>
 <gates>
 <gate name="G$1" symbol="STM32-M-64-LQFP" x="0" y="0"/>
 </gates>
@@ -4426,15 +4442,15 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="G$1" pin="PD1-OSC_OUT-CANTX" pad="6"/>
 <connect gate="G$1" pin="PD2-TIM3ETR" pad="54"/>
 <connect gate="G$1" pin="VBAT" pad="1"/>
-<connect gate="G$1" pin="VCAP_1" pad="31"/>
-<connect gate="G$1" pin="VCAP_2" pad="47"/>
 <connect gate="G$1" pin="VDD1" pad="32"/>
 <connect gate="G$1" pin="VDD2" pad="48"/>
 <connect gate="G$1" pin="VDD3" pad="64"/>
 <connect gate="G$1" pin="VDD4" pad="19"/>
 <connect gate="G$1" pin="VDDA" pad="13"/>
-<connect gate="G$1" pin="VSS1" pad="63"/>
-<connect gate="G$1" pin="VSS2" pad="18"/>
+<connect gate="G$1" pin="VSS1" pad="31"/>
+<connect gate="G$1" pin="VSS2" pad="47"/>
+<connect gate="G$1" pin="VSS3" pad="63"/>
+<connect gate="G$1" pin="VSS4" pad="18"/>
 <connect gate="G$1" pin="VSSA" pad="12"/>
 </connects>
 <technologies>
@@ -5021,13 +5037,13 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="0.575" y1="0.6" x2="0.675" y2="0.6" width="0.1524" layer="21"/>
 <wire x1="1.825" y1="0.6" x2="1.925" y2="0.6" width="0.1524" layer="21"/>
 <wire x1="-1.925" y1="0.6" x2="-1.825" y2="0.6" width="0.1524" layer="21"/>
-<smd name="1" x="-2.5" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
-<smd name="2" x="-1.25" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
-<smd name="3" x="0" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
-<smd name="4" x="1.25" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
-<smd name="MNT1" x="-5.05" y="-1.8" dx="3" dy="2.1" layer="1" rot="R90"/>
-<smd name="MNT2" x="5.05" y="-1.8" dx="3" dy="2.1" layer="1" rot="R90"/>
-<smd name="5" x="2.5" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="1" x="-2.5" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-1.25" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="0" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="1.25" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="MNT1" x="-5.05" y="-1.8" dx="3" dy="2.1" layer="1" rot="R90" cream="no"/>
+<smd name="MNT2" x="5.05" y="-1.8" dx="3" dy="2.1" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="2.5" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
 <text x="-3.7592" y="2.54" size="0.635" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="-3.8608" y="-4.826" size="0.635" layer="28" font="vector" ratio="16">&gt;VALUE</text>
 <rectangle x1="-0.16" y1="0.6" x2="0.16" y2="1.6" layer="51"/>
@@ -5035,6 +5051,13 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="1.09" y1="0.6" x2="1.41" y2="1.6" layer="51"/>
 <rectangle x1="2.34" y1="0.6" x2="2.66" y2="1.6" layer="51"/>
 <rectangle x1="-2.66" y1="0.6" x2="-2.34" y2="1.6" layer="51"/>
+<rectangle x1="-5.9" y1="-3.1" x2="-4.2" y2="-0.5" layer="31"/>
+<rectangle x1="4.2" y1="-3.1" x2="5.9" y2="-0.5" layer="31"/>
+<rectangle x1="-0.3" y1="0.4" x2="0.3" y2="1.8" layer="31"/>
+<rectangle x1="-2.8" y1="0.4" x2="-2.2" y2="1.8" layer="31"/>
+<rectangle x1="2.2" y1="0.4" x2="2.8" y2="1.8" layer="31"/>
+<rectangle x1="-1.5446" y1="0.4" x2="-0.9446" y2="1.8" layer="31"/>
+<rectangle x1="0.9446" y1="0.4" x2="1.5446" y2="1.8" layer="31"/>
 </package>
 <package name="PB-53398-05">
 <wire x1="1.75" y1="1.1" x2="2" y2="1.1" width="0.1524" layer="21"/>
@@ -5115,20 +5138,20 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="3.7" y1="0.6" x2="3.8" y2="0.6" width="0.1524" layer="21"/>
 <wire x1="4.95" y1="0.6" x2="5.05" y2="0.6" width="0.1524" layer="21"/>
 <wire x1="6.2" y1="0.6" x2="6.3" y2="0.6" width="0.1524" layer="21"/>
-<smd name="1" x="-6.875" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
-<smd name="2" x="-5.625" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
-<smd name="7" x="0.625" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
-<smd name="8" x="1.875" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
-<smd name="MNT1" x="-9.425" y="-1.8" dx="3" dy="2.1" layer="1" rot="R90"/>
-<smd name="MNT2" x="9.425" y="-1.8" dx="3" dy="2.1" layer="1" rot="R90"/>
-<smd name="3" x="-4.375" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
-<smd name="4" x="-3.125" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
-<smd name="5" x="-1.875" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
-<smd name="6" x="-0.625" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
-<smd name="9" x="3.125" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
-<smd name="10" x="4.375" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
-<smd name="11" x="5.625" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
-<smd name="12" x="6.875" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="1" x="-6.875" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-5.625" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="7" x="0.625" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="8" x="1.875" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="MNT1" x="-9.425" y="-1.8" dx="3" dy="2.1" layer="1" rot="R90" cream="no"/>
+<smd name="MNT2" x="9.425" y="-1.8" dx="3" dy="2.1" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="-4.375" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="-3.125" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="-1.875" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="6" x="-0.625" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="9" x="3.125" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="10" x="4.375" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="11" x="5.625" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="12" x="6.875" y="1.1" dx="1.6" dy="0.8" layer="1" rot="R90" cream="no"/>
 <text x="-8.8392" y="2.667" size="0.635" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="-8.9408" y="-4.953" size="0.635" layer="28" font="vector" ratio="16">&gt;VALUE</text>
 <rectangle x1="-5.785" y1="0.6" x2="-5.465" y2="1.6" layer="51"/>
@@ -5143,6 +5166,20 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="4.215" y1="0.6" x2="4.535" y2="1.6" layer="51"/>
 <rectangle x1="5.465" y1="0.6" x2="5.785" y2="1.6" layer="51"/>
 <rectangle x1="6.715" y1="0.6" x2="7.035" y2="1.6" layer="51"/>
+<rectangle x1="-10.3" y1="-3.1" x2="-8.6" y2="-0.5" layer="31"/>
+<rectangle x1="8.6" y1="-3.1" x2="10.3" y2="-0.5" layer="31"/>
+<rectangle x1="-0.95" y1="0.4" x2="-0.3" y2="1.8" layer="31"/>
+<rectangle x1="-2.2" y1="0.4" x2="-1.55" y2="1.8" layer="31"/>
+<rectangle x1="-3.45" y1="0.4" x2="-2.8" y2="1.8" layer="31"/>
+<rectangle x1="-4.7" y1="0.4" x2="-4.05" y2="1.8" layer="31"/>
+<rectangle x1="-5.95" y1="0.4" x2="-5.3" y2="1.8" layer="31"/>
+<rectangle x1="-7.2" y1="0.4" x2="-6.55" y2="1.8" layer="31"/>
+<rectangle x1="0.3" y1="0.4" x2="0.95" y2="1.8" layer="31"/>
+<rectangle x1="1.55" y1="0.4" x2="2.2" y2="1.8" layer="31"/>
+<rectangle x1="2.8" y1="0.4" x2="3.45" y2="1.8" layer="31"/>
+<rectangle x1="6.55" y1="0.4" x2="7.2" y2="1.8" layer="31"/>
+<rectangle x1="5.3" y1="0.4" x2="5.95" y2="1.8" layer="31"/>
+<rectangle x1="4.05" y1="0.4" x2="4.7" y2="1.8" layer="31"/>
 </package>
 <package name="PB-53047-12">
 <wire x1="-8.075" y1="-1.15" x2="8.075" y2="-1.15" width="0.1524" layer="21"/>
@@ -5466,7 +5503,7 @@ Source: AVX .. aphvc.pdf</description>
 <smd name="46" x="-1.75" y="3.825" dx="0.25" dy="0.75" layer="1"/>
 <smd name="47" x="-2.25" y="3.825" dx="0.25" dy="0.75" layer="1"/>
 <smd name="48" x="-2.75" y="3.825" dx="0.25" dy="0.75" layer="1"/>
-<smd name="49" x="0" y="0" dx="6.2" dy="6.2" layer="1"/>
+<smd name="49" x="0" y="0" dx="6.2" dy="6.2" layer="1" cream="no"/>
 <wire x1="-3.2" y1="4.1" x2="-4.1" y2="4.1" width="0.2" layer="21"/>
 <wire x1="-4.1" y1="4.1" x2="-4.1" y2="3.2" width="0.2" layer="21"/>
 <wire x1="-4.1" y1="-3.2" x2="-4.1" y2="-4.1" width="0.2" layer="21"/>
@@ -5481,10 +5518,26 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-4.1" y1="-4.1" x2="4.1" y2="-4.1" width="0.2" layer="51"/>
 <wire x1="4.1" y1="-4.1" x2="4.1" y2="4.1" width="0.2" layer="51"/>
 <wire x1="4.1" y1="4.1" x2="-4.1" y2="4.1" width="0.2" layer="51"/>
+<rectangle x1="-2.794" y1="1.9685" x2="-1.9685" y2="2.794" layer="31"/>
+<rectangle x1="-1.2065" y1="1.9685" x2="-0.381" y2="2.794" layer="31"/>
+<rectangle x1="0.381" y1="1.9685" x2="1.2065" y2="2.794" layer="31"/>
+<rectangle x1="1.9685" y1="1.9685" x2="2.794" y2="2.794" layer="31"/>
+<rectangle x1="-2.794" y1="0.381" x2="-1.9685" y2="1.2065" layer="31"/>
+<rectangle x1="-1.2065" y1="0.381" x2="-0.381" y2="1.2065" layer="31"/>
+<rectangle x1="0.381" y1="0.381" x2="1.2065" y2="1.2065" layer="31"/>
+<rectangle x1="1.9685" y1="0.381" x2="2.794" y2="1.2065" layer="31"/>
+<rectangle x1="-2.794" y1="-1.2065" x2="-1.9685" y2="-0.381" layer="31"/>
+<rectangle x1="-1.2065" y1="-1.2065" x2="-0.381" y2="-0.381" layer="31"/>
+<rectangle x1="0.381" y1="-1.2065" x2="1.2065" y2="-0.381" layer="31"/>
+<rectangle x1="1.9685" y1="-1.2065" x2="2.794" y2="-0.381" layer="31"/>
+<rectangle x1="-2.794" y1="-2.794" x2="-1.9685" y2="-1.9685" layer="31"/>
+<rectangle x1="-1.2065" y1="-2.794" x2="-0.381" y2="-1.9685" layer="31"/>
+<rectangle x1="0.381" y1="-2.794" x2="1.2065" y2="-1.9685" layer="31"/>
+<rectangle x1="1.9685" y1="-2.794" x2="2.794" y2="-1.9685" layer="31"/>
 </package>
 <package name="NX5032GA">
-<smd name="1" x="-2" y="0" dx="2" dy="2.4" layer="1"/>
-<smd name="2" x="2" y="0" dx="2" dy="2.4" layer="1"/>
+<smd name="1" x="-2" y="0" dx="2" dy="2.4" layer="1" cream="no"/>
+<smd name="2" x="2" y="0" dx="2" dy="2.4" layer="1" cream="no"/>
 <wire x1="-2.6" y1="1.5" x2="-2.6" y2="1.7" width="0.2" layer="21"/>
 <wire x1="-2.6" y1="1.7" x2="2.6" y2="1.7" width="0.2" layer="21"/>
 <wire x1="2.6" y1="1.7" x2="2.6" y2="1.5" width="0.2" layer="21"/>
@@ -5497,6 +5550,8 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-2.6" y1="-1.7" x2="2.6" y2="-1.7" width="0.2" layer="51"/>
 <wire x1="2.6" y1="-1.7" x2="2.6" y2="1.7" width="0.2" layer="51"/>
 <wire x1="2.6" y1="1.7" x2="-2.6" y2="1.7" width="0.2" layer="51"/>
+<rectangle x1="-2.8575" y1="-1.0795" x2="-1.143" y2="1.0795" layer="31"/>
+<rectangle x1="1.143" y1="-1.0795" x2="2.8575" y2="1.0795" layer="31"/>
 </package>
 <package name="TCX_7Q">
 <smd name="1" x="-1.51" y="-0.68" dx="0.78" dy="0.87" layer="1"/>
@@ -5515,11 +5570,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-1.68" y1="-0.07" x2="-1.68" y2="0.07" width="0.127" layer="51"/>
 </package>
 <package name="SMA_EDGE">
-<smd name="P2" x="-4.2418" y="-2.54" dx="5.08" dy="2.54" layer="1" rot="R90"/>
-<smd name="P3" x="4.2418" y="-2.54" dx="5.08" dy="2.54" layer="1" rot="R90"/>
-<smd name="P4" x="-4.2418" y="-2.54" dx="5.08" dy="2.54" layer="16" rot="R90"/>
-<smd name="P5" x="4.2418" y="-2.54" dx="5.08" dy="2.54" layer="16" rot="R90"/>
-<smd name="P1" x="0" y="-2.54" dx="5.08" dy="0.889" layer="1" rot="R90"/>
+<smd name="P2" x="-4.2418" y="-2.54" dx="5.08" dy="2.54" layer="1" rot="R90" cream="no"/>
+<smd name="P3" x="4.2418" y="-2.54" dx="5.08" dy="2.54" layer="1" rot="R90" cream="no"/>
+<smd name="P4" x="-4.2418" y="-2.54" dx="5.08" dy="2.54" layer="16" rot="R90" cream="no"/>
+<smd name="P5" x="4.2418" y="-2.54" dx="5.08" dy="2.54" layer="16" rot="R90" cream="no"/>
+<smd name="P1" x="0" y="-2.54" dx="5.08" dy="0.889" layer="1" rot="R90" cream="no"/>
 <wire x1="-6.096" y1="-0.127" x2="-6.096" y2="-5.588" width="0.254" layer="21"/>
 <wire x1="-6.096" y1="-5.588" x2="6.096" y2="-5.588" width="0.254" layer="21"/>
 <wire x1="6.096" y1="-5.588" x2="6.096" y2="-0.127" width="0.254" layer="21"/>
@@ -23680,18 +23735,24 @@ Various fiducial points for machine vision alignment.</description>
 <wire x1="-3.75" y1="-1.7" x2="-4.25" y2="-2.2" width="0.127" layer="21"/>
 <wire x1="-4.25" y1="-2.2" x2="-3.95" y2="-2.2" width="0.127" layer="21"/>
 <wire x1="-3.95" y1="-2.2" x2="-3.45" y2="-1.7" width="0.127" layer="21"/>
-<smd name="GND_MID_RIGHT" x="1.2" y="0" dx="1.9" dy="1.9" layer="1" rot="R180"/>
-<smd name="GND_MID_LEFT" x="-1.2" y="0" dx="1.9" dy="1.9" layer="1" rot="R180"/>
-<smd name="GND_LEFT" x="-4" y="0" dx="1.8" dy="1.9" layer="1"/>
-<smd name="GND_RIGHT" x="4" y="0" dx="1.8" dy="1.9" layer="1"/>
-<smd name="GND_UP_LEFT" x="-3.1" y="2.6" dx="2.1" dy="1.6" layer="1"/>
-<smd name="GND_UP_RIGHT" x="3.1" y="2.6" dx="2.1" dy="1.6" layer="1"/>
+<smd name="GND_MID_RIGHT" x="1.2" y="0" dx="1.9" dy="1.9" layer="1" rot="R180" cream="no"/>
+<smd name="GND_MID_LEFT" x="-1.2" y="0" dx="1.9" dy="1.9" layer="1" rot="R180" cream="no"/>
+<smd name="GND_LEFT" x="-4" y="0" dx="1.8" dy="1.9" layer="1" cream="no"/>
+<smd name="GND_RIGHT" x="4" y="0" dx="1.8" dy="1.9" layer="1" cream="no"/>
+<smd name="GND_UP_LEFT" x="-3.1" y="2.6" dx="2.1" dy="1.6" layer="1" cream="no"/>
+<smd name="GND_UP_RIGHT" x="3.1" y="2.6" dx="2.1" dy="1.6" layer="1" cream="no"/>
 <smd name="PIN_3" x="0" y="2.725" dx="1.35" dy="0.4" layer="1" rot="R90"/>
 <smd name="PIN_4" x="0.65" y="2.725" dx="1.35" dy="0.4" layer="1" rot="R90"/>
 <smd name="PIN_2" x="-0.65" y="2.725" dx="1.35" dy="0.4" layer="1" rot="R90"/>
 <smd name="PIN_1" x="-1.3" y="2.725" dx="1.35" dy="0.4" layer="1" rot="R90"/>
 <smd name="PIN_5" x="1.3" y="2.725" dx="1.35" dy="0.4" layer="1" rot="R90"/>
 <rectangle x1="-3.75" y1="-1.45" x2="3.75" y2="2" layer="39"/>
+<rectangle x1="-4" y1="1.9" x2="-2.2" y2="3.3" layer="31"/>
+<rectangle x1="-4.8" y1="-0.8" x2="-3.2" y2="0.8" layer="31"/>
+<rectangle x1="-2" y1="-0.8" x2="-0.4" y2="0.8" layer="31"/>
+<rectangle x1="0.4" y1="-0.8" x2="2" y2="0.8" layer="31"/>
+<rectangle x1="3.2" y1="-0.8" x2="4.8" y2="0.8" layer="31"/>
+<rectangle x1="2.2" y1="1.9" x2="4" y2="3.3" layer="31"/>
 </package>
 </packages>
 <symbols>
@@ -24536,8 +24597,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <wire x1="274.32" y1="132.08" x2="276.86" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="GND53" gate="1" pin="GND"/>
-<pinref part="U3" gate="G$1" pin="VSS1"/>
-<pinref part="U3" gate="G$1" pin="VSS2"/>
+<pinref part="U3" gate="G$1" pin="VSS3"/>
+<pinref part="U3" gate="G$1" pin="VSS4"/>
 <wire x1="276.86" y1="132.08" x2="281.94" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="129.54" x2="276.86" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="129.54" x2="276.86" y2="132.08" width="0.1524" layer="91"/>
@@ -24673,7 +24734,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <wire x1="274.32" y1="134.62" x2="312.42" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="134.62" x2="312.42" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="VCAP_2"/>
+<pinref part="U3" gate="G$1" pin="VSS2"/>
 <pinref part="C82" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -24925,7 +24986,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="VSS1" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="VCAP_1"/>
+<pinref part="U3" gate="G$1" pin="VSS1"/>
 <wire x1="274.32" y1="137.16" x2="320.04" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="C66" gate="G$1" pin="1"/>
 <wire x1="320.04" y1="137.16" x2="320.04" y2="132.08" width="0.1524" layer="91"/>
