@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -7712,7 +7712,6 @@ design rules under a new name.</description>
 <wire x1="23.8252" y1="48.514" x2="23.749" y2="48.4378" width="0.254" layer="1"/>
 <wire x1="28.8036" y1="49.784" x2="28.576946875" y2="49.678228125" width="0.254" layer="1"/>
 <wire x1="28.576946875" y1="49.678228125" x2="28.4226" y2="49.6062" width="0.254" layer="1"/>
-<wire x1="10.922" y1="49.6062" x2="11.4808" y2="49.2252" width="0.254" layer="1"/>
 <wire x1="11.4808" y1="49.2252" x2="11.4808" y2="48.4482" width="0.254" layer="1"/>
 <wire x1="11.4808" y1="48.4482" x2="11.4888" y2="48.3616" width="0.254" layer="1"/>
 <wire x1="10.186" y1="47.56" x2="10.186" y2="48.1336" width="0.254" layer="1"/>
@@ -9302,12 +9301,12 @@ design rules under a new name.</description>
 <wire x1="29.8196" y1="26.416" x2="30.3784" y2="26.416" width="0.1524" layer="15"/>
 <wire x1="28.2194" y1="28.0162" x2="27.0002" y2="28.0162" width="0.1524" layer="15"/>
 <wire x1="27.0002" y1="28.0162" x2="24.4602" y2="30.5562" width="0.1524" layer="15"/>
-<wire x1="33.147" y1="24.7904" x2="33.9344" y2="24.003" width="0.1524" layer="15"/>
-<wire x1="33.9344" y1="24.003" x2="35.052" y2="24.003" width="0.1524" layer="15"/>
+<wire x1="33.0962" y1="24.7904" x2="33.8836" y2="24.003" width="0.1524" layer="15"/>
+<wire x1="33.8836" y1="24.003" x2="35.052" y2="24.003" width="0.1524" layer="15"/>
 <wire x1="35.052" y1="24.003" x2="36.2712" y2="22.7838" width="0.1524" layer="15"/>
 <wire x1="36.2712" y1="22.7838" x2="39.5986" y2="22.7838" width="0.1524" layer="15"/>
 <wire x1="30.3784" y1="26.416" x2="32.004" y2="24.7904" width="0.1524" layer="15"/>
-<wire x1="32.004" y1="24.7904" x2="33.147" y2="24.7904" width="0.1524" layer="15"/>
+<wire x1="32.004" y1="24.7904" x2="33.0962" y2="24.7904" width="0.1524" layer="15"/>
 </signal>
 <signal name="MAX_Q1">
 <wire x1="43.932" y1="22.7024" x2="44.4044" y2="22.7024" width="0.1524" layer="1"/>
@@ -11907,6 +11906,24 @@ design rules under a new name.</description>
 <wire x1="28.739" y1="52.287" x2="28.739" y2="51.1732" width="0.1524" layer="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="3,1,c783c78dc783c983"/>
+<approved hash="3,1,c7c7c7c7c7c7c7c7"/>
+<approved hash="3,1,83c783c783c783c7"/>
+<approved hash="3,1,8383838383838383"/>
+<approved hash="5,1,08b26aa4c2bffff9"/>
+<approved hash="5,1,1f364f6ac2a4c2bb"/>
+<approved hash="5,1,5f8becdd85e3c3c1"/>
+<approved hash="5,1,7093d88c02061d58"/>
+<approved hash="5,1,49ff33683b241ee3"/>
+<approved hash="5,1,588194d0dc8770d7"/>
+<approved hash="5,1,ee90ceff99e4f83c"/>
+<approved hash="5,1,decc698a99ff99f8"/>
+<approved hash="5,1,4d9478f31b38a4bb"/>
+<approved hash="5,1,f53acdcc247f5d3e"/>
+<approved hash="5,1,562f012859195e5d"/>
+<approved hash="5,1,47a5366525dd1df7"/>
+</errors>
 </board>
 </drawing>
 </eagle>
