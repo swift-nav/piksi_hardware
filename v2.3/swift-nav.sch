@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -24306,7 +24306,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND44" library="supply1" deviceset="GND" device=""/>
 <part name="J6" library="open-bldc" deviceset="ZX62-B-5PA" device=""/>
 <part name="VCC39" library="supply1" deviceset="VCCIO" device=""/>
-<part name="GND69" library="supply1" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="V+" device=""/>
 <part name="D1" library="swift-nav" deviceset="MBR0520" device=""/>
 <part name="X5" library="pel_misc" deviceset="CONN_5-2" device=""/>
@@ -27878,7 +27877,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="VCC39" gate="G$1" x="76.2" y="60.96" smashed="yes">
 <attribute name="VALUE" x="72.39" y="63.5" size="1.778" layer="96"/>
 </instance>
-<instance part="GND69" gate="1" x="111.76" y="86.36"/>
 <instance part="P+7" gate="1" x="160.02" y="121.92" smashed="yes">
 <attribute name="VALUE" x="158.75" y="123.19" size="1.778" layer="96"/>
 </instance>
@@ -28048,20 +28046,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="X5" gate="G$1" pin="5"/>
 <pinref part="X5" gate="G$1" pin="7"/>
 <pinref part="X5" gate="G$1" pin="9"/>
-</segment>
-<segment>
-<wire x1="104.14" y1="91.44" x2="106.68" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="91.44" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="91.44" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="91.44" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
-<junction x="106.68" y="91.44"/>
-<junction x="109.22" y="91.44"/>
-<junction x="111.76" y="91.44"/>
-<pinref part="J6" gate="G$1" pin="S4"/>
-<pinref part="J6" gate="G$1" pin="S3"/>
-<pinref part="J6" gate="G$1" pin="S2"/>
-<pinref part="J6" gate="G$1" pin="S1"/>
-<pinref part="GND69" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
