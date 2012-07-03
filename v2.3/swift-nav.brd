@@ -8,7 +8,7 @@
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,15 +23,15 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -90,8 +90,8 @@
 <layer number="113" name="old_tplace" color="13" fill="1" visible="no" active="yes"/>
 <layer number="114" name="old_bplace" color="13" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
-<layer number="121" name="_tplace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bplace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tplace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bplace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="14" fill="1" visible="no" active="yes"/>
@@ -275,7 +275,7 @@
 <wire x1="4.318" y1="34.036" x2="12.954" y2="34.036" width="0.2032" layer="122"/>
 <wire x1="12.954" y1="34.036" x2="12.954" y2="31.496" width="0.2032" layer="122"/>
 <text x="16.891" y="6.5278" size="1.524" layer="121" font="vector" ratio="15">RESET</text>
-<text x="23.942046875" y="6.738621875" size="1.9304" layer="122" font="vector" ratio="15" rot="MR0">v2.3.0</text>
+<text x="23.942046875" y="6.738621875" size="1.9304" layer="122" font="vector" ratio="15" rot="MR0">v2.3.1</text>
 <circle x="47.231196875" y="17.0299875" radius="0.2" width="0.2032" layer="113"/>
 <circle x="36.486996875" y="21.5257875" radius="0.2" width="0.2032" layer="113"/>
 <circle x="43.268796875" y="30.8221875" radius="0.2" width="0.2032" layer="113"/>
@@ -320,8 +320,6 @@
 <wire x1="22.9417125" y1="16.093009375" x2="22.9417125" y2="16.99300625" width="0.2032" layer="121"/>
 <wire x1="22.9417125" y1="23.39299375" x2="22.9417125" y2="24.292990625" width="0.2032" layer="121"/>
 <wire x1="22.9417125" y1="24.292990625" x2="22.0417125" y2="24.292990625" width="0.2032" layer="121"/>
-<wire x1="31.5349875" y1="23.10320625" x2="31.5349875" y2="20.1032125" width="0.2032" layer="121"/>
-<wire x1="34.88499375" y1="23.10320625" x2="34.88499375" y2="20.1032125" width="0.2032" layer="121"/>
 <wire x1="37.924053125" y1="28.1534375" x2="38.813053125" y2="28.1534375" width="0.2032" layer="121"/>
 <wire x1="38.813053125" y1="26.6294375" x2="37.924053125" y2="26.6294375" width="0.2032" layer="121"/>
 <wire x1="43.4975" y1="25.75290625" x2="44.14250625" y2="25.75290625" width="0.2032" layer="121"/>
@@ -334,21 +332,20 @@
 <wire x1="39.04249375" y1="25.402896875" x2="39.392503125" y2="25.75290625" width="0.2032" layer="121"/>
 <wire x1="39.392503125" y1="25.75290625" x2="39.7129" y2="25.75290625" width="0.2032" layer="121"/>
 <circle x="38.51950625" y="25.310896875" radius="0.2032" width="0.2032" layer="121"/>
-<circle x="42.5958" y="31.3182" radius="0.0762" width="0.2032" layer="121"/>
 <wire x1="36.47559375" y1="43.978803125" x2="36.47559375" y2="43.67880625" width="0.2032" layer="121"/>
 <wire x1="36.47559375" y1="43.67880625" x2="30.27560625" y2="43.67880625" width="0.2032" layer="121"/>
 <wire x1="30.27560625" y1="43.67880625" x2="30.27560625" y2="43.978803125" width="0.2032" layer="121"/>
 <wire x1="30.27560625" y1="48.67879375" x2="30.27560625" y2="48.87879375" width="0.2032" layer="121"/>
 <wire x1="30.27560625" y1="48.87879375" x2="36.47559375" y2="48.87879375" width="0.2032" layer="121"/>
 <wire x1="36.47559375" y1="48.87879375" x2="36.47559375" y2="48.67879375" width="0.2032" layer="121"/>
-<circle x="35.24290625" y="23.710696875" radius="0.2032" width="0.2032" layer="121"/>
+<circle x="33.74430625" y="23.990096875" radius="0.2032" width="0.2032" layer="121"/>
 <circle x="37.78290625" y="26.149096875" radius="0.2032" width="0.2032" layer="121"/>
 <circle x="48.47630625" y="16.903496875" radius="0.2032" width="0.2032" layer="121"/>
 <circle x="25.10830625" y="13.550696875" radius="0.2032" width="0.2032" layer="121"/>
 <circle x="14.38950625" y="24.625096875" radius="0.2032" width="0.2032" layer="121"/>
 <circle x="5.16930625" y="42.557496875" radius="0.2032" width="0.2032" layer="121"/>
 <circle x="29.09610625" y="46.900896875" radius="0.2032" width="0.2032" layer="121"/>
-<circle x="36.10650625" y="43.395696875" radius="0.2032" width="0.2032" layer="121"/>
+<circle x="36.23350625" y="43.294096875" radius="0.2032" width="0.2032" layer="121"/>
 <circle x="45.78390625" y="43.852896875" radius="0.2032" width="0.2032" layer="121"/>
 <wire x1="28.293059375" y1="48.26" x2="28.293059375" y2="52.959" width="0.2032" layer="122"/>
 <text x="29.969459375" y="52.451" size="1.27" layer="122" font="vector" ratio="15" rot="MR270">GND</text>
@@ -366,6 +363,11 @@
 <wire x1="26.311859375" y1="48.259996875" x2="26.311859375" y2="52.958996875" width="0.2032" layer="122"/>
 <text x="24.168096875" y="50.91938125" size="1.27" layer="122" font="vector" ratio="15" rot="MR270">.</text>
 <text x="25.8216375" y="50.91938125" size="1.27" layer="122" font="vector" ratio="15" rot="MR270">.</text>
+<wire x1="33.2232" y1="23.5712" x2="34.4932" y2="23.5712" width="0.1524" layer="121"/>
+<wire x1="34.4932" y1="23.5712" x2="34.4932" y2="22.0472" width="0.1524" layer="121"/>
+<wire x1="34.4932" y1="22.0472" x2="33.2232" y2="22.0472" width="0.1524" layer="121"/>
+<wire x1="33.2232" y1="22.0472" x2="33.2232" y2="23.5712" width="0.1524" layer="121"/>
+<circle x="42.60890625" y="31.330696875" radius="0.2032" width="0.2032" layer="121"/>
 </plain>
 <libraries>
 <library name="rcl">
