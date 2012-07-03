@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
@@ -760,33 +760,33 @@ Source: Samtec SSW.pdf</description>
 <wire x1="40.626" y1="40.626" x2="-0.254" y2="40.626" width="0.1524" layer="21"/>
 <wire x1="-0.254" y1="40.626" x2="-0.254" y2="-0.254" width="0.1524" layer="21"/>
 <smd name="1" x="2.55" y="0.5" dx="3.1" dy="1" layer="1" cream="no"/>
-<smd name="2" x="8.2" y="0.5" dx="3.8" dy="1" layer="1" cream="no"/>
+<smd name="2" x="8.2" y="0.5" dx="3.8" dy="1" layer="1"/>
 <smd name="3" x="37.85" y="0.5" dx="3.1" dy="1" layer="1" cream="no"/>
 <smd name="4" x="39.9" y="2.55" dx="1" dy="3.1" layer="1" cream="no"/>
-<smd name="5" x="39.9" y="8.2" dx="3.3" dy="1" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="39.9" y="8.2" dx="3.3" dy="1" layer="1" rot="R90"/>
 <smd name="6" x="39.9" y="37.85" dx="1" dy="3.1" layer="1" cream="no"/>
 <smd name="7" x="37.85" y="39.9" dx="3.1" dy="1" layer="1" cream="no"/>
-<smd name="8" x="8.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180" cream="no"/>
+<smd name="8" x="8.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180"/>
 <smd name="9" x="2.55" y="39.9" dx="3.1" dy="1" layer="1" cream="no"/>
 <smd name="10" x="0.5" y="37.85" dx="1" dy="3.1" layer="1" cream="no"/>
-<smd name="11" x="0.5" y="8.2" dx="3.8" dy="1" layer="1" rot="R270" cream="no"/>
+<smd name="11" x="0.5" y="8.2" dx="3.8" dy="1" layer="1" rot="R270"/>
 <smd name="12" x="0.5" y="2.55" dx="1" dy="3.1" layer="1" cream="no"/>
-<smd name="13" x="14.2" y="0.5" dx="3.8" dy="1" layer="1" cream="no"/>
-<smd name="14" x="20.2" y="0.5" dx="3.8" dy="1" layer="1" cream="no"/>
-<smd name="15" x="26.2" y="0.5" dx="3.8" dy="1" layer="1" cream="no"/>
-<smd name="16" x="32.2" y="0.5" dx="3.8" dy="1" layer="1" cream="no"/>
-<smd name="17" x="39.9" y="14.2" dx="3.8" dy="1" layer="1" rot="R90" cream="no"/>
-<smd name="18" x="39.9" y="20.2" dx="3.8" dy="1" layer="1" rot="R90" cream="no"/>
-<smd name="19" x="39.9" y="32.2" dx="3.8" dy="1" layer="1" rot="R90" cream="no"/>
-<smd name="21" x="39.9" y="26.2" dx="3.8" dy="1" layer="1" rot="R90" cream="no"/>
-<smd name="20" x="0.5" y="14.2" dx="3.8" dy="1" layer="1" rot="R270" cream="no"/>
-<smd name="22" x="0.5" y="20.2" dx="3.8" dy="1" layer="1" rot="R270" cream="no"/>
-<smd name="23" x="0.5" y="26.2" dx="3.8" dy="1" layer="1" rot="R270" cream="no"/>
-<smd name="24" x="0.5" y="32.2" dx="3.8" dy="1" layer="1" rot="R270" cream="no"/>
-<smd name="25" x="14.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180" cream="no"/>
-<smd name="26" x="20.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180" cream="no"/>
-<smd name="27" x="26.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180" cream="no"/>
-<smd name="28" x="32.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180" cream="no"/>
+<smd name="13" x="14.2" y="0.5" dx="3.8" dy="1" layer="1"/>
+<smd name="14" x="20.2" y="0.5" dx="3.8" dy="1" layer="1"/>
+<smd name="15" x="26.2" y="0.5" dx="3.8" dy="1" layer="1"/>
+<smd name="16" x="32.2" y="0.5" dx="3.8" dy="1" layer="1"/>
+<smd name="17" x="39.9" y="14.2" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="18" x="39.9" y="20.2" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="19" x="39.9" y="32.2" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="21" x="39.9" y="26.2" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="20" x="0.5" y="14.2" dx="3.8" dy="1" layer="1" rot="R270"/>
+<smd name="22" x="0.5" y="20.2" dx="3.8" dy="1" layer="1" rot="R270"/>
+<smd name="23" x="0.5" y="26.2" dx="3.8" dy="1" layer="1" rot="R270"/>
+<smd name="24" x="0.5" y="32.2" dx="3.8" dy="1" layer="1" rot="R270"/>
+<smd name="25" x="14.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="26" x="20.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="27" x="26.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="28" x="32.2" y="39.9" dx="3.8" dy="1" layer="1" rot="R180"/>
 <polygon width="0.000253125" layer="1">
 <vertex x="1" y="40.4"/>
 <vertex x="0" y="39.4"/>
@@ -826,6 +826,62 @@ Source: Samtec SSW.pdf</description>
 <vertex x="39.5" y="-0.025"/>
 <vertex x="40.425" y="0.9"/>
 <vertex x="39.5" y="0.9"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="4.1" y="40.4"/>
+<vertex x="4.1" y="39.4"/>
+<vertex x="1.4" y="39.4"/>
+<vertex x="0.7" y="40.1"/>
+<vertex x="1" y="40.4"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="1" y="36.3"/>
+<vertex x="1" y="39"/>
+<vertex x="0.3" y="39.7"/>
+<vertex x="0" y="39.4"/>
+<vertex x="0" y="36.3"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="36.3" y="40.4"/>
+<vertex x="36.3" y="39.4"/>
+<vertex x="39" y="39.4"/>
+<vertex x="39.7" y="40.1"/>
+<vertex x="39.4" y="40.4"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="39.4" y="4.1"/>
+<vertex x="39.4" y="1.4"/>
+<vertex x="40.1" y="0.7"/>
+<vertex x="40.4" y="1"/>
+<vertex x="40.4" y="4.1"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="36.3" y="1"/>
+<vertex x="36.3" y="0"/>
+<vertex x="39.4" y="0"/>
+<vertex x="39.7" y="0.3"/>
+<vertex x="39" y="1"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="4.1" y="1"/>
+<vertex x="1.4" y="1"/>
+<vertex x="0.7" y="0.3"/>
+<vertex x="1" y="0"/>
+<vertex x="4.1" y="0"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="1" y="4.1"/>
+<vertex x="1" y="1.4"/>
+<vertex x="0.3" y="0.7"/>
+<vertex x="0" y="1"/>
+<vertex x="0" y="4.1"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="40.1" y="39.7"/>
+<vertex x="39.4" y="39"/>
+<vertex x="39.4" y="36.3"/>
+<vertex x="40.4" y="36.3"/>
+<vertex x="40.4" y="39.4"/>
 </polygon>
 </package>
 <package name="LTST-C195KGJRKT">
