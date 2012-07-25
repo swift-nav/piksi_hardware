@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -25,12 +25,12 @@
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -2675,15 +2675,15 @@ Metric Code Size 1608</description>
 <rectangle x1="0.0381" y1="0.03175" x2="0.4191" y2="0.69215" layer="29"/>
 <rectangle x1="-0.4191" y1="-0.69215" x2="-0.0381" y2="-0.03175" layer="29"/>
 <rectangle x1="0.0381" y1="-0.69215" x2="0.4191" y2="-0.03175" layer="29"/>
-<rectangle x1="-0.3175" y1="-0.5334" x2="-0.1397" y2="-0.1778" layer="31"/>
-<rectangle x1="0.1397" y1="-0.5334" x2="0.3175" y2="-0.1778" layer="31"/>
-<rectangle x1="0.1397" y1="0.1778" x2="0.3175" y2="0.5334" layer="31"/>
-<rectangle x1="-0.3175" y1="0.1778" x2="-0.1397" y2="0.5334" layer="31"/>
 <wire x1="-0.4445" y1="0.762" x2="0.4445" y2="0.762" width="0.127" layer="21"/>
 <wire x1="0.4445" y1="-0.762" x2="-0.4445" y2="-0.762" width="0.127" layer="21"/>
 <text x="-0.508" y="2.032" size="0.8128" layer="25">&gt;NAME</text>
 <text x="-0.508" y="1.016" size="0.8128" layer="27">&gt;VALUE</text>
 <circle x="-0.762" y="-1.27" radius="0.254" width="0.1778" layer="21"/>
+<rectangle x1="-0.335" y1="0.135" x2="-0.145" y2="0.605" layer="31"/>
+<rectangle x1="0.145" y1="0.135" x2="0.335" y2="0.605" layer="31"/>
+<rectangle x1="-0.335" y1="-0.605" x2="-0.145" y2="-0.135" layer="31"/>
+<rectangle x1="0.145" y1="-0.605" x2="0.335" y2="-0.135" layer="31"/>
 </package>
 <package name="LOGO3_SMALL">
 <rectangle x1="9.04685" y1="0.485775" x2="9.058275" y2="0.49720625" layer="122" rot="R180"/>
@@ -7136,11 +7136,11 @@ Metric Code Size 1608</description>
 <rectangle x1="9.652640625" y1="9.938384375" x2="9.664065625" y2="9.949815625" layer="122" rot="R180"/>
 </package>
 <package name="SAW_1.4X1.1">
-<smd name="1" x="0" y="0.5" dx="0.325" dy="0.25" layer="1"/>
-<smd name="2" x="-0.2875" y="0" dx="0.325" dy="0.25" layer="1"/>
-<smd name="3" x="-0.2875" y="-0.5" dx="0.325" dy="0.25" layer="1"/>
-<smd name="4" x="0.2875" y="-0.5" dx="0.325" dy="0.25" layer="1"/>
-<smd name="5" x="0.2875" y="0" dx="0.325" dy="0.25" layer="1"/>
+<smd name="1" x="0" y="0.5" dx="0.325" dy="0.25" layer="1" cream="no"/>
+<smd name="2" x="-0.2875" y="0" dx="0.325" dy="0.25" layer="1" cream="no"/>
+<smd name="3" x="-0.2875" y="-0.5" dx="0.325" dy="0.25" layer="1" cream="no"/>
+<smd name="4" x="0.2875" y="-0.5" dx="0.325" dy="0.25" layer="1" cream="no"/>
+<smd name="5" x="0.2875" y="0" dx="0.325" dy="0.25" layer="1" cream="no"/>
 <wire x1="-0.635" y1="0.762" x2="0.635" y2="0.762" width="0.1524" layer="21"/>
 <wire x1="0.635" y1="0.762" x2="0.635" y2="-0.762" width="0.1524" layer="21"/>
 <wire x1="0.635" y1="-0.762" x2="-0.635" y2="-0.762" width="0.1524" layer="21"/>
@@ -7152,6 +7152,11 @@ Metric Code Size 1608</description>
 <rectangle x1="-0.5842" y1="-0.7112" x2="0.5842" y2="0.7112" layer="39"/>
 <text x="0.9" y="0.2" size="0.508" layer="25">&gt;NAME</text>
 <text x="0.9" y="-0.5" size="0.508" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.43" y1="-0.105" x2="-0.145" y2="0.105" layer="31"/>
+<rectangle x1="-0.14" y1="0.395" x2="0.145" y2="0.605" layer="31"/>
+<rectangle x1="0.145" y1="-0.105" x2="0.43" y2="0.105" layer="31"/>
+<rectangle x1="0.145" y1="-0.605" x2="0.43" y2="-0.395" layer="31"/>
+<rectangle x1="-0.43" y1="-0.605" x2="-0.145" y2="-0.395" layer="31"/>
 </package>
 <package name="C1210">
 <smd name="P$1" x="-1.4" y="0" dx="1.6" dy="2.7" layer="1" rot="R180" cream="no"/>
