@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -24490,7 +24490,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="VCC32" library="supply1" deviceset="VCCIO" device=""/>
 <part name="R28" library="pel_dipol_comp" deviceset="RESISTOR" device="-0402" value="150"/>
 <part name="VCC13" library="supply1" deviceset="VCCIO" device=""/>
-<part name="R30" library="pel_dipol_comp" deviceset="RESISTOR" device="-0402" value="150"/>
+<part name="R30" library="pel_dipol_comp" deviceset="RESISTOR" device="-0402" value="910"/>
 <part name="VCC28" library="supply1" deviceset="VCCIO" device=""/>
 <part name="LED1" library="pel_dipol_comp" deviceset="LED" device="-0603" value="RED"/>
 <part name="LED2" library="pel_dipol_comp" deviceset="LED" device="-0603" value="GREEN"/>
@@ -24611,7 +24611,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="C20" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0402" value="0.047uF"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="L2" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="29nH"/>
+<part name="L2" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="27nH"/>
 <part name="C37" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0402" value="100pF"/>
 <part name="C38" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0402" value="12pF"/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
@@ -24718,8 +24718,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="U10" library="jobygnss" deviceset="MAX2769" device=""/>
 <part name="C12" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0402" value="100pF"/>
 <part name="C13" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0402" value="0.47uF"/>
-<part name="L1" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="29nH / DNP"/>
-<part name="L3" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="29nH"/>
+<part name="L1" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="27nH / DNP"/>
+<part name="L3" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="3.3nH"/>
 <part name="R12" library="pel_dipol_comp" deviceset="RESISTOR" device="-0402" value="10k"/>
 <part name="VCC37" library="supply1" deviceset="VCCIO" device=""/>
 <part name="VCC49" library="supply1" deviceset="VCCIO" device=""/>
@@ -24728,7 +24728,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND84" library="supply1" deviceset="GND" device=""/>
 <part name="X3" library="pel_molex" deviceset="CONN_12-1" device="-53261" value="FPGA DEBUG"/>
 <part name="L4" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="5.1nH"/>
-<part name="L5" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="3.3nH"/>
+<part name="L5" library="pel_dipol_comp" deviceset="INDUCTOR" device="-0402" value="2nH"/>
 <part name="GND62" library="supply1" deviceset="GND" device=""/>
 <part name="C36" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0402" value="100pF"/>
 <part name="C41" library="pel_dipol_comp" deviceset="CAPACITOR" device="-0402" value="0.47uF"/>
@@ -24808,11 +24808,17 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="VCC32" gate="G$1" x="63.5" y="162.56" smashed="yes">
 <attribute name="VALUE" x="59.69" y="163.83" size="1.778" layer="96"/>
 </instance>
-<instance part="R28" gate="G$1" x="119.38" y="116.84" rot="R270"/>
+<instance part="R28" gate="G$1" x="119.38" y="116.84" smashed="yes" rot="R270">
+<attribute name="VALUE" x="121.412" y="119.38" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="116.332" y="119.38" size="1.778" layer="95" rot="R270"/>
+</instance>
 <instance part="VCC13" gate="G$1" x="119.38" y="127" smashed="yes">
 <attribute name="VALUE" x="119.38" y="128.27" size="1.778" layer="96"/>
 </instance>
-<instance part="R30" gate="G$1" x="109.22" y="116.84" rot="R90"/>
+<instance part="R30" gate="G$1" x="109.22" y="116.84" smashed="yes" rot="R90">
+<attribute name="VALUE" x="112.268" y="114.3" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="107.188" y="114.3" size="1.778" layer="95" rot="R90"/>
+</instance>
 <instance part="VCC28" gate="G$1" x="109.22" y="127" smashed="yes">
 <attribute name="VALUE" x="109.22" y="128.27" size="1.778" layer="96"/>
 </instance>

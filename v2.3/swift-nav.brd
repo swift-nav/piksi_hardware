@@ -7424,7 +7424,7 @@ design rules under a new name.</description>
 <element name="C29" library="pel_dipol_comp" package="0603-CAP" value="4.7uF" x="22.987" y="28.956" rot="R270"/>
 <element name="C30" library="pel_dipol_comp" package="0603-CAP" value="4.7uF" x="30.988" y="39.2938"/>
 <element name="C31" library="pel_dipol_comp" package="0402-CAP" value="0.47uF" x="19.431" y="28.9814" rot="R270"/>
-<element name="L2" library="pel_dipol_comp" package="0402-IND" value="29nH" x="36.8808" y="22.3266" rot="R180"/>
+<element name="L2" library="pel_dipol_comp" package="0402-IND" value="27nH" x="36.8808" y="22.3266" rot="R180"/>
 <element name="C37" library="pel_dipol_comp" package="0402-CAP" value="100pF" x="35.4076" y="23.114" rot="R90"/>
 <element name="C38" library="pel_dipol_comp" package="0402-CAP" value="12pF" x="37.084" y="23.4188" rot="R180"/>
 <element name="C39" library="pel_dipol_comp" package="0402-CAP" value="0.47uF" x="40.806746875" y="18.17895625" rot="R270"/>
@@ -7488,7 +7488,7 @@ design rules under a new name.</description>
 </element>
 <element name="SHLD2" library="jobygnss" package="BMI-S-208" value="BMI-S-208" x="9.686" y="50.11" rot="R270"/>
 <element name="R28" library="pel_dipol_comp" package="0402-RES" value="150" x="45.5168" y="15.0368" rot="R270"/>
-<element name="R30" library="pel_dipol_comp" package="0402-RES" value="150" x="44.323" y="15.0368" rot="R90"/>
+<element name="R30" library="pel_dipol_comp" package="0402-RES" value="910" x="44.323" y="15.0368" rot="R90"/>
 <element name="JP8" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="46.251" y="5.9934" rot="R90"/>
 <element name="JP9" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="6.156" y="45.2848" rot="R90"/>
 <element name="JP10" library="aspirin" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="13.5802" y="5.9562" rot="R90"/>
@@ -7558,14 +7558,14 @@ design rules under a new name.</description>
 <element name="U10" library="jobygnss" package="MAX2769" value="MAX2769" x="41.5925" y="23.2029" rot="R270"/>
 <element name="C12" library="pel_dipol_comp" package="0402-CAP" value="100pF" x="48.514" y="24.1427" rot="R90"/>
 <element name="C13" library="pel_dipol_comp" package="0402-CAP" value="0.47uF" x="47.0281" y="24.7904"/>
-<element name="L1" library="pel_dipol_comp" package="0402-IND" value="29nH / DNP" x="31.6484" y="26.8097" rot="R90"/>
-<element name="L3" library="pel_dipol_comp" package="0402-IND" value="29nH" x="48.26" y="26.6319" rot="R270"/>
+<element name="L1" library="pel_dipol_comp" package="0402-IND" value="27nH / DNP" x="31.6484" y="26.8097" rot="R90"/>
+<element name="L3" library="pel_dipol_comp" package="0402-IND" value="3.3nH" x="48.26" y="26.6319" rot="R270"/>
 <element name="R12" library="pel_dipol_comp" package="0402-RES" value="10k" x="35.2298" y="32.5882" rot="R180"/>
 <element name="R19" library="pel_dipol_comp" package="0402-RES" value="10k" x="48.4632" y="41.4528" rot="R90"/>
 <element name="R20" library="pel_dipol_comp" package="0402-RES" value="10k" x="41.0718" y="31.5722"/>
 <element name="X3" library="pel_molex" package="PB-53261-12" value="FPGA DEBUG" x="23.114" y="52.2732" rot="R180"/>
 <element name="L4" library="pel_dipol_comp" package="0402-IND" value="5.1nH" x="36.6522" y="27.9146"/>
-<element name="L5" library="pel_dipol_comp" package="0402-IND" value="3.3nH" x="35.1282" y="28.4226" rot="R270"/>
+<element name="L5" library="pel_dipol_comp" package="0402-IND" value="2nH" x="35.1282" y="28.4226" rot="R270"/>
 <element name="C36" library="pel_dipol_comp" package="0402-CAP" value="100pF" x="31.242" y="25.273"/>
 <element name="C41" library="pel_dipol_comp" package="0402-CAP" value="0.47uF" x="32.8422" y="25.7302" rot="R270"/>
 <element name="C43" library="pel_dipol_comp" package="0402-CAP" value="0.47uF" x="21.8186" y="28.702" rot="R270"/>
