@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -24744,13 +24744,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <sheets>
 <sheet>
 <plain>
-<text x="322.58" y="132.08" size="2.54" layer="94">No STM32F10 compatibility</text>
-<text x="203.2" y="187.96" size="5.08" layer="94">STM32F4</text>
-<text x="330.2" y="27.94" size="5.08" layer="94">Microcontroller</text>
+<text x="322.58" y="132.08" size="2.54" layer="111">No STM32F10 compatibility</text>
+<text x="180.34" y="185.42" size="5.08" layer="111">STM32F4 Microcontroller</text>
+<text x="328.93" y="26.67" size="5.08" layer="94">Microcontroller</text>
 <text x="426.72" y="10.16" size="3.81" layer="94" rot="R180">2.3.1</text>
-<text x="105.41" y="171.45" size="2.54" layer="97">Reset Button</text>
-<text x="40.64" y="185.42" size="2.1844" layer="97">STM has internal pull-up</text>
-<text x="353.06" y="226.06" size="3.81" layer="94">STM32 Bypass</text>
+<text x="105.41" y="171.45" size="2.54" layer="111">Reset Button</text>
+<text x="40.64" y="187.96" size="2.1844" layer="111">STM has internal pull-up</text>
+<text x="353.06" y="226.06" size="3.81" layer="111">STM32 Bypass</text>
 </plain>
 <instances>
 <instance part="U3" gate="G$1" x="218.44" y="132.08"/>
@@ -25313,21 +25313,21 @@ We've spent an enormous amount of time creating and checking these footprints an
 </sheet>
 <sheet>
 <plain>
-<text x="203.2" y="69.85" size="6.4516" layer="94">Spartan Configuration Flash</text>
-<text x="162.56" y="256.54" size="6.4516" layer="94">Spartan IO Banks</text>
-<text x="210.82" y="223.52" size="2.54" layer="94">Bank 2</text>
-<text x="27.94" y="224.79" size="2.54" layer="94">Bank 0</text>
-<text x="124.46" y="243.84" size="2.54" layer="94">Bank 1</text>
-<text x="358.14" y="242.57" size="2.54" layer="94">Bank 3</text>
-<text x="256.286" y="213.868" size="1.778" layer="97">2K4 max for CCLK = 2MHz (default)</text>
-<text x="50.546" y="211.328" size="1.778" layer="97">Short in CONF guide,</text>
-<text x="50.546" y="208.788" size="1.778" layer="97">but 2K is fine</text>
-<text x="228.346" y="122.428" size="1.778" layer="97">2K4 or 4K7 recommended,</text>
-<text x="228.346" y="119.888" size="1.778" layer="97">but 2K is fine</text>
-<text x="281.686" y="119.888" size="1.778" layer="97">Can probably DNP as this is driven by STM</text>
+<text x="200.66" y="67.31" size="6.4516" layer="111">Spartan Configuration Flash</text>
+<text x="179.07" y="256.54" size="6.4516" layer="111">Spartan IO Banks</text>
+<text x="210.82" y="223.52" size="2.54" layer="111">Bank 2</text>
+<text x="27.94" y="224.79" size="2.54" layer="111">Bank 0</text>
+<text x="124.46" y="243.84" size="2.54" layer="111">Bank 1</text>
+<text x="358.14" y="242.57" size="2.54" layer="111">Bank 3</text>
+<text x="256.286" y="213.868" size="1.778" layer="111">2K4 max for CCLK = 2MHz (default)</text>
+<text x="55.626" y="210.058" size="1.778" layer="111">Short in CONF guide, but 2K is fine</text>
+<text x="228.346" y="119.888" size="1.778" layer="111">2K4 or 4K7 recommended,</text>
+<text x="228.346" y="117.348" size="1.778" layer="111">but 2K is fine</text>
+<text x="282.956" y="119.888" size="1.778" layer="111">Could DNP as this is driven by STM</text>
 <text x="426.72" y="10.16" size="3.81" layer="94" rot="R180">2.3.1</text>
-<text x="332.74" y="25.4" size="5.08" layer="94">FPGA IO / JTAG / FLASH</text>
-<text x="63.5" y="54.61" size="6.4516" layer="94">Spartan JTAG</text>
+<text x="328.93" y="26.67" size="5.08" layer="94">FPGA IO / JTAG / FLASH</text>
+<text x="63.5" y="54.61" size="6.4516" layer="111">Spartan JTAG</text>
+<text x="55.626" y="207.518" size="1.778" layer="111">Pulls up IO's during configuration</text>
 </plain>
 <instances>
 <instance part="U1" gate="B0" x="38.1" y="165.1"/>
@@ -25352,30 +25352,30 @@ We've spent an enormous amount of time creating and checking these footprints an
 </instance>
 <instance part="GND37" gate="1" x="118.11" y="30.48"/>
 <instance part="U13" gate="G$1" x="257.048" y="29.21"/>
-<instance part="R15" gate="G$1" x="271.78" y="119.38" smashed="yes" rot="R270">
-<attribute name="NAME" x="274.32" y="119.38" size="1.778" layer="95"/>
-<attribute name="VALUE" x="274.32" y="116.84" size="1.778" layer="96"/>
+<instance part="R15" gate="G$1" x="274.32" y="119.38" smashed="yes" rot="R270">
+<attribute name="NAME" x="276.86" y="119.38" size="1.778" layer="95"/>
+<attribute name="VALUE" x="276.86" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="VCC14" gate="G$1" x="271.78" y="128.27" smashed="yes">
-<attribute name="VALUE" x="280.67" y="128.27" size="1.778" layer="96" rot="R180"/>
+<instance part="VCC14" gate="G$1" x="274.32" y="128.27" smashed="yes">
+<attribute name="VALUE" x="283.21" y="128.27" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R16" gate="G$1" x="245.11" y="214.63" smashed="yes" rot="R90">
 <attribute name="NAME" x="248.92" y="216.1286" size="1.778" layer="95"/>
 <attribute name="VALUE" x="248.92" y="213.868" size="1.778" layer="96"/>
 </instance>
 <instance part="VCC15" gate="G$1" x="245.11" y="229.87"/>
-<instance part="R17" gate="G$1" x="259.08" y="119.38" smashed="yes" rot="R270">
-<attribute name="NAME" x="261.62" y="119.38" size="1.778" layer="95"/>
-<attribute name="VALUE" x="261.62" y="116.84" size="1.778" layer="96"/>
+<instance part="R17" gate="G$1" x="261.62" y="119.38" smashed="yes" rot="R270">
+<attribute name="NAME" x="264.16" y="119.38" size="1.778" layer="95"/>
+<attribute name="VALUE" x="264.16" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="VCC16" gate="G$1" x="259.08" y="128.27" smashed="yes">
-<attribute name="VALUE" x="261.62" y="127" size="1.778" layer="96"/>
+<instance part="VCC16" gate="G$1" x="261.62" y="128.27" smashed="yes">
+<attribute name="VALUE" x="264.16" y="127" size="1.778" layer="96"/>
 </instance>
-<instance part="R18" gate="G$1" x="78.74" y="205.74" smashed="yes" rot="R180">
-<attribute name="NAME" x="77.47" y="210.82" size="1.778" layer="95"/>
-<attribute name="VALUE" x="77.47" y="208.28" size="1.778" layer="96"/>
+<instance part="R18" gate="G$1" x="72.39" y="200.66" smashed="yes" rot="R90">
+<attribute name="NAME" x="74.93" y="200.66" size="1.778" layer="95"/>
+<attribute name="VALUE" x="74.93" y="198.12" size="1.778" layer="96"/>
 </instance>
-<instance part="GND41" gate="1" x="85.09" y="203.2"/>
+<instance part="GND41" gate="1" x="72.39" y="191.77"/>
 <instance part="GND42" gate="1" x="255.27" y="179.07"/>
 <instance part="VCC17" gate="G$1" x="236.22" y="229.87"/>
 <instance part="VCC18" gate="G$1" x="228.6" y="229.87"/>
@@ -25408,7 +25408,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="GND41" gate="1" pin="GND"/>
-<wire x1="85.09" y1="205.74" x2="83.82" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="194.31" x2="72.39" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND42" gate="1" pin="GND"/>
@@ -25440,7 +25440,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="U13" gate="G$1" pin="NHOLD"/>
 </segment>
 <segment>
-<wire x1="271.78" y1="125.73" x2="271.78" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="125.73" x2="274.32" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="VCC14" gate="G$1" pin="VCCIO"/>
 </segment>
@@ -25450,7 +25450,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="VCC15" gate="G$1" pin="VCCIO"/>
 </segment>
 <segment>
-<wire x1="259.08" y1="125.73" x2="259.08" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="125.73" x2="261.62" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <pinref part="VCC16" gate="G$1" pin="VCCIO"/>
 </segment>
@@ -25639,7 +25639,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="N$31" class="0">
 <segment>
-<wire x1="43.18" y1="205.74" x2="73.66" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="205.74" x2="72.39" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="U1" gate="B0" pin="IO_L1P_HSWAPEN_0"/>
 <pinref part="R18" gate="G$1" pin="2"/>
 </segment>
@@ -25669,19 +25669,19 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <pinref part="U1" gate="B2" pin="IO_L65P_INIT_B_2"/>
 <pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="110.49" x2="259.08" y2="110.49" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="110.49" x2="259.08" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="110.49" x2="284.48" y2="110.49" width="0.1524" layer="91"/>
-<junction x="259.08" y="110.49"/>
+<wire x1="226.06" y1="110.49" x2="261.62" y2="110.49" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="110.49" x2="261.62" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="110.49" x2="284.48" y2="110.49" width="0.1524" layer="91"/>
+<junction x="261.62" y="110.49"/>
 <label x="287.02" y="110.49" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FPGA_PROGRAM_B" class="0">
 <segment>
-<wire x1="226.06" y1="107.95" x2="271.78" y2="107.95" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="107.95" x2="284.48" y2="107.95" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="114.3" x2="271.78" y2="107.95" width="0.1524" layer="91"/>
-<junction x="271.78" y="107.95"/>
+<wire x1="226.06" y1="107.95" x2="274.32" y2="107.95" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="107.95" x2="284.48" y2="107.95" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="114.3" x2="274.32" y2="107.95" width="0.1524" layer="91"/>
+<junction x="274.32" y="107.95"/>
 <label x="287.02" y="107.95" size="1.778" layer="95"/>
 <pinref part="U1" gate="B2" pin="PROGRAM_B_2"/>
 <pinref part="R15" gate="G$1" pin="2"/>
@@ -25956,13 +25956,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 </sheet>
 <sheet>
 <plain>
-<text x="180.34" y="185.42" size="2.54" layer="97">Spartan 6 Bypass - VCCAUX</text>
-<text x="172.72" y="152.4" size="2.54" layer="97">Spartan 6 Bypass - VCCINT</text>
-<text x="198.12" y="86.36" size="2.54" layer="97">Spartan 6 Bypass - Bank 3</text>
-<text x="147.32" y="121.92" size="2.54" layer="97">Spartan 6 Bypass - Bank 0</text>
-<text x="200.66" y="121.92" size="2.54" layer="97">Spartan 6 Bypass - Bank 1</text>
-<text x="149.86" y="86.36" size="2.54" layer="97">Spartan 6 Bypass - Bank 2</text>
-<text x="175.26" y="25.4" size="5.08" layer="94">FPGA Power Pins / Bypassing</text>
+<text x="180.34" y="185.42" size="2.54" layer="111">Spartan 6 Bypass - VCCAUX</text>
+<text x="172.72" y="152.4" size="2.54" layer="111">Spartan 6 Bypass - VCCINT</text>
+<text x="200.66" y="86.36" size="2.54" layer="111">Spartan 6 Bypass - Bank 3</text>
+<text x="149.86" y="121.92" size="2.54" layer="111">Spartan 6 Bypass - Bank 0</text>
+<text x="200.66" y="121.92" size="2.54" layer="111">Spartan 6 Bypass - Bank 1</text>
+<text x="149.86" y="86.36" size="2.54" layer="111">Spartan 6 Bypass - Bank 2</text>
+<text x="176.53" y="26.67" size="5.08" layer="94">FPGA Power Pins / Bypassing</text>
 <text x="274.32" y="10.16" size="3.81" layer="94" rot="R180">2.3.1</text>
 </plain>
 <instances>
@@ -26416,14 +26416,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 </sheet>
 <sheet>
 <plain>
-<text x="132.08" y="238.76" size="6.4516" layer="94">RF Frontend - Analog Section</text>
+<text x="134.62" y="240.03" size="6.4516" layer="111">RF Frontend - Analog Section</text>
 <text x="367.665" y="233.045" size="2.54" layer="94">3V3_RF</text>
 <text x="426.72" y="10.16" size="3.81" layer="94" rot="R180">2.3.1</text>
-<text x="330.2" y="25.4" size="5.08" layer="94">RF Frontend / RF Power</text>
-<text x="294.64" y="243.84" size="6.4516" layer="94">RF LDO Regulator</text>
-<text x="266.7" y="177.8" size="6.4516" layer="94">RF Frontend Power Bypassing</text>
-<text x="53.34" y="91.44" size="6.4516" layer="94">RF Frontend - Digital Section</text>
-<text x="248.92" y="116.84" size="6.4516" layer="94">RF Frontend - Power</text>
+<text x="328.93" y="26.67" size="5.08" layer="94">RF Frontend / RF Power</text>
+<text x="295.91" y="243.84" size="6.4516" layer="111">RF LDO Regulator</text>
+<text x="261.62" y="176.53" size="6.4516" layer="111">RF Frontend Power Bypassing</text>
+<text x="53.34" y="91.44" size="6.4516" layer="111">RF Frontend - Digital Section</text>
+<text x="247.65" y="115.57" size="6.4516" layer="111">RF Frontend - Power</text>
 </plain>
 <instances>
 <instance part="C14" gate="G$1" x="119.38" y="170.18" smashed="yes" rot="R90">
@@ -27192,18 +27192,20 @@ We've spent an enormous amount of time creating and checking these footprints an
 <sheet>
 <plain>
 <text x="187.96" y="111.76" size="2.54" layer="94">1V2</text>
-<text x="121.285" y="99.695" size="1.778" layer="91">Route FB line away from SW line</text>
-<text x="73.66" y="111.76" size="2.54" layer="94">3V3</text>
-<text x="118.745" y="144.145" size="3.81" layer="94">Digital 3V3 and 1V2</text>
-<text x="91.44" y="127" size="1.778" layer="97">Any low Rdson</text>
+<text x="12.7" y="99.06" size="1.778" layer="111">Route FB lines away from SW lines so they don't feedback</text>
+<text x="74.93" y="111.76" size="2.54" layer="94">3V3</text>
+<text x="104.775" y="145.415" size="3.81" layer="111">Digital 3V3 / 1V2 Power Rails</text>
 <text x="274.32" y="10.16" size="3.81" layer="94" rot="R180">2.3.1</text>
-<text x="180.34" y="25.4" size="5.08" layer="94">Digital Power</text>
+<text x="176.53" y="26.67" size="5.08" layer="94">Digital Power</text>
 </plain>
 <instances>
 <instance part="VCC1" gate="G$1" x="185.42" y="114.3" smashed="yes">
 <attribute name="VALUE" x="181.61" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="U2" gate="G$1" x="137.16" y="111.76"/>
+<instance part="U2" gate="G$1" x="137.16" y="111.76" smashed="yes">
+<attribute name="VALUE" x="123.19" y="71.12" size="2.54" layer="96"/>
+<attribute name="NAME" x="123.19" y="74.93" size="2.54" layer="95"/>
+</instance>
 <instance part="R1" gate="G$1" x="160.02" y="124.46" smashed="yes" rot="R90">
 <attribute name="NAME" x="162.56" y="125.9586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="162.56" y="123.698" size="1.778" layer="96"/>
@@ -27215,20 +27217,20 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="VALUE" x="172.974" y="81.661" size="1.778" layer="96"/>
 </instance>
 <instance part="C1" gate="G$1" x="101.6" y="88.9" smashed="yes" rot="R270">
-<attribute name="NAME" x="98.044" y="84.201" size="1.778" layer="95"/>
-<attribute name="VALUE" x="98.044" y="81.661" size="1.778" layer="96"/>
+<attribute name="NAME" x="99.314" y="84.201" size="1.778" layer="95"/>
+<attribute name="VALUE" x="99.314" y="81.661" size="1.778" layer="96"/>
 </instance>
 <instance part="R61" gate="G$1" x="101.6" y="93.98" smashed="yes" rot="R180">
 <attribute name="NAME" x="99.06" y="98.0186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="99.06" y="95.758" size="1.778" layer="96"/>
 </instance>
 <instance part="R62" gate="G$1" x="111.76" y="88.9" smashed="yes" rot="R270">
-<attribute name="NAME" x="118.11" y="88.6714" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="119.38" y="90.932" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="118.11" y="91.2114" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="119.38" y="88.392" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R63" gate="G$1" x="162.56" y="88.9" smashed="yes" rot="R270">
-<attribute name="NAME" x="161.29" y="88.6714" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="161.29" y="90.932" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="160.02" y="91.2114" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="160.02" y="88.392" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R64" gate="G$1" x="172.72" y="93.98" smashed="yes">
 <attribute name="NAME" x="168.91" y="98.0186" size="1.778" layer="95"/>
@@ -27247,7 +27249,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="C2" gate="G$1" x="111.76" y="127"/>
 <instance part="C3" gate="G$1" x="83.82" y="96.52"/>
 <instance part="C4" gate="G$1" x="185.42" y="96.52"/>
-<instance part="Q1" gate="G$1" x="101.6" y="132.08" rot="R90"/>
+<instance part="Q1" gate="G$1" x="101.6" y="132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="99.06" y="139.7" size="1.778" layer="95"/>
+<attribute name="VALUE" x="99.06" y="137.16" size="1.778" layer="96"/>
+</instance>
 <instance part="GND80" gate="1" x="101.6" y="119.38"/>
 <instance part="VDD1" gate="G$1" x="172.72" y="137.16"/>
 <instance part="FRAME5" gate="G$1" x="0" y="0"/>
@@ -27429,11 +27434,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 </sheet>
 <sheet>
 <plain>
-<text x="215.9" y="215.9" size="6.4516" layer="94">FT232H UART/FIFO to USB</text>
-<text x="298.45" y="151.13" size="1.778" layer="97">Insert resistor in UART6_TX to avoid FIFO/UART contention?</text>
+<text x="207.01" y="214.63" size="6.4516" layer="111">FT232H UART/FIFO to USB</text>
 <text x="220.98" y="71.247" size="1.778" layer="97">(1%)</text>
 <text x="426.72" y="10.16" size="3.81" layer="94" rot="R180">2.3.1</text>
-<text x="330.2" y="25.4" size="5.08" layer="94">FTDI UART/FIFO to USB</text>
+<text x="328.93" y="26.67" size="5.08" layer="94">FTDI UART/FIFO to USB</text>
 </plain>
 <instances>
 <instance part="U6" gate="G$1" x="82.55" y="106.68"/>
@@ -28064,22 +28068,23 @@ We've spent an enormous amount of time creating and checking these footprints an
 </sheet>
 <sheet>
 <plain>
-<text x="202.565" y="190.5" size="5.08" layer="91">RF shield</text>
-<text x="114.3" y="121.92" size="5.08" layer="91" rot="MR0">USB</text>
-<text x="83.82" y="69.85" size="5.08" layer="91" rot="MR180">JTAG</text>
-<text x="148.59" y="69.85" size="3.81" layer="91" rot="MR180">JTAG chain</text>
+<text x="202.565" y="190.5" size="5.08" layer="111">RF shield</text>
+<text x="114.3" y="121.92" size="5.08" layer="111" rot="MR0">USB</text>
+<text x="83.82" y="69.85" size="5.08" layer="111" rot="MR180">JTAG</text>
+<text x="148.59" y="69.85" size="3.81" layer="111" rot="MR180">JTAG chain</text>
 <rectangle x1="144.78" y1="48.26" x2="157.48" y2="59.69" layer="91"/>
 <rectangle x1="167.64" y1="48.26" x2="180.34" y2="59.69" layer="91"/>
 <text x="127" y="52.07" size="2.54" layer="91">TDI</text>
 <text x="125.73" y="43.18" size="2.54" layer="91">TDO</text>
 <text x="168.91" y="60.96" size="2.54" layer="91">STM32</text>
 <text x="142.24" y="60.96" size="2.54" layer="91">SPARTAN6</text>
-<text x="15.24" y="154.94" size="5.08" layer="91" rot="MR180">UART1</text>
-<text x="15.24" y="106.68" size="5.08" layer="91" rot="MR180">UART3</text>
+<text x="15.24" y="154.94" size="5.08" layer="111" rot="MR180">UART1</text>
+<text x="15.24" y="106.68" size="5.08" layer="111" rot="MR180">UART3</text>
 <text x="274.32" y="10.16" size="3.81" layer="94" rot="R180">2.3.1</text>
-<text x="175.26" y="25.4" size="5.08" layer="94">Connectors / Misc</text>
-<text x="194.945" y="132.08" size="5.08" layer="91">Mounting Holes</text>
-<text x="210.185" y="76.2" size="5.08" layer="91">Fiducials</text>
+<text x="177.8" y="26.67" size="5.08" layer="94">Connectors / Misc</text>
+<text x="194.945" y="132.08" size="5.08" layer="111">Mounting Holes</text>
+<text x="210.185" y="76.2" size="5.08" layer="111">Fiducials</text>
+<text x="29.21" y="55.88" size="5.08" layer="111" rot="MR180">Logo</text>
 </plain>
 <instances>
 <instance part="GND8" gate="1" x="198.12" y="96.52"/>
@@ -28132,12 +28137,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="FRAME8" gate="G$2" x="172.72" y="0"/>
 <instance part="X3" gate="G$1" x="101.6" y="167.64" smashed="yes" rot="R180">
 <attribute name="NAME" x="104.14" y="147.32" size="1.27" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="137.16" y="198.12" size="5.08" layer="91" rot="R180"/>
+<attribute name="VALUE" x="137.16" y="198.12" size="5.08" layer="111" rot="R180"/>
 </instance>
 <instance part="P+3" gate="1" x="114.3" y="185.42" smashed="yes">
 <attribute name="VALUE" x="113.03" y="187.96" size="1.778" layer="96"/>
 </instance>
-<instance part="U$2" gate="G$1" x="10.16" y="7.62"/>
+<instance part="U$2" gate="G$1" x="33.02" y="43.18"/>
 </instances>
 <busses>
 </busses>
