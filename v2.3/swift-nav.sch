@@ -24747,7 +24747,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="322.58" y="132.08" size="2.54" layer="94">No STM32F10 compatibility</text>
 <text x="203.2" y="187.96" size="5.08" layer="94">STM32F4</text>
 <text x="330.2" y="27.94" size="5.08" layer="94">Microcontroller</text>
-<text x="424.18" y="10.16" size="3.81" layer="94" rot="R180">2.3</text>
+<text x="426.72" y="10.16" size="3.81" layer="94" rot="R180">2.3.1</text>
 <text x="105.41" y="171.45" size="2.54" layer="97">Reset Button</text>
 <text x="40.64" y="185.42" size="2.1844" layer="97">STM has internal pull-up</text>
 <text x="353.06" y="226.06" size="3.81" layer="94">STM32 Bypass</text>
@@ -25315,17 +25315,17 @@ We've spent an enormous amount of time creating and checking these footprints an
 <plain>
 <text x="203.2" y="69.85" size="6.4516" layer="94">Spartan Configuration Flash</text>
 <text x="162.56" y="256.54" size="6.4516" layer="94">Spartan IO Banks</text>
-<text x="205.74" y="228.6" size="2.54" layer="94">Bank 2</text>
-<text x="27.94" y="229.87" size="2.54" layer="94">Bank 0</text>
-<text x="121.92" y="246.38" size="2.54" layer="94">Bank 1</text>
-<text x="353.06" y="245.11" size="2.54" layer="94">Bank 3</text>
+<text x="210.82" y="223.52" size="2.54" layer="94">Bank 2</text>
+<text x="27.94" y="224.79" size="2.54" layer="94">Bank 0</text>
+<text x="124.46" y="243.84" size="2.54" layer="94">Bank 1</text>
+<text x="358.14" y="242.57" size="2.54" layer="94">Bank 3</text>
 <text x="256.286" y="213.868" size="1.778" layer="97">2K4 max for CCLK = 2MHz (default)</text>
 <text x="50.546" y="211.328" size="1.778" layer="97">Short in CONF guide,</text>
 <text x="50.546" y="208.788" size="1.778" layer="97">but 2K is fine</text>
 <text x="228.346" y="122.428" size="1.778" layer="97">2K4 or 4K7 recommended,</text>
 <text x="228.346" y="119.888" size="1.778" layer="97">but 2K is fine</text>
 <text x="281.686" y="119.888" size="1.778" layer="97">Can probably DNP as this is driven by STM</text>
-<text x="424.18" y="10.16" size="3.81" layer="94" rot="R180">2.3</text>
+<text x="426.72" y="10.16" size="3.81" layer="94" rot="R180">2.3.1</text>
 <text x="332.74" y="25.4" size="5.08" layer="94">FPGA IO / JTAG / FLASH</text>
 <text x="63.5" y="54.61" size="6.4516" layer="94">Spartan JTAG</text>
 </plain>
@@ -25963,7 +25963,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="200.66" y="121.92" size="2.54" layer="97">Spartan 6 Bypass - Bank 1</text>
 <text x="149.86" y="86.36" size="2.54" layer="97">Spartan 6 Bypass - Bank 2</text>
 <text x="175.26" y="25.4" size="5.08" layer="94">FPGA Power Pins / Bypassing</text>
-<text x="271.78" y="10.16" size="3.81" layer="94" rot="R180">2.3</text>
+<text x="274.32" y="10.16" size="3.81" layer="94" rot="R180">2.3.1</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="50.8" y="86.36"/>
@@ -26418,7 +26418,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <plain>
 <text x="132.08" y="238.76" size="6.4516" layer="94">RF Frontend - Analog Section</text>
 <text x="367.665" y="233.045" size="2.54" layer="94">3V3_RF</text>
-<text x="424.18" y="10.16" size="3.81" layer="94" rot="R180">2.3</text>
+<text x="426.72" y="10.16" size="3.81" layer="94" rot="R180">2.3.1</text>
 <text x="330.2" y="25.4" size="5.08" layer="94">RF Frontend / RF Power</text>
 <text x="294.64" y="243.84" size="6.4516" layer="94">RF LDO Regulator</text>
 <text x="266.7" y="177.8" size="6.4516" layer="94">RF Frontend Power Bypassing</text>
@@ -27196,7 +27196,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="73.66" y="111.76" size="2.54" layer="94">3V3</text>
 <text x="118.745" y="144.145" size="3.81" layer="94">Digital 3V3 and 1V2</text>
 <text x="91.44" y="127" size="1.778" layer="97">Any low Rdson</text>
-<text x="271.78" y="10.16" size="3.81" layer="94" rot="R180">2.3</text>
+<text x="274.32" y="10.16" size="3.81" layer="94" rot="R180">2.3.1</text>
 <text x="180.34" y="25.4" size="5.08" layer="94">Digital Power</text>
 </plain>
 <instances>
@@ -27432,7 +27432,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="215.9" y="215.9" size="6.4516" layer="94">FT232H UART/FIFO to USB</text>
 <text x="298.45" y="151.13" size="1.778" layer="97">Insert resistor in UART6_TX to avoid FIFO/UART contention?</text>
 <text x="220.98" y="71.247" size="1.778" layer="97">(1%)</text>
-<text x="424.18" y="10.16" size="3.81" layer="94" rot="R180">2.3</text>
+<text x="426.72" y="10.16" size="3.81" layer="94" rot="R180">2.3.1</text>
 <text x="330.2" y="25.4" size="5.08" layer="94">FTDI UART/FIFO to USB</text>
 </plain>
 <instances>
@@ -28076,7 +28076,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="142.24" y="60.96" size="2.54" layer="91">SPARTAN6</text>
 <text x="15.24" y="154.94" size="5.08" layer="91" rot="MR180">UART1</text>
 <text x="15.24" y="106.68" size="5.08" layer="91" rot="MR180">UART3</text>
-<text x="269.24" y="10.16" size="3.81" layer="94" rot="R180">2.3</text>
+<text x="274.32" y="10.16" size="3.81" layer="94" rot="R180">2.3.1</text>
 <text x="175.26" y="25.4" size="5.08" layer="94">Connectors / Misc</text>
 <text x="194.945" y="132.08" size="5.08" layer="91">Mounting Holes</text>
 <text x="210.185" y="76.2" size="5.08" layer="91">Fiducials</text>
