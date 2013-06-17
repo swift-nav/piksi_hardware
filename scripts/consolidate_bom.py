@@ -1,7 +1,9 @@
 #!/usr/bin/python
+import sys
 
-#consolidates parts in eagle .bom file by value, device, and package
-#will fail if there are not at least 4 fields per line
+#Consolidates parts in eagle .bom file by value, device, and package
+#Use bom.ulp to export BOM to a text file and then run consolidate_bom.py
+#Can then be uploaded to a Google Docs Spreadsheet
 def consolidate_bom(fnamein,fnameout):
 
   refdes = []
@@ -10,7 +12,7 @@ def consolidate_bom(fnamein,fnameout):
   package = []
 
   fin = open(fnamein,'r')
-  #First four lines aren't parts
+  #First five lines aren't parts
   for i in range(5):
     line = fin.readline()
   while not line == '': #EOF
@@ -24,10 +26,13 @@ def consolidate_bom(fnamein,fnameout):
     if duplicate_part: #part is already in list
       refdes[i].append(els[0])
     else: #part not in list yet
-      refdes.append([els[0]])
-      value.append(els[1])
-      device.append(els[2])
-      package.append(els[3])
+      try:
+        refdes.append([els[0]])
+        value.append(els[1])
+        device.append(els[2])
+        package.append(els[3])
+      except IndexError:
+        raise Exception("One of the component lines has < 4 fields")
     line = fin.readline()
 
   fout = open(fnameout,'w')
@@ -42,7 +47,7 @@ def consolidate_bom(fnamein,fnameout):
 if __name__ == '__main__':
   import argparse
   parser = argparse.ArgumentParser()
-  parser.add_argument('-i', action='store', dest='infile', help='Input file')
-  parser.add_argument('-o', action='store', dest='outfile', help='Ouput file')
+  parser.add_argument('infile', help='Input file')
+  parser.add_argument('outfile', help='Output file')
   args = parser.parse_args()
   consolidate_bom(args.infile,args.outfile)
