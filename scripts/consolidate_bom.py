@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 import sys
 
 #Consolidates parts in eagle .bom file by value, device, and package
