@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import sys
 
 #Consolidates parts in eagle .bom file by value, device, and package
 #Use bom.ulp to export BOM to a text file and then run consolidate_bom.py
