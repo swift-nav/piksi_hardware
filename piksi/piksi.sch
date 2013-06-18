@@ -24817,7 +24817,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="FRAME12" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="FRAME7" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="FRAME6" library="frames" deviceset="A4L-LOC" device=""/>
-<part name="FRAME5" library="frames" deviceset="A3L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -26502,11 +26501,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="261.62" y="176.53" size="6.4516" layer="111">RF Frontend Power Bypassing</text>
 <text x="53.34" y="91.44" size="6.4516" layer="111">RF Frontend - Digital Section</text>
 <text x="247.65" y="115.57" size="6.4516" layer="111">RF Frontend - Power</text>
-<text x="742.315" y="26.67" size="1.778" layer="111">Piksi 2.3.1</text>
-<text x="742.315" y="20.32" size="1.778" layer="111">Copyright (C) 2011-2013 Swift Navigation Inc.</text>
-<text x="742.315" y="13.97" size="1.778" layer="111">License : CC BY-SA 3.0</text>
-<text x="796.925" y="27.94" size="1.778" layer="111">FTDI UART / FIFO to USB</text>
-<text x="827.405" y="12.7" size="1.778" layer="111">v2.3.1</text>
 </plain>
 <instances>
 <instance part="C14" gate="G$1" x="119.38" y="170.18" smashed="yes" rot="R90">
@@ -26701,7 +26695,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="NAME" x="154.94" y="119.38" size="2.54" layer="95"/>
 <attribute name="VALUE" x="154.94" y="114.3" size="2.54" layer="96"/>
 </instance>
-<instance part="FRAME5" gate="G$1" x="452.12" y="7.62"/>
 </instances>
 <busses>
 </busses>
