@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -24759,7 +24759,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <sheet>
 <description>Microcontroller</description>
 <plain>
-<text x="297.18" y="124.46" size="2.54" layer="111">No STM32F10 compatibility</text>
 <text x="154.94" y="177.8" size="5.08" layer="111">STM32F4 Microcontroller</text>
 <text x="80.01" y="163.83" size="2.54" layer="111">Reset Button</text>
 <text x="15.24" y="180.34" size="2.1844" layer="111">STM has internal pull-up</text>
@@ -27218,7 +27217,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <description>Digital Power Rails</description>
 <plain>
 <text x="182.88" y="91.44" size="2.54" layer="94">1V2</text>
-<text x="7.62" y="78.74" size="1.778" layer="111">Route FB lines away from SW lines so they don't feedback</text>
+<text x="38.1" y="73.66" size="1.778" layer="111">Route FB lines away from
+SW lines so they don't feedback</text>
 <text x="69.85" y="91.44" size="2.54" layer="94">3V3</text>
 <text x="99.695" y="125.095" size="3.81" layer="111">Digital 3V3 / 1V2 Power Rails</text>
 <text x="163.195" y="19.05" size="1.778" layer="111">Piksi 2.3.1</text>
@@ -28559,4 +28559,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
