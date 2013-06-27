@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -28414,14 +28414,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="69.85" y1="58.42" x2="69.85" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="69.85" y1="63.5" x2="90.17" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="1"/>
-<wire x1="90.17" y1="50.8" x2="90.17" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="90.17" y1="63.5" x2="92.71" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<junction x="90.17" y="50.8"/>
 <label x="77.47" y="71.12" size="1.778" layer="95"/>
+<wire x1="90.17" y1="63.5" x2="92.71" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="69.85" y1="63.5" x2="69.85" y2="71.12" width="0.1524" layer="91"/>
 <junction x="69.85" y="63.5"/>
 <wire x1="69.85" y1="71.12" x2="77.47" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="90.17" y1="50.8" x2="90.17" y2="63.5" width="0.1524" layer="91"/>
+<junction x="90.17" y="63.5"/>
 </segment>
 </net>
 <net name="UART1_TX" class="0">
