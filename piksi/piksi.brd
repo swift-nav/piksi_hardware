@@ -7659,14 +7659,6 @@ design rules under a new name.</description>
 <contactref element="C55" pad="P$2"/>
 <contactref element="J6" pad="PIN_5"/>
 <contactref element="SHLD2" pad="21"/>
-<contactref element="SHLD2" pad="1"/>
-<contactref element="SHLD2" pad="28"/>
-<contactref element="SHLD2" pad="27"/>
-<contactref element="SHLD2" pad="26"/>
-<contactref element="SHLD2" pad="25"/>
-<contactref element="SHLD2" pad="24"/>
-<contactref element="SHLD2" pad="23"/>
-<contactref element="SHLD2" pad="22"/>
 <contactref element="SHLD2" pad="20"/>
 <contactref element="SHLD2" pad="19"/>
 <contactref element="SHLD2" pad="18"/>
@@ -7681,11 +7673,6 @@ design rules under a new name.</description>
 <contactref element="SHLD2" pad="9"/>
 <contactref element="SHLD2" pad="8"/>
 <contactref element="SHLD2" pad="7"/>
-<contactref element="SHLD2" pad="6"/>
-<contactref element="SHLD2" pad="5"/>
-<contactref element="SHLD2" pad="4"/>
-<contactref element="SHLD2" pad="3"/>
-<contactref element="SHLD2" pad="2"/>
 <contactref element="U3" pad="12"/>
 <contactref element="U3" pad="60"/>
 <contactref element="B1" pad="P$2"/>
@@ -7878,7 +7865,6 @@ design rules under a new name.</description>
 <wire x1="28.576946875" y1="49.678228125" x2="28.4226" y2="49.6062" width="0.254" layer="1"/>
 <wire x1="11.4808" y1="49.2252" x2="11.4808" y2="48.4482" width="0.254" layer="1"/>
 <wire x1="11.4808" y1="48.4482" x2="11.4888" y2="48.3616" width="0.254" layer="1"/>
-<wire x1="10.186" y1="47.56" x2="10.186" y2="48.1336" width="0.254" layer="1"/>
 <wire x1="10.186" y1="48.1336" x2="10.5664" y2="48.3362" width="0.254" layer="1"/>
 <wire x1="10.5664" y1="48.3362" x2="11.4046" y2="48.3362" width="0.254" layer="1"/>
 <wire x1="11.4046" y1="48.3362" x2="11.3792" y2="48.4886" width="0.254" layer="1"/>
@@ -8088,10 +8074,6 @@ design rules under a new name.</description>
 <via x="10.1854" y="13.5128" extent="1-16" drill="0.3"/>
 <wire x1="49.5554" y1="22.6568" x2="50.9778" y2="22.6568" width="0.3048" layer="1"/>
 <wire x1="50.9778" y1="22.6568" x2="51.0286" y2="23.114" width="0.3048" layer="1"/>
-<wire x1="49.586" y1="29.91" x2="49.586" y2="30.1042" width="0.3048" layer="1"/>
-<wire x1="49.586" y1="30.1042" x2="49.784" y2="31.1658" width="0.3048" layer="1"/>
-<wire x1="49.784" y1="31.1658" x2="50.6984" y2="31.1658" width="0.3048" layer="1"/>
-<wire x1="50.6984" y1="31.1658" x2="50.7492" y2="31.1912" width="0.3048" layer="1"/>
 <via x="52.959" y="23.5854" extent="1-16" drill="0.3"/>
 <via x="51.4858" y="23.5354" extent="1-16" drill="0.3"/>
 <via x="53.009" y="32.1334" extent="1-16" drill="0.3"/>
@@ -8406,6 +8388,20 @@ design rules under a new name.</description>
 <wire x1="34.1457" y1="22.8092" x2="34.1457" y2="22.8427" width="0.1524" layer="1"/>
 <wire x1="34.1457" y1="22.8427" x2="34.4932" y2="23.1902" width="0.1524" layer="1"/>
 <via x="34.0968" y="24.5526" extent="1-16" drill="0.3"/>
+<contactref element="SHLD2" pad="22"/>
+<contactref element="SHLD2" pad="23"/>
+<contactref element="SHLD2" pad="24"/>
+<contactref element="SHLD2" pad="25"/>
+<contactref element="SHLD2" pad="26"/>
+<contactref element="SHLD2" pad="27"/>
+<contactref element="SHLD2" pad="28"/>
+<contactref element="SHLD2" pad="6"/>
+<contactref element="SHLD2" pad="5"/>
+<contactref element="SHLD2" pad="4"/>
+<contactref element="SHLD2" pad="3"/>
+<contactref element="SHLD2" pad="2"/>
+<contactref element="SHLD2" pad="1"/>
+<wire x1="53.045359375" y1="31.1658" x2="53.045359375" y2="31.1658" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$3">
 <contactref element="R2" pad="P$1"/>
