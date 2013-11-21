@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -287,14 +287,14 @@
 <circle x="24.294996875" y="13.6009875" radius="0.2" width="0.2032" layer="113"/>
 <wire x1="32.1564" y1="48.9204" x2="33.6804" y2="48.9204" width="0.2032" layer="113"/>
 <wire x1="30.861" y1="43.6626" x2="35.5854" y2="43.6626" width="0.2032" layer="113"/>
-<dimension x1="7.4" y1="7.4" x2="7.4" y2="52.4" x3="-0.2" y3="29.9" layer="48"/>
-<dimension x1="7.4" y1="52.4" x2="52.4" y2="52.4" x3="29.9" y3="59.8" layer="48"/>
-<dimension x1="7.9" y1="51.9" x2="4.38175" y2="54.70569375" x3="-1.71655" y3="59.568896875" layer="48" dtype="radius"/>
-<dimension x1="3.4" y1="7.9" x2="56.4" y2="7.9" x3="29.9" y3="-2.4" layer="48"/>
-<dimension x1="7.9" y1="56.4" x2="7.9" y2="3.4" x3="-8.1" y3="29.9" layer="48"/>
-<dimension x1="52.4" y1="7.4" x2="56.4" y2="7.4" x3="54.4" y3="-5.2" layer="48"/>
-<dimension x1="52.4" y1="7.4" x2="52.4" y2="3.4" x3="65.2" y3="5.4" layer="48"/>
-<dimension x1="52.4" y1="52.4" x2="58.8" y2="56.3" x3="61.2" y3="56.3" layer="48" dtype="leader"/>
+<dimension x1="7.4" y1="7.4" x2="7.4" y2="52.4" x3="-0.2" y3="29.9" textsize="3.5" layer="48"/>
+<dimension x1="7.4" y1="52.4" x2="52.4" y2="52.4" x3="29.9" y3="59.8" textsize="3.5" layer="48"/>
+<dimension x1="7.9" y1="51.9" x2="4.38175" y2="54.70569375" x3="-1.71655" y3="59.568896875" textsize="3.5" layer="48" dtype="radius"/>
+<dimension x1="3.4" y1="7.9" x2="56.4" y2="7.9" x3="29.9" y3="-2.4" textsize="3.5" layer="48"/>
+<dimension x1="7.9" y1="56.4" x2="7.9" y2="3.4" x3="-8.1" y3="29.9" textsize="3.5" layer="48"/>
+<dimension x1="52.4" y1="7.4" x2="56.4" y2="7.4" x3="54.4" y3="-5.2" textsize="3.5" layer="48"/>
+<dimension x1="52.4" y1="7.4" x2="52.4" y2="3.4" x3="65.2" y3="5.4" textsize="3.5" layer="48"/>
+<dimension x1="52.4" y1="52.4" x2="58.8" y2="56.3" x3="61.2" y3="56.3" textsize="3.5" layer="48" dtype="leader"/>
 <text x="59" y="57" size="1.778" layer="48">3.5mm dia for M3 loose fit</text>
 <text x="46.7868" y="45.847" size="1.27" layer="122" font="vector" ratio="15" rot="MR0">V+ max 5.5V</text>
 <wire x1="29.56600625" y1="47.35720625" x2="12.565990625" y2="47.35720625" width="0.2032" layer="121"/>
@@ -7235,7 +7235,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -9549,7 +9549,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="SPI2MISO">
 <contactref element="U1" pad="P10"/>
-<contactref element="U13" pad="2"/>
 <contactref element="U3" pad="35"/>
 <wire x1="38.6134" y1="32.6924" x2="38.6134" y2="35.2752" width="0.1778" layer="1"/>
 <wire x1="38.6134" y1="35.2752" x2="38.5318" y2="35.4584" width="0.1778" layer="1"/>
@@ -9581,7 +9580,6 @@ design rules under a new name.</description>
 <wire x1="34.9504" y1="45.8978" x2="35.1798" y2="45.8978" width="0.1524" layer="15"/>
 <wire x1="35.1798" y1="45.8978" x2="35.55" y2="46.268" width="0.1524" layer="15"/>
 <wire x1="35.55" y1="46.268" x2="35.7464" y2="46.268" width="0.254" layer="1"/>
-<wire x1="35.7464" y1="46.268" x2="36.3756" y2="45.6388" width="0.254" layer="1"/>
 <wire x1="28.321" y1="44.7802" x2="26.1874" y2="44.7802" width="0.1524" layer="15"/>
 <wire x1="26.1874" y1="44.7802" x2="25.1714" y2="43.7642" width="0.1524" layer="15"/>
 <wire x1="25.1714" y1="43.7642" x2="24.638" y2="43.7642" width="0.1524" layer="15"/>
@@ -9596,6 +9594,8 @@ design rules under a new name.</description>
 <wire x1="13.7414" y1="36.1696" x2="13.462" y2="36.449" width="0.1524" layer="15"/>
 <wire x1="13.462" y1="36.449" x2="13.462" y2="40.0304" width="0.1524" layer="15"/>
 <wire x1="13.462" y1="40.0304" x2="13.5128" y2="40.0812" width="0.1524" layer="15"/>
+<contactref element="U13" pad="2"/>
+<wire x1="35.7464" y1="46.268" x2="36.3756" y2="45.6388" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$34">
 <contactref element="U1" pad="P14"/>
@@ -10054,7 +10054,6 @@ design rules under a new name.</description>
 <wire x1="38.0746" y1="22.1742" x2="37.9984" y2="22.0218" width="0.2794" layer="1"/>
 </signal>
 <signal name="SPI2NSS_FLASH">
-<contactref element="U1" pad="T3"/>
 <contactref element="R13" pad="P$1"/>
 <contactref element="U13" pad="1"/>
 <contactref element="U3" pad="33"/>
@@ -10062,7 +10061,6 @@ design rules under a new name.</description>
 <wire x1="37.0078" y1="44.9834" x2="36.4722" y2="44.45" width="0.1778" layer="1"/>
 <wire x1="36.4722" y1="44.45" x2="36.3756" y2="44.3788" width="0.1778" layer="1"/>
 <via x="35.5346" y="45.0134" extent="1-16" drill="0.3"/>
-<wire x1="13.566" y1="44.3572" x2="13.566" y2="44.3762" width="0.1524" layer="1"/>
 <wire x1="13.566" y1="44.3762" x2="13.0683" y2="43.8277" width="0.1524" layer="1"/>
 <via x="13.0683" y="43.8277" extent="1-16" drill="0.3"/>
 <wire x1="35.5346" y1="45.0134" x2="35.53" y2="45.0134" width="0.1524" layer="15"/>
@@ -10102,6 +10100,8 @@ design rules under a new name.</description>
 <wire x1="16.6878" y1="44.5516" x2="15.3416" y2="43.2054" width="0.1524" layer="15"/>
 <wire x1="15.3416" y1="43.2054" x2="13.6906" y2="43.2054" width="0.1524" layer="15"/>
 <wire x1="13.6906" y1="43.2054" x2="13.0683" y2="43.8277" width="0.1524" layer="15"/>
+<contactref element="U1" pad="T3"/>
+<wire x1="13.566" y1="44.3572" x2="13.566" y2="44.3762" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <wire x1="40.5892" y1="26.2382" x2="40.592" y2="25.5424" width="0.2794" layer="1"/>
@@ -10268,7 +10268,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="SPI2SCK">
 <contactref element="U1" pad="R11"/>
-<contactref element="U13" pad="6"/>
 <contactref element="U3" pad="34"/>
 <wire x1="37.6428" y1="17.0942" x2="37.6428" y2="16.1544" width="0.1524" layer="1"/>
 <via x="37.6428" y="16.1544" extent="1-16" drill="0.3"/>
@@ -10309,7 +10308,6 @@ design rules under a new name.</description>
 <wire x1="30.8864" y1="44.3992" x2="31.2166" y2="44.7294" width="0.1524" layer="15"/>
 <wire x1="43.6245" y1="18.7833" x2="40.9956" y2="16.1544" width="0.1524" layer="15"/>
 <wire x1="40.9956" y1="16.1544" x2="37.6428" y2="16.1544" width="0.1524" layer="15"/>
-<wire x1="30.3756" y1="46.9188" x2="30.6429625" y2="46.9188" width="0.254" layer="1"/>
 <wire x1="30.6429625" y1="46.9188" x2="31.22168125" y2="46.34008125" width="0.254" layer="1"/>
 <wire x1="40.592" y1="20.8624" x2="40.592" y2="20.0434" width="0.1524" layer="1"/>
 <wire x1="40.592" y1="20.0434" x2="37.6428" y2="17.0942" width="0.1524" layer="1"/>
@@ -10339,6 +10337,8 @@ design rules under a new name.</description>
 <wire x1="45.3644" y1="27.2796" x2="45.6184" y2="27.0256" width="0.1524" layer="15"/>
 <wire x1="45.6184" y1="27.0256" x2="49.1744" y2="27.0256" width="0.1524" layer="15"/>
 <wire x1="49.1744" y1="27.0256" x2="50.1396" y2="26.0604" width="0.1524" layer="15"/>
+<contactref element="U13" pad="6"/>
+<wire x1="30.6429625" y1="46.9188" x2="30.3756" y2="46.9188" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI2NSS_MAX">
 <contactref element="U3" pad="30"/>
@@ -10378,7 +10378,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="SPI2MOSI">
 <contactref element="U1" pad="T10"/>
-<contactref element="U13" pad="5"/>
 <contactref element="U3" pad="36"/>
 <via x="36.3982" y="16.3576" extent="1-16" drill="0.3"/>
 <wire x1="39.1134" y1="32.6924" x2="39.1134" y2="35.0292" width="0.1778" layer="1"/>
@@ -10425,7 +10424,6 @@ design rules under a new name.</description>
 <wire x1="15.748" y1="39.497" x2="15.748" y2="40.767" width="0.1524" layer="15"/>
 <wire x1="31.21151875" y1="47.5796" x2="31.21151875" y2="47.13731875" width="0.1524" layer="15"/>
 <wire x1="31.21151875" y1="47.13731875" x2="28.4988" y2="44.4246" width="0.1524" layer="15"/>
-<wire x1="30.3756" y1="48.1788" x2="30.61231875" y2="48.1788" width="0.254" layer="1"/>
 <wire x1="30.61231875" y1="48.1788" x2="31.21151875" y2="47.5796" width="0.254" layer="1"/>
 <wire x1="40.092" y1="20.8624" x2="40.092" y2="20.0514" width="0.1524" layer="1"/>
 <wire x1="40.092" y1="20.0514" x2="36.3982" y2="16.3576" width="0.1524" layer="1"/>
@@ -10453,6 +10451,8 @@ design rules under a new name.</description>
 <wire x1="49.8094" y1="27.3304" x2="46.4058" y2="27.3304" width="0.1524" layer="15"/>
 <wire x1="46.4058" y1="27.3304" x2="44.8056" y2="28.9306" width="0.1524" layer="15"/>
 <wire x1="20.4978" y1="42.3164" x2="21.2852" y2="42.3164" width="0.1524" layer="15"/>
+<contactref element="U13" pad="5"/>
+<wire x1="30.61231875" y1="48.1788" x2="30.3756" y2="48.1788" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DEBUG6">
 <contactref element="X3" pad="5"/>
